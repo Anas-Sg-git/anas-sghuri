@@ -11,29 +11,18 @@ main:
   - title: "Accueil"
     url: /
 
-  - title: "Introduction"
-    url: /introduction/
-
-  - title: "Contexte"
-    url: /contexte/
-
-  - title: "Élaboration"
-    url: /elaboration/
-
-  - title: "Vieillissement"
-    url: /vieillissement/
-
-  - title: "Modélisation"
-    url: /modelisation/
-
-  - title: "Application"
-    url: /application/
-
-  - title: "Conclusion"
-    url: /conclusion/
-
-  - title: "Annexes"
-    url: /annexes/
+  - title: "PhD"
+    url: /phd/
 
   - title: "Publications"
     url: /publications/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Portfolio"
+    url: /portfolio/
+
+  - title: "Teaching"
+    url: /teaching/
+
