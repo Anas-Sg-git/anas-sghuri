@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Caractérisation mécanique de l’Ag"
+excerpt: "Ce projet de portfolio présente mon travail sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouches Ag/Cu, en combinant des essais de traction, la corrélation d’images numériques et l’analyse de la rupture interfaciale afin d’étudier le rôle du vieillissement thermique et de la pression de frittage sur la fiabilité de l’assemblage.<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
