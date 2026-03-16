@@ -13,14 +13,10 @@ Ce projet vise à établir les relations entre paramètres de procédé, état m
 
 Les essais de traction ont été couplés à une mesure de champs par Digital Image Correlation (DIC) : la surface peinte de l’éprouvette est suivie image par image afin de reconstruire les champs de déplacements en surface, puis les champs de déformations associés ; ces données cinématiques, obtenues avec Digital Image Correlation and Tracking with MATLAB et synchronisées avec l’effort appliqué, permettent d’interpréter la localisation de la déformation, la séquence de rupture et l’évolution de l’intégrité interfaciale du système Ag/Cu.
 
-Résultat clé : indicateur simple de décohésion interfaciale
+Résultat clé :
 
-L’analyse des courbes de traction met en évidence, dans le régime post-rupture des bicouches Ag/Cu, des chutes de contrainte successives interprétées comme la manifestation mécanique d’un endommagement interfacial progressif. Ces événements traduisent vraisemblablement une dégradation locale du transfert de charge entre la couche d’Ag nanoporeux rompue et le substrat de Cu plastifiant, et peuvent être considérés comme un marqueur qualitatif de la cohésion interfaciale.
+Les stress drops observés après la rupture de la couche d’Ag sont utilisés ici comme un indicateur qualitatif de désolidarisation ou de glissement entre la couche d’Ag nanoporeux déjà rompue et la couche de Cu qui continue à se déformer.
 
-Effet de l’aging
+Lorsque le temps d’aging augmente, ces stress drops deviennent globalement moins fréquents et moins marqués ; en parallèle, la rupture du Cu tend plus souvent à se produire au même endroit que celle de l’Ag, et les deux couches restent plus souvent liées jusqu’à la fin de l’essai, ce qui va dans le sens d’un bonding Ag/Cu plus fort.
 
-L’augmentation du temps d’aging conduit à une atténuation nette de ces instabilités mécaniques, ce qui suggère une amélioration de la cohésion Ag/Cu et une plus grande stabilité du transfert de charge au cours de la déformation. Les états les plus vieillis présentent ainsi un comportement post-rupture plus régulier, ainsi qu’une rupture plus souvent co-localisée entre les deux couches.
-
-Effet des conditions de frittage
-
-Une pression de frittage plus élevée semble par ailleurs favoriser une meilleure intégrité mécanique de l’assemblage, les échantillons consolidés à 10 MPa paraissant moins sensibles aux ruptures successives de la couche d’Ag que ceux élaborés à 5 MPa. Cette observation reste toutefois de nature qualitative, en raison de la variabilité importante des résultats expérimentaux.
+Une pression de frittage plus grande semble conduire à des échantillons plus résistants que ceux frittés à faible pression, mais cette conclusion reste qualitative compte tenu de la dispersion des résultats, de la qualité limitée des échantillons et de la variabilité intrinsèque de la structure nanoporeuse.
