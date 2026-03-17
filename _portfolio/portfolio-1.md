@@ -22,4 +22,4 @@ Lorsque le temps d’aging augmente, ces stress drops deviennent globalement moi
 Une pression de frittage plus grande semble conduire à des échantillons plus résistants que ceux frittés à faible pression, mais cette conclusion reste qualitative compte tenu de la dispersion des résultats, de la qualité limitée des échantillons et de la variabilité intrinsèque de la structure nanoporeuse.
 
 Résumé graphique :
-
+<br/><img src='/images/Synthèse — Argent Nanoporeux Ag et AgCu Tests de Microtraction.png'>
