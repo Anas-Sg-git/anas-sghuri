@@ -1,8 +1,7 @@
 ---
 title: "Caractérisation mécanique de l’Ag"
 excerpt: "Ce projet de portfolio présente mon travail sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouches Ag/Cu, en combinant des essais de traction, la corrélation d’images numériques et l’analyse de la rupture interfaciale afin d’étudier le rôle du vieillissement thermique et de la pression de frittage sur la fiabilité de l’assemblage.
-Ce projet porte sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouche Ag/Cu, afin d’évaluer l’effet du temps de vieillissement thermique et de la pression de frittage sur le comportement en micro-traction.
-<br/><img src='/images/500x300.png'>"
+Ce projet porte sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouche Ag/Cu, afin d’évaluer l’effet du temps de vieillissement thermique et de la pression de frittage sur le comportement en micro-traction."
 collection: portfolio
 ---
 
@@ -22,7 +21,7 @@ Lorsque le temps d’aging augmente, ces stress drops deviennent globalement moi
 Une pression de frittage plus grande semble conduire à des échantillons plus résistants que ceux frittés à faible pression, mais cette conclusion reste qualitative compte tenu de la dispersion des résultats, de la qualité limitée des échantillons et de la variabilité intrinsèque de la structure nanoporeuse.
 
 Résumé graphique :
-<br/><img src='/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png'>
+"<br/><img src='/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png'>"
 Résumé graphique :
 
 <img src="{{ '/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png' | relative_url }}" alt="Résumé graphique">
