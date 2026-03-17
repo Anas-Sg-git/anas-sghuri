@@ -23,3 +23,12 @@ Une pression de frittage plus grande semble conduire à des échantillons plus r
 
 Résumé graphique :
 <br/><img src='/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png'>
+Résumé graphique :
+
+<img src="{{ '/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png' | relative_url }}" alt="Résumé graphique">
+
+<p>
+  <a href="{{ '/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png' | relative_url }}" download>
+    Télécharger l’image de synthèse
+  </a>
+</p>
