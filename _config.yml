@@ -28,9 +28,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Univ. de Poitiers
-   ISAE-ENSMA 
-   Institut Pprime"
+  employer         : "Univ. de Poitiers<br>ISAE-ENSMA<br>Institut Pprime"
   uri              : # URL
   email            : "anas.sghuri@gmail.com" 
 
