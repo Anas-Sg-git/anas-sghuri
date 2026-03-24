@@ -5,7 +5,7 @@ layout: single
 author_profile: true
 ---
 
-# Doctorat "Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre"
+# "Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre"
 
 ![Contexte du sujet](assets/images/phd/phd-hero-context.webp)
 
