@@ -4,7 +4,7 @@ collection: teaching
 type: "Enseignement supérieur et encadrement"
 permalink: /enseignement-encadrement/ater-isae-ensma/
 venue: "ISAE-ENSMA, département MSISI"
-date: 2022-2023
+date: "2022-2023"
 location: "Chasseneuil-du-Poitou, France"
 ---
 
