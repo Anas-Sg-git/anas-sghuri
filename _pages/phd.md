@@ -64,15 +64,15 @@ La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 m
 
 *Estimation des conductivités thermiques dans le plan à partir d’images infrarouges et de la résolution inverse de l’équation de la chaleur 3D instationnaire*
 
-> **Placeholder image — Slide 7**  
-> Procédé de frittage : pâte → dégazage → couches → frittage sous pression  
-> /assets/images/phd/frittage-process.png
+<!--> **Placeholder image — Slide 7**  
+> Procédé de frittage : pâte → dégazage → couches → frittage sous pression  -->
+<img src="{{ '/images/frittage-process.png' | relative_url }}" alt="Procédé de frittage ">
 
-*Procédé d'élaboration — dépôt multicouche, dégazage sous vide, frittage 0–10 MPa @ 270 °C.*
+*Procédé d'élaboration : dépôt multicouche, dégazage sous vide et frittage 0–10 MPa @ 270 °C pendant 5 min.*
 
 En complément de la Flash 3D, l’approche expérimentale comprend un **protocole complet d’élaboration des échantillons**, fondé sur un dépôt multicouche de pâte d’argent, un **dégazage sous vide primaire à température ambiante**, puis un **frittage sous pression à 270 °C pendant 5 min**, suivi d’un refroidissement libre. Ce protocole a été conçu pour obtenir des échantillons massifs et bicouches à densité contrôlée, en faisant varier la pression appliquée au frittage.
 
-> **Placeholder image — Figure 3.3**  
+<!--> **Placeholder image — Figure 3.3**  
 > Cinétique de dégazage sous vide de la pâte d’Ag  
 > /assets/images/phd/degazage-masse.png
 
@@ -84,7 +84,7 @@ Une première méthode expérimentale clé a consisté à **suivre la perte de m
 > Analyses DSC / ATG de la pâte d’argent  
 > /assets/images/phd/dsc-atg-paste.png
 
-*DSC/ATG — identification du dégazage des solvants et de la température de frittage.*
+*DSC/ATG — identification du dégazage des solvants et de la température de frittage.*-->
 
 La **température de frittage** a été déterminée par **analyse calorimétrique différentielle à balayage (DSC)** couplée à une **analyse thermogravimétrique (ATG)**. Les essais ont été réalisés sur la plage **25–300 °C** avec une vitesse de chauffe de **10 °C/min**. La DSC met en évidence un premier pic vers **125 °C**, attribué au dégazage des solvants, puis un second vers **257 °C**, associé au frittage des particules d’Ag. L’ATG montre en parallèle une perte de masse importante à partir de **100 °C** jusqu’à environ **210 °C**, puis une diminution plus lente attribuée à la décomposition du liant et du dispersant.
 
