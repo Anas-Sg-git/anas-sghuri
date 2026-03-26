@@ -56,7 +56,7 @@ La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 m
 
 > **Placeholder image — Slide 27**  
 > Photo du setup Flash 3D (laser, caméra IR, échantillon, cryothermostat)  
-> /assets/images/phd/setup-flash3d.png
+<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Dispositif Flash 3D">
 
 *Dispositif Flash 3D — laser CO₂, caméra IR haute vitesse, cryothermostat.*
 
