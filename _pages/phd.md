@@ -1,11 +1,11 @@
 ---
-title: "PhD — Conductivité thermique de l'Argent fritté"
+title: ""
 permalink: /phd/
 layout: single
 author_profile: true
 ---
 
-# Conductivité thermique de l'Argent fritté poreux : vieillissement thermique & interface Ag/Cu
+# "Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre"
 
 *Thèse de doctorat · Institut P' · ENSMA · Université de Poitiers*
 
