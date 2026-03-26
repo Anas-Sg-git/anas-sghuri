@@ -34,19 +34,18 @@ Les composants en SiC et GaN de nouvelle génération, destinés à l’électro
 
 L'**argent fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à 426 W·m⁻¹·K⁻¹, élaboration à basse température (200–300 °C), pas de fusion en service. Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées, et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté dans la littérature.
 
-<img src="{{ '/images/module-puissance.png' | relative_url }}">
+<img src="{{ '/images/module-puissance.png' }}">
 >Architecture type d'un module de puissance et la microstructure de l'Ag fritté.
 >L'interconnexion entre la puce SiC/GaN et le substrat est le maillon thermique critique. Source : présentation de soutenance.
 
 ## 02 — Verrou scientifique
 
-### Trois questions sans réponse robuste dans la littérature
+Malgré l’intérêt croissant porté à l’Ag fritté comme matériau d’interconnexion, son comportement thermique reste difficile à décrire de manière robuste et prédictive. Cette difficulté tient à la fois à sa microstructure poreuse, à son évolution sous vieillissement thermique et au rôle des interfaces dans les assemblages réels. Trois verrous scientifiques principaux se dégagent :
 
-La littérature recense plus d'une dizaine d'études sur la conductivité de l'Ag fritté, mais les résultats sont dispersés sur plus d'une décade pour un même taux de porosité. Trois problèmes fondamentaux se dégagent :
-
-1. **Mesurer sur un matériau hautement diffusif.** L'Ag fritté est extrêmement conducteur, ce qui rend la méthode flash 1D inadaptée. Il fallait une méthode capable de gérer des effets 2D/3D et une anisotropie potentielle, sans hypothèse simplificatrice.
-2. **Relier conductivité, densité et vieillissement.** La densité est le levier principal, mais personne n'avait encore établi de corrélation robuste λ = f(ρ, t, T) sur une large plage de conditions.
-3. **Quantifier l'effet de l'interface Ag/Cu.** Dans un assemblage réel, l'argent repose sur un substrat cuivre. Les résistances d'interface sont systématiquement négligées dans la littérature — leur évolution à long terme était totalement inconnue.
+ **1. Mesurer un matériau hautement diffusif.**
+L’Ag fritté présente une conductivité thermique très élevée ; l’argent est en effet le métal le plus conducteur thermiquement à température ambiante. Cette forte diffusivité limite la validité des approches flash 1D. Une méthode capable de prendre en compte des effets 2D/3D ainsi qu’une anisotropie potentielle était donc nécessaire.
+**2. Relier conductivité, densité et vieillissement.** La densité est un paramètre clé, mais on ne disposait pas encore d’une relation claire entre conductivité thermique, densité, temps et température de vieillissement.
+**3. Quantifier l'effet de l'interface Ag/Cu.** Dans un assemblage réel, l'Ag repose sur un substrat Cu. Les résistances d'interface sont systématiquement négligées dans la littérature et leur évolution à long terme était totalement inconnue.
 
 ## 03 — Approche expérimentale
 
