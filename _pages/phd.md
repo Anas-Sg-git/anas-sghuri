@@ -54,11 +54,15 @@ L’Ag fritté présente une conductivité thermique très élevée ; l’argent
 La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 ms)** et une caméra infrarouge haute vitesse (2000 fps) qui enregistre la diffusion thermique 2D en surface. L’identification des conductivités thermiques repose sur la résolution d’un problème inverse fondé sur la solution analytique tridimensionnelle instationnaire de l’équation de la chaleur, projetée sur une base d’harmoniques spatiales.
 
 
-> **Placeholder image — Slide 27**  
-> Photo du setup Flash 3D (laser, caméra IR, échantillon, cryothermostat)  
-<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Dispositif Flash 3D">
+<!-- **Placeholder image — Slide 27**  
+ Photo du setup Flash 3D (laser, caméra IR, échantillon, cryothermostat)-->  
+<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Flash 3D: banc expérimental ">
 
-*Dispositif Flash 3D — laser CO₂, caméra IR haute vitesse, cryothermostat.*
+*banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
+
+<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification ">
+
+*Estimation des conductivités thermiques dans le plan à partir d’images infrarouges et de la résolution inverse de l’équation de la chaleur 3D instationnaire*
 
 > **Placeholder image — Slide 7**  
 > Procédé de frittage : pâte → dégazage → couches → frittage sous pression  
