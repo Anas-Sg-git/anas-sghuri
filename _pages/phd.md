@@ -51,7 +51,8 @@ L’Ag fritté présente une conductivité thermique très élevée ; l’argent
 
 ### La méthode Flash 3D : un choix décisif
 
-La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 ms)** et une caméra infrarouge haute vitesse (2000 fps) qui enregistre la diffusion thermique 2D en surface. Un estimateur analytique (ENH — Estimation par Normalisation Harmonique) extrait les diffusivités αₓ et αᵧ simultanément, sans hypothèse 1D.
+La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 ms)** et une caméra infrarouge haute vitesse (2000 fps) qui enregistre la diffusion thermique 2D en surface. L’identification des conductivités thermiques repose sur la résolution d’un problème inverse fondé sur la solution analytique tridimensionnelle instationnaire de l’équation de la chaleur, projetée sur une base d’harmoniques spatiales.
+
 
 > **Placeholder image — Slide 27**  
 > Photo du setup Flash 3D (laser, caméra IR, échantillon, cryothermostat)  
