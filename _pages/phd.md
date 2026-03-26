@@ -34,7 +34,7 @@ Les composants en SiC et GaN de nouvelle génération, destinés à l’électro
 
 L'**argent fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à 426 W·m⁻¹·K⁻¹, élaboration à basse température (200–300 °C), pas de fusion en service. Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées, et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté dans la littérature.
 
-<img src="/module-puissance.png" alt="Module de puissance">
+<img src="{{ '/module-puissance.png' | relative_url }}" alt="Module de puissance">
 >Architecture type d'un module de puissance et la microstructure de l'Ag fritté.
 >L'interconnexion entre la puce SiC/GaN et le substrat est le maillon thermique critique. Source : présentation de soutenance.
 
