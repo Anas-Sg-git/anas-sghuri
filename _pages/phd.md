@@ -18,21 +18,21 @@ Travaux menés à l’interface entre expérimentation, modélisation et analyse
 
 ## Chiffres clés
 
-| Valeur | Description |
+<!--| Valeur | Description |
 |---|---|
 | +84 % | Gain de conductivité thermique par frittage sous 10 MPa |
 | 45 min | Cinétique de stabilisation de λ lors du vieillissement initial |
 | 500 h | Durée maximale de vieillissement thermique étudié |
 | ~50 % | Zone Ag affectée par l'interface à 500 h @ 350 °C |
-| <6 % | Incertitude de mesure Flash 3D après calibration |
+| <6 % | Incertitude de mesure Flash 3D après calibration |-->
 
 ## 01 — Contexte & enjeux
 
 ### Pourquoi s'intéresser à l'Ag fritté en électronique de puissance ?
 
-Les puces en **SiC et GaN** de nouvelle génération opèrent au-delà de 250 °C et dissipent des densités de puissance croissantes — en traction électrique, énergies renouvelables, aérospatiale. Les brasures classiques (SAC305 : 50 W·m⁻¹·K⁻¹) ne peuvent plus assurer l'évacuation thermique requise.
+Les composants en SiC et GaN de nouvelle génération, destinés à l’électronique de puissance, fonctionnent au-delà de 250 °C et doivent évacuer des densités de puissance croissantes. Dans ce contexte, les brasures classiques comme le SAC305 (50 W·m⁻¹·K⁻¹) ne permettent plus une dissipation thermique suffisante.
 
-L'**argent fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à 426 W·m⁻¹·K⁻¹, élaboration à basse température (200–300 °C), pas de fusion en service. Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées, et l'effet du vieillissement thermique sur ses propriétés restait très mal documenté.
+L'**argent fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à 426 W·m⁻¹·K⁻¹, élaboration à basse température (200–300 °C), pas de fusion en service. Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées, et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté dans la littérature.
 
 > **Placeholder image — Slide 2**
 > Exporter & placer dans /assets/images/phd/module-puissance.png
