@@ -16,9 +16,9 @@ Travaux menés à l’interface entre expérimentation, modélisation et analyse
 - Financement : ACI++ Pprime Eprom · UE FEDER
 - Publication : Acta Materialia (2023)
 
-## Chiffres clés
+<!--## Chiffres clés
 
-<!--| Valeur | Description |
+| Valeur | Description |
 |---|---|
 | +84 % | Gain de conductivité thermique par frittage sous 10 MPa |
 | 45 min | Cinétique de stabilisation de λ lors du vieillissement initial |
