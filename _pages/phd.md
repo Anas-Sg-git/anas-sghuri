@@ -73,7 +73,7 @@ La **température de frittage** a été déterminée par **analyse calorimétriq
 
 Les **observations MEB** ont servi à suivre l’évolution microstructurale de la pâte avec la température. Elles montrent que la microstructure initiale est globalement conservée jusqu’à **250 °C**, puis que les particules d’Ag commencent à coalescer au-delà. Ces observations ont conduit à retenir un **frittage à 270 °C pendant 5 min** comme compromis entre élimination du dispersant et compaction des particules.
 
-<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 
 * **Analyses DSC/ATG et évolution microstructurale de la pâte d’argent en fonction de la température.**  
 À gauche, les courbes DSC/ATG mettent en évidence le dégazage des solvants puis le frittage des particules d’Ag. À droite, les micrographies MEB montrent la conservation de la microstructure initiale jusqu’à **250 °C**, suivie de la coalescence des particules à plus haute température.*
@@ -82,7 +82,7 @@ Après élaboration, plusieurs techniques de **métrologie dimensionnelle** ont 
 
 La **porosité primaire** a été mesurée par **imagerie MEB** après une préparation métallographique minutieuse des échantillons. Cette préparation repose sur des **polissages successifs** avec papiers abrasifs de granulométrie **400, 800, 1200, 2000 et 4000** afin d’obtenir une surface miroir révélant clairement les pores et les grains. Les images MEB acquises à **5000×** ont ensuite été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
-<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="display: block; width: 70%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Traitement d’image pour l’évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
