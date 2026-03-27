@@ -53,6 +53,7 @@ L’Ag fritté présente une conductivité thermique très élevée ; l’argent
 
 La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 ms)** et une caméra infrarouge haute vitesse (2000 fps) qui enregistre la diffusion thermique 2D en surface. L’identification des conductivités thermiques repose sur la résolution d’un problème inverse fondé sur la solution analytique tridimensionnelle instationnaire de l’équation de la chaleur, projetée sur une base d’harmoniques spatiales.
 
+Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, Cu, Ag massif) a permis d'établir trois paramètres critiques : puissance laser maximale, nombre de trames ≥ 1200, rapport signal/bruit ≥ 5. Résultat : une erreur de mesure inférieure à 6 %.
 
 <!-- **Placeholder image — Slide 27**  
  Photo du setup Flash 3D (laser, caméra IR, échantillon, cryothermostat)-->  
@@ -64,47 +65,25 @@ La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 m
 
 *Estimation des conductivités thermiques dans le plan à partir d’images infrarouges et de la résolution inverse de l’équation de la chaleur 3D instationnaire*
 
-<!--> **Placeholder image — Slide 7**  
+
+L’approche expérimentale repose également sur un **protocole complet d’élaboration des échantillons**. Celui-ci comprend un dépôt multicouche de pâte d’argent, un **dégazage sous vide primaire à température ambiante**, puis un **frittage sous pression à 270 °C pendant 5 min**, suivi d’un refroidissement libre. Ce protocole a été conçu pour obtenir des échantillons massifs et bicouches à densité contrôlée, en faisant varier la pression appliquée au frittage.
+
+> **Placeholder image — Slide 7**  
 > Procédé de frittage : pâte → dégazage → couches → frittage sous pression  -->
 <img src="{{ '/images/frittage-process.png' | relative_url }}" alt="Procédé de frittage ">
 
 *Procédé d'élaboration : dépôt multicouche, dégazage sous vide et frittage 0–10 MPa @ 270 °C pendant 5 min.*
 
-En complément de la Flash 3D, l’approche expérimentale comprend un **protocole complet d’élaboration des échantillons**, fondé sur un dépôt multicouche de pâte d’argent, un **dégazage sous vide primaire à température ambiante**, puis un **frittage sous pression à 270 °C pendant 5 min**, suivi d’un refroidissement libre. Ce protocole a été conçu pour obtenir des échantillons massifs et bicouches à densité contrôlée, en faisant varier la pression appliquée au frittage.
-
-<!--> **Placeholder image — Figure 3.3**  
-> Cinétique de dégazage sous vide de la pâte d’Ag  
-> /assets/images/phd/degazage-masse.png
-
-*Suivi du dégazage — diminution rapide de la masse durant les premières dizaines de minutes, puis stabilisation.*
-
-Une première méthode expérimentale clé a consisté à **suivre la perte de masse pendant le dégazage sous vide**. Cette mesure a montré une évaporation rapide des solvants au début du traitement, puis une stabilisation de la masse, ce qui a permis de fixer un protocole de dégazage robuste avant le frittage.
-
-> **Placeholder image — Figure 3.4**  
-> Analyses DSC / ATG de la pâte d’argent  
-> /assets/images/phd/dsc-atg-paste.png
-
-*DSC/ATG — identification du dégazage des solvants et de la température de frittage.*-->
-
 La **température de frittage** a été déterminée par **analyse calorimétrique différentielle à balayage (DSC)** couplée à une **analyse thermogravimétrique (ATG)**. Les essais ont été réalisés sur la plage **25–300 °C** avec une vitesse de chauffe de **10 °C/min**. La DSC met en évidence un premier pic vers **125 °C**, attribué au dégazage des solvants, puis un second vers **257 °C**, associé au frittage des particules d’Ag. L’ATG montre en parallèle une perte de masse importante à partir de **100 °C** jusqu’à environ **210 °C**, puis une diminution plus lente attribuée à la décomposition du liant et du dispersant.
 
-> **Placeholder image — Figure 3.5**  
-> Micrographies MEB de la pâte d’Ag frittée à différentes températures  
-> /assets/images/phd/meb-temperature-series.png
+Les **observations MEB** ont servi à suivre l’évolution microstructurale de la pâte avec la température. Elles montrent que la microstructure initiale est globalement conservée jusqu’à **250 °C**, puis que les particules d’Ag commencent à coalescer au-delà. Ces observations ont conduit à retenir un **frittage à 270 °C pendant 5 min** comme compromis entre élimination du dispersant et compaction des particules.
 
-*MEB — conservation de la microstructure initiale jusqu’à ~250 °C, puis coalescence des particules.*
+<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB">
 
-Les **observations MEB** ont servi à suivre l’évolution microstructurale de la pâte avec la température. Elles montrent que la microstructure initiale est globalement conservée jusqu’à **250 °C**, puis que les particules d’argent commencent à coalescer au-delà. Ces observations ont conduit à retenir un **frittage à 270 °C pendant 5 min** comme compromis entre élimination du dispersant et compaction des particules.
-
-Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, Cu, Ag massif) a permis d'établir trois paramètres critiques : puissance laser maximale, nombre de trames ≥ 1200, rapport signal/bruit ≥ 5. Résultat : une erreur de mesure inférieure à 6 %.
+> **Analyses DSC/ATG et évolution microstructurale de la pâte d’argent en fonction de la température.**  
+À gauche, les courbes DSC/ATG mettent en évidence le dégazage des solvants puis le frittage des particules d’Ag. À droite, les micrographies MEB montrent la conservation de la microstructure initiale jusqu’à **250 °C**, suivie de la coalescence des particules à plus haute température.
 
 Après élaboration, plusieurs techniques de **métrologie dimensionnelle** ont été utilisées pour déterminer la **densité apparente** des échantillons. La masse a été mesurée par balance, les dimensions latérales par **profilomètre optique**, et l’épaisseur par **comparateur mécanique digital**. La densité a ensuite été calculée par le rapport classique **masse/volume**.
-
-> **Placeholder image — Figure 3.6**  
-> Porosité observée en MEB et traitement ImageJ  
-> /assets/images/phd/porosity-imagej.png
-
-*Porosité — préparation métallographique, acquisition MEB, binarisation et quantification sous ImageJ.*
 
 La **porosité primaire** a été mesurée par **imagerie MEB** après une préparation métallographique minutieuse des échantillons. Cette préparation repose sur des **polissages successifs** avec papiers abrasifs de granulométrie **400, 800, 1200, 2000 et 4000** afin d’obtenir une surface miroir révélant clairement les pores et les grains. Les images MEB acquises à **5000×** ont ensuite été traitées sous **ImageJ** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
