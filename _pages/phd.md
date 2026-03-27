@@ -34,7 +34,7 @@ Les composants en SiC et GaN de nouvelle génération, destinés à l’électro
 
 L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à 426 W·m⁻¹·K⁻¹, élaboration à basse température (200–300 °C), pas de fusion en service. Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées, et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté dans la littérature.
 
-<img src="{{ '/images/module-puissance.png' | relative_url }}" alt="Module de puissance">
+<img src="{{ '/images/module-puissance.png' | relative_url }}" alt="Module de puissance" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 >Architecture type d'un module de puissance et la microstructure de l'Ag fritté.
 >L’interconnexion entre la puce en SiC/GaN et le substrat est un élément critique pour la dissipation thermique. Source : présentation de soutenance.
 
@@ -55,17 +55,17 @@ La méthode retenue repose sur une **excitation laser locale (CO₂, 130 W, 10 m
 
 Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, Cu, Ag massif) a permis d'établir trois paramètres critiques : puissance laser maximale, nombre de trames ≥ 1200, rapport signal/bruit ≥ 5. Résultat : une erreur de mesure inférieure à 6 %.
  
-<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Flash 3D: banc expérimental ">
+<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Flash 3D: banc expérimental " style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
 
-<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification "style="width: 50%; max-width: 600px; height: auto;">
+<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification " style="display: block; width: 90%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Estimation des conductivités thermiques dans le plan à partir d’images infrarouges et de la résolution inverse de l’équation de la chaleur 3D instationnaire*
 
 L’approche expérimentale repose également sur un **protocole complet d’élaboration des échantillons**. Celui-ci comprend un dépôt multicouche de pâte d’argent, un **dégazage sous vide primaire à température ambiante**, puis un **frittage sous pression à 270 °C pendant 5 min**, suivi d’un refroidissement libre. Ce protocole a été conçu pour obtenir des échantillons massifs et bicouches à densité contrôlée, en faisant varier la pression appliquée au frittage.
 
-<img src="{{ '/images/frittage-process.png' | relative_url }}" alt="Procédé de frittage ">
+<img src="{{ '/images/frittage-process.png' | relative_url }}" alt="Procédé de frittage " style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Procédé d'élaboration : dépôt multicouche, dégazage sous vide et frittage 0–10 MPa @ 270 °C pendant 5 min.*
 
@@ -73,7 +73,7 @@ La **température de frittage** a été déterminée par **analyse calorimétriq
 
 Les **observations MEB** ont servi à suivre l’évolution microstructurale de la pâte avec la température. Elles montrent que la microstructure initiale est globalement conservée jusqu’à **250 °C**, puis que les particules d’Ag commencent à coalescer au-delà. Ces observations ont conduit à retenir un **frittage à 270 °C pendant 5 min** comme compromis entre élimination du dispersant et compaction des particules.
 
-<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="width: 60%; max-width: 600px; height: auto;">
+<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 
 * **Analyses DSC/ATG et évolution microstructurale de la pâte d’argent en fonction de la température.**  
 À gauche, les courbes DSC/ATG mettent en évidence le dégazage des solvants puis le frittage des particules d’Ag. À droite, les micrographies MEB montrent la conservation de la microstructure initiale jusqu’à **250 °C**, suivie de la coalescence des particules à plus haute température.*
@@ -82,13 +82,13 @@ Après élaboration, plusieurs techniques de **métrologie dimensionnelle** ont 
 
 La **porosité primaire** a été mesurée par **imagerie MEB** après une préparation métallographique minutieuse des échantillons. Cette préparation repose sur des **polissages successifs** avec papiers abrasifs de granulométrie **400, 800, 1200, 2000 et 4000** afin d’obtenir une surface miroir révélant clairement les pores et les grains. Les images MEB acquises à **5000×** ont ensuite été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
-<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="width: 70%; max-width: 600px; height: auto;">
+<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="display: block; width: 70%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Traitement d’image pour l’évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
 La **taille des grains** d’Ag a été évaluée à partir d’images acquises par microscopie électronique à balayage à émission de champ **MEB-FEG** à un grossissement de **30 000×**. Les contours des grains ont d’abord été tracés, puis les images binarisées et traitées sous **ImageJ** à l’aide de l’outil de mesure de particules, en excluant les pores et les grains en bord d’image. L’aire de chaque grain a ensuite été mesurée et convertie en **diamètre équivalent**, en assimilant les grains à des disques. Il a ainsi été possible d’établir une distribution des tailles de grains, décrite par une moyenne et un écart-type.
 
-<img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="width: 60%; max-width: 600px; height: auto;">
+<img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 
 ***Traitement d’image mis en œuvre pour l’évaluation de la taille des grains :** image brute, tracé des joints, préparation de l’image pour l’analyse, puis identification individuelle des grains sous **ImageJ**.*
 
