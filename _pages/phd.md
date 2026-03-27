@@ -59,7 +59,7 @@ Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, C
 
 *banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
 
-<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification ">
+<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification "style="width: 50%; max-width: 600px; height: auto;">
 
 *Estimation des conductivités thermiques dans le plan à partir d’images infrarouges et de la résolution inverse de l’équation de la chaleur 3D instationnaire*
 
@@ -73,7 +73,7 @@ La **température de frittage** a été déterminée par **analyse calorimétriq
 
 Les **observations MEB** ont servi à suivre l’évolution microstructurale de la pâte avec la température. Elles montrent que la microstructure initiale est globalement conservée jusqu’à **250 °C**, puis que les particules d’Ag commencent à coalescer au-delà. Ces observations ont conduit à retenir un **frittage à 270 °C pendant 5 min** comme compromis entre élimination du dispersant et compaction des particules.
 
-<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB">
+<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="width: 60%; max-width: 600px; height: auto;">
 
 * **Analyses DSC/ATG et évolution microstructurale de la pâte d’argent en fonction de la température.**  
 À gauche, les courbes DSC/ATG mettent en évidence le dégazage des solvants puis le frittage des particules d’Ag. À droite, les micrographies MEB montrent la conservation de la microstructure initiale jusqu’à **250 °C**, suivie de la coalescence des particules à plus haute température.*
@@ -82,13 +82,13 @@ Après élaboration, plusieurs techniques de **métrologie dimensionnelle** ont 
 
 La **porosité primaire** a été mesurée par **imagerie MEB** après une préparation métallographique minutieuse des échantillons. Cette préparation repose sur des **polissages successifs** avec papiers abrasifs de granulométrie **400, 800, 1200, 2000 et 4000** afin d’obtenir une surface miroir révélant clairement les pores et les grains. Les images MEB acquises à **5000×** ont ensuite été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
-<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB">
+<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="width: 70%; max-width: 600px; height: auto;">
 
 *Traitement d’image pour l’évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
 La **taille des grains** d’Ag a été évaluée à partir d’images acquises par microscopie électronique à balayage à émission de champ **MEB-FEG** à un grossissement de **30 000×**. Les contours des grains ont d’abord été tracés, puis les images binarisées et traitées sous **ImageJ** à l’aide de l’outil de mesure de particules, en excluant les pores et les grains en bord d’image. L’aire de chaque grain a ensuite été mesurée et convertie en **diamètre équivalent**, en assimilant les grains à des disques. Il a ainsi été possible d’établir une distribution des tailles de grains, décrite par une moyenne et un écart-type.
 
-<img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="width: 20%; max-width: 600px; height: auto;">
+<img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="width: 60%; max-width: 600px; height: auto;">
 
 ***Traitement d’image mis en œuvre pour l’évaluation de la taille des grains :** image brute, tracé des joints, préparation de l’image pour l’analyse, puis identification individuelle des grains sous **ImageJ**.*
 
