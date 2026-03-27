@@ -84,12 +84,7 @@ La **porosité primaire** a été mesurée par **imagerie MEB** après une prép
 
 <img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB">
 
-### Légende de figure — Porosité
-
-**Évaluation de la porosité par traitement d’images MEB.**  
-(a) Image brute acquise à un grossissement de **5 000×**.  
-(b) Binarisation sous **ImageJ** à l’aide de l’outil *threshold*, utilisée pour distinguer la phase solide des zones poreuses et quantifier la fraction de pixels noirs, assimilée au taux de porosité.  
-(c) Image binarisée finale, mettant en évidence la répartition spatiale des pores au sein de la microstructure.
+*Traitement d’image pour l’évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
 La **taille des grains** d’Ag a été évaluée à partir d’images acquises par microscopie électronique à balayage à émission de champ **MEB-FEG** à un grossissement de **30 000×**. Les contours des grains ont d’abord été tracés, puis les images binarisées et traitées sous **ImageJ** à l’aide de l’outil de mesure de particules, en excluant les pores et les grains en bord d’image. L’aire de chaque grain a ensuite été mesurée et convertie en **diamètre équivalent**, en assimilant les grains à des disques. Il a ainsi été possible d’établir une distribution des tailles de grains, décrite par une moyenne et un écart-type.
 
