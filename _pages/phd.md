@@ -102,8 +102,7 @@ La **capacité calorifique** a été déterminée afin de compléter la caracté
 
 La pression de frittage est le levier principal : passer de 0 à 10 MPa augmente la densité de **62 %** et la conductivité thermique de **84 %**. Les mesures s'alignent sur les prédictions des modèles à pores sphériques et cylindriques d'Ordonez-Miranda (2016).
 
-> **Placeholder image — Slide 39**
-<img src="{{ '/images/ag-non-vieilli.png' | relative_url }}" alt="Conductivité thermique mesurée en fonction de la porosité relative" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/ag-non-vieilli.png' | relative_url }}" alt="Conductivité thermique mesurée en fonction de la porosité relative" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Conductivité thermique mesurée en fonction de la porosité relative, pour 4 pressions de frittage. Comparaison avec les modèles de pore sphérique, cylindrique et plat.*
 
@@ -111,13 +110,11 @@ La pression de frittage est le levier principal : passer de 0 à 10 MPa augmente
 
 Le vieillissement thermique révèle une dynamique en deux temps. Dans les **premières 45 minutes** — et non les premières 50 heures comme suggéré dans la littérature — la conductivité fait un saut significatif, particulièrement marqué pour les échantillons fortement densifiés (10 MPa). La **densité, elle, reste parfaitement stable** jusqu'à 500 h à 350 °C.
 
-> **Placeholder image — Slide 42**
-<img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Évolution de λ pour 0–10 MPa, 150–350 °C, jusqu'à 500 h.*
 
-> **Placeholder image — Slide 43 ou 47**
-<img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Cinétique fine — λ atteint son maximum en ≈ 45 min. La taille des grains (≈300 nm) reste inchangée.*
 
