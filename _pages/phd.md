@@ -131,8 +131,7 @@ Le vieillissement thermique révèle une dynamique en deux temps. Dans les **pre
 Les bicouches Ag/Cu présentent d'abord le même comportement que l'Ag seul : une hausse de λ dans les 50 premières heures. Puis, **au-delà de 200 h**, une dégradation progressive et significative apparaît — absente dans les échantillons monocouches. La densité globale, elle, reste stable.
 
 > **Placeholder image — Slide 55 ou 56**
-> Barplot λ Ag/Cu — comparaison 0h / 50h / 200h / 500h pour les 4 pressions, avec tendance Ag seul superposée
-> /assets/images/phd/agcu-vieillissement.png
+<img src="{{ '/images/agcu-vieillissement.png' | relative_url }}" alt="Barplot λ Ag/Cu" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 
 *Évolution de la conductivité effective des bicouches Ag/Cu au cours du vieillissement @ 350 °C. La tendance en pointillés représente l'Ag fritté seul (pas de dégradation).*
 
