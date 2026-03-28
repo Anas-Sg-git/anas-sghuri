@@ -12,7 +12,7 @@ author_profile: true
 > Sujet de thèse centré sur l’évaluation des performances thermiques de matériaux d’assemblage innovants pour l’électronique de puissance.
 Travaux menés à l’interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
 
-- Directeurs : Y. Billaud & X. Milhet
+- Directeurs : X. Milhet & Y. Billaud  
 - Financement : ACI++ Pprime Eprom · UE FEDER
 - Publication : Acta Materialia (2023)
 
