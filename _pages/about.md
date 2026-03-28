@@ -1,6 +1,6 @@
 ---
 title: ""
-permalink: /phd/
+permalink: /
 layout: single
 author_profile: true
 classes: wide
