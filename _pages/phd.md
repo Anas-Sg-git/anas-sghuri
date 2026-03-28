@@ -92,12 +92,9 @@ La **taille des grains** d’Ag a été évaluée à partir d’images acquises 
 
 ***Traitement d’image mis en œuvre pour l’évaluation de la taille des grains :** image brute, tracé des joints, préparation de l’image pour l’analyse, puis identification individuelle des grains sous **ImageJ**.*
 
-Enfin, des **mesures calorimétriques complémentaires** ont été mobilisées pour accéder aux **grandeurs thermophysiques nécessaires à l’exploitation complète des résultats thermiques**, en particulier la capacité calorifique utilisée pour relier diffusivité et conductivité thermique.
+La **capacité calorifique** a été déterminée afin de compléter la caractérisation thermophysique des échantillons et de convertir les mesures de **diffusivité thermique** en **conductivité thermique**. Les essais ont été réalisés par **mDSC** entre **−25 °C et 300 °C** à **10 °C/min**. Grâce à la modulation du signal thermique, cette méthode permet d’accéder plus finement à la réponse réversible du matériau et donc à sa capacité calorifique.
 
-> **Deux familles d'échantillons :** plaques d'Ag fritté seul (5×5 cm, 0,5–1,4 mm) pour s'affranchir  
-> de l'interface, puis bicouches Ag/Cu (Ag 0,12–0,46 mm + Cu 0,1 mm) pour intégrer l'effet  
-> d'interface. Frittage de 0 à 10 MPa. Vieillissement sous vide primaire à 150, 250 et 350 °C pendant  
-> 50, 200 et 500 h.
+**Deux familles d’échantillons :** plaques d’Ag fritté seul (**5 × 5 cm**, **0,5–1,4 mm**) pour isoler le comportement intrinsèque du matériau, puis bicouches **Ag/Cu** (**Ag : 0,12–0,46 mm** + **Cu : 0,1 mm**) pour intégrer l’effet d’interface. Le frittage a été réalisé sous des pressions comprises entre **0 et 10 MPa**. Les essais de vieillissement ont ensuite été conduits dans un **four horizontal Pyrox** sous **vide primaire**, afin de limiter les effets d’oxydation parasite tout en restant proches des conditions rencontrées en service. Trois températures ont été retenues **150, 250 et 350 °C** pour explorer des sollicitations thermiques croissantes, depuis des conditions modérées jusqu’aux températures visées pour les composants de nouvelle génération. Les durées de vieillissement (**50, 200 et 500 h**) permettent enfin de suivre l’évolution des assemblages à **court, moyen et long terme**.
 
 ## 4. Résultats : Ag fritté seul
 
