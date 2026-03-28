@@ -120,7 +120,7 @@ Le vieillissement thermique révèle une dynamique en deux temps. Dans les **pre
 
 > **Interprétation clé :** l'augmentation initiale de λ n'est pas liée à une densification (ρ =
 > constante) ni à une croissance de grains (stable à ≈ 300 nm). Elle est attribuée à la **relaxation
-> de contraintes résiduelles de compression** générées lors du frittage sous pression — un mécanisme
+> de contraintes résiduelles de compression** générées lors du frittage sous pression; un mécanisme
 > mis en évidence via des mesures de résonance dynamique (X. Milhet et al., 2015) et corroboré par des
 > études indépendantes (Zuo et al., 2022 ; Agyakwa, 2024).
 
