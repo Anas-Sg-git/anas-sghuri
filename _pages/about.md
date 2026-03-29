@@ -210,22 +210,22 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
     <th>Bicouches Ag/Cu</th>
   </tr>
   <tr>
-    <td>Dimensions</td>
-    <td colspan="2" style="text-align:center;">5 × 5 cm</td>
+    <td>Dimensions cm</td>
+    <td colspan="2" style="text-align:center;">5 × 5</td>
   </tr>
   <tr>
-    <td>Épaisseur Ag</td>
-    <td>0,5 – 1,4 mm</td>
-    <td>0,12 – 0,46 mm</td>
+    <td>Épaisseur Ag mm</td>
+    <td>0,5 – 1,4</td>
+    <td>0,12 – 0,46</td>
   </tr>
   <tr>
-    <td>Épaisseur Cu</td>
+    <td>Épaisseur Cu mm</td>
     <td>—</td>
-    <td>0,1 mm</td>
+    <td>0,1</td>
   </tr>
   <tr>
-    <td>Pressions de frittage</td>
-    <td colspan="2" style="text-align:center;">0 / 2 / 5 / 10 MPa</td>
+    <td>Pressions de frittage MPa</td>
+    <td colspan="2" style="text-align:center;">0 / 2 / 5 / 10</td>
   </tr>
   <tr>
     <td>Lots</td>
@@ -233,13 +233,13 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
     <td>× 1</td>
   </tr>
   <tr>
-    <td>T° de vieillissement</td>
-    <td>150 / 250 / 350 °C</td>
-    <td>350 °C</td>
+    <td>T° de vieillissement °C</td>
+    <td>150 / 250 / 350</td>
+    <td>350</td>
   </tr>
   <tr>
-    <td>Durées de vieillissement</td>
-    <td colspan="2" style="text-align:center;">50 / 200 / 500 h</td>
+    <td>Durées de vieillissement h</td>
+    <td colspan="2" style="text-align:center;">50 / 200 / 500</td>
   </tr>
 </table>
 
