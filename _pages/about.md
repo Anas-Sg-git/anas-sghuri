@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Thèse de doctorat"
-permalink: /phd/
+permalink: /
 author_profile: true
 toc: true
 toc_label: "Sommaire"
