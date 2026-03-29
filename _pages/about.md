@@ -259,7 +259,7 @@ Les mesures s'alignent sur les prédictions des modèles à pores sphériques et
 
 avec *n* dépendant de la forme des pores (3/2 pour sphérique, 5/3 pour cylindrique, ∞ pour plat).
 
-La relation empirique conductivité–densité (après vieillissement) est :
+La relation empirique conductivité–densité (avant vieillissement) est :
 
 > **λ = 1,58·ρ² + 10,9·ρ + 20** &nbsp;&nbsp;(R² = 0,97)
 
@@ -268,14 +268,18 @@ La relation empirique conductivité–densité (après vieillissement) est :
 
 ### 4.2. Effet du vieillissement thermique
 
-Le vieillissement révèle une dynamique en deux temps :
+Après avoir établi la relation entre porosité et conductivité à l'état 
+initial, la question suivante est : comment ces propriétés évoluent-elles 
+en service ? Pour y répondre, les échantillons d'Ag fritté ont été vieillis 
+sous vide primaire à 150, 250 et 350 °C pendant des durées allant 
+jusqu'à 500 h. Le suivi de la conductivité thermique au cours du 
+vieillissement révèle une dynamique en deux temps :
 
 **Étape 1 (ES1) — Saut initial rapide :** la conductivité thermique augmente significativement dans les **premières 45 minutes** de vieillissement. Ce saut est d'autant plus marqué que la pression de frittage est élevée. À 0 MPa, l'évolution est très limitée et plus lente.
 
 **Étape 2 (ES2) — Stabilisation :** après ES1, la conductivité se stabilise. L'évolution résiduelle ne dépend ni de la procédure d'élaboration ni de la densité.
 
 <img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
-*Cinétique fine — λ atteint son maximum en ≈ 45 min (Ag 10 MPa @ 150 °C, mesures par intervalles de 15 min).*
 
 <img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Évolution de λ pour 0–10 MPa, 150–350 °C, jusqu'à 500 h.*
