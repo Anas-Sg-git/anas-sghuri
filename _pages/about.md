@@ -203,17 +203,47 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
 
 **Deux familles d'échantillons :**
 
-| | Ag fritté seul | Bicouches Ag/Cu |
-|:---|:---|:---|
-| Dimensions | 5 × 5 cm |
-| Épaisseur Ag | 0,5 – 1,4 mm | 0,12 – 0,46 mm |
-| Épaisseur Cu | — | 0,1 mm |
-| Pressions de frittage | 0 / 2 / 5 / 10 MPa |
-| Lots | × 3 | × 1 |
-| T° de vieillissement | 150 / 250 / 350 °C | 350 °C |
-| Durées de vieillissement | 50 / 200 / 500 h |
+<table>
+  <tr>
+    <th></th>
+    <th>Ag fritté seul</th>
+    <th>Bicouches Ag/Cu</th>
+  </tr>
+  <tr>
+    <td>Dimensions</td>
+    <td colspan="2" style="text-align:center;">5 × 5 cm</td>
+  </tr>
+  <tr>
+    <td>Épaisseur Ag</td>
+    <td>0,5 – 1,4 mm</td>
+    <td>0,12 – 0,46 mm</td>
+  </tr>
+  <tr>
+    <td>Épaisseur Cu</td>
+    <td>—</td>
+    <td>0,1 mm</td>
+  </tr>
+  <tr>
+    <td>Pressions de frittage</td>
+    <td colspan="2" style="text-align:center;">0 / 2 / 5 / 10 MPa</td>
+  </tr>
+  <tr>
+    <td>Lots</td>
+    <td>× 3</td>
+    <td>× 1</td>
+  </tr>
+  <tr>
+    <td>T° de vieillissement</td>
+    <td>150 / 250 / 350 °C</td>
+    <td>350 °C</td>
+  </tr>
+  <tr>
+    <td>Durées de vieillissement</td>
+    <td colspan="2" style="text-align:center;">50 / 200 / 500 h</td>
+  </tr>
+</table>
 
-**Vieillissement :** sous vide primaire (four Pyrox) pour limiter l'oxydation parasite.
+**Vieillissement :** sous vide primaire (four Pyrox) pour limiter l'oxydation tout en restant proche des conditions de fonctionnement réelles.
 
 ---
 
