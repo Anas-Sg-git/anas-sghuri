@@ -69,7 +69,15 @@ toc_sticky: true
 
 ### Pourquoi s'intéresser à l'Ag fritté en électronique de puissance ?
 
-Les modules d'électronique de puissance reposent sur une chaîne de dissipation thermique dans laquelle l'interconnexion entre la puce et le substrat joue un rôle critique. Avec l'essor des composants SiC et GaN de nouvelle génération, capables de fonctionner au-delà de **250 °C**, les solutions d'assemblage conventionnelles deviennent limitantes. Les brasures classiques comme le SAC305 (**50 W·m⁻¹·K⁻¹**, T° fusion 217 °C) ou l'Au-20Sn (**57 W·m⁻¹·K⁻¹**, T° fusion 278 °C) ne permettent plus une dissipation thermique suffisante.
+Les modules d'électronique de puissance reposent sur une chaîne de 
+dissipation thermique dans laquelle l'interconnexion entre la puce et 
+le substrat joue un rôle critique. Les composants SiC et GaN de nouvelle 
+génération fonctionnent au-delà de **250 °C** et imposent des densités de 
+puissance croissantes. Or les brasures classiques comme le SAC305 
+(50 W·m⁻¹·K⁻¹, T° fusion 217 °C) ou l'Au-20Sn (57 W·m⁻¹·K⁻¹, 
+T° fusion 278 °C) ne sont plus adaptées : leur température de fusion 
+est trop proche des conditions de service, et leur conductivité thermique 
+reste insuffisante.
 
 L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à **426 W·m⁻¹·K⁻¹** (le métal le plus conducteur thermiquement), élaboration à basse température (**200–300 °C**), pas de fusion en service (T° fusion Ag : 961 °C). Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées (conductivité variant de **3 à 433 W·m⁻¹·K⁻¹** selon la littérature), et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté.
 
