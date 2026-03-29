@@ -18,7 +18,7 @@ toc_sticky: true
 - **Directeurs :** X. Milhet (MCF HDR) & Y. Billaud (MCF)
 - **Financement :** ACI++ Pprime Eprom · UE FEDER
 - **Soutenance :** 11 mars 2024
-- **Publication :** [Voir partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
+- **Publication :** [Voir la partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
 
 ---
 
@@ -43,7 +43,7 @@ toc_sticky: true
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Relations structure–propriété</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Conductivité variant d'un facteur 4 selon la porosité · lois reliant porosité, densité et conductivité établies · capacité thermique mesurée, différente de l'hypothèse courante
+      Conductivité variant d'un facteur 4 selon la porosité · lois reliant porosité, densité et conductivité établies
     </div>
   </div>
 
