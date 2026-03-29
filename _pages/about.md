@@ -1,352 +1,388 @@
 ---
-title: ""
-permalink: /
 layout: single
+title: "Thèse de doctorat"
+permalink: /phd/
 author_profile: true
-classes: wide
+toc: true
+toc_label: "Sommaire"
+toc_icon: "flask"
+toc_sticky: true
 ---
 
-<style>
-.phd-hero {
-  padding: 2rem 0 1rem;
-}
+# Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre
 
-.phd-badge {
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding: 0.35rem 0.8rem;
-  border-radius: 999px;
-  background: #e6f4f1;
-  color: #0f766e;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
+*Thèse de doctorat · Université de Poitiers · ENSMA · Institut P' (Pprime, UPR CNRS 3346)*
 
-.phd-lead {
-  font-size: 1.05rem;
-  color: #4b5563;
-  max-width: 900px;
-}
+> Sujet de thèse centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance. Travaux menés à l'interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
 
-.phd-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin: 1rem 0 1.5rem;
-}
+- **Directeurs :** X. Milhet (MCF HDR) & Y. Billaud (MCF)
+- **Financement :** ACI++ Pprime Eprom · UE FEDER 2014–2021
+- **Soutenance :** 11 mars 2024
+- **Publication :** [Acta Materialia (2023)](https://doi.org/10.1016/j.actamat.2023.119109)
 
-.phd-meta span {
-  display: inline-block;
-  padding: 0.55rem 0.85rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 999px;
-  background: #fff;
-  font-size: 0.95rem;
-}
+---
 
-.phd-highlight {
-  margin: 1.5rem 0 2rem;
-  padding: 1.1rem 1.2rem;
-  border-left: 4px solid #0f766e;
-  background: #f8fafc;
-  border-radius: 0.75rem;
-}
-
-.phd-grid-2,
-.phd-grid-3,
-.phd-kpis {
-  display: grid;
-  gap: 1rem;
-  margin: 1.25rem 0;
-}
-
-.phd-grid-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.phd-grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.phd-kpis {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.phd-card,
-.phd-kpi {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 1rem;
-  padding: 1.1rem;
-}
-
-.phd-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-  font-size: 1.05rem;
-}
-
-.phd-kpi {
-  text-align: center;
-}
-
-.phd-kpi-value {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: #0f766e;
-  line-height: 1.1;
-}
-
-.phd-kpi-label {
-  margin-top: 0.4rem;
-  font-size: 0.92rem;
-  color: #6b7280;
-}
-
-.phd-figure {
-  margin: 1.5rem 0;
-  text-align: center;
-}
-
-.phd-figure img {
-  border-radius: 1rem;
-}
-
-.phd-figure figcaption {
-  margin-top: 0.6rem;
-  font-size: 0.92rem;
-  color: #6b7280;
-}
-
-.phd-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-top: 1rem;
-}
-
-.phd-tag {
-  display: inline-block;
-  padding: 0.45rem 0.75rem;
-  border-radius: 999px;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 900px) {
-  .phd-grid-2,
-  .phd-grid-3,
-  .phd-kpis {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-
-<div class="phd-hero">
-  <span class="phd-badge">Thèse de doctorat · Université de Poitiers · ENSMA · Institut P’</span>
-
-# Étude expérimentale de la conductivité thermique de l’argent fritté poreux : effet du vieillissement thermique et de l’interface avec un substrat de cuivre
-
-<p class="phd-lead">
-Travaux de thèse consacrés à la caractérisation thermique de matériaux d’assemblage innovants pour l’électronique de puissance, à l’interface entre expérimentation, modélisation et analyse microstructurale.
-</p>
-
-<div class="phd-meta">
-  <span><strong>Encadrement :</strong> Y. Billaud &amp; X. Milhet</span>
-  <span><strong>Financement :</strong> ACI++ Pprime Eprom · UE FEDER</span>
-  <span><strong>Publication principale :</strong> Acta Materialia (2023)</span>
-</div>
-</div>
-
-<div class="phd-highlight">
-<strong>Problématique.</strong> Les composants SiC et GaN de nouvelle génération fonctionnent à des températures élevées et imposent des contraintes croissantes de dissipation thermique. Dans ce contexte, l’argent fritté constitue une alternative prometteuse aux brasures classiques, mais sa microstructure poreuse, son évolution sous vieillissement et le rôle de l’interface Ag/Cu rendent son comportement thermique difficile à décrire de manière robuste.
-</div>
-
-<div class="phd-kpis">
-  <div class="phd-kpi">
-    <div class="phd-kpi-value">+84 %</div>
-    <div class="phd-kpi-label">gain de conductivité thermique entre 0 et 10 MPa</div>
+<div style="display: flex; flex-wrap: wrap; gap: 1em; margin: 1.5em 0; justify-content: center;">
+  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
+    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">+84 %</div>
+    <div style="font-size: 0.85em; margin-top: 0.3em;">gain de conductivité thermique entre 0 et 10 MPa</div>
   </div>
-  <div class="phd-kpi">
-    <div class="phd-kpi-value">+62 %</div>
-    <div class="phd-kpi-label">augmentation de densité par pression de frittage</div>
+  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
+    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">+62 %</div>
+    <div style="font-size: 0.85em; margin-top: 0.3em;">augmentation de densité par pression de frittage</div>
   </div>
-  <div class="phd-kpi">
-    <div class="phd-kpi-value">≈ 45 min</div>
-    <div class="phd-kpi-label">temps caractéristique du saut initial de λ</div>
+  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
+    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">≈ 45 min</div>
+    <div style="font-size: 0.85em; margin-top: 0.3em;">temps caractéristique du saut initial de λ</div>
   </div>
-  <div class="phd-kpi">
-    <div class="phd-kpi-value">≈ 50 %</div>
-    <div class="phd-kpi-label">de la couche d’Ag affectée à 500 h @ 350 °C</div>
+  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
+    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">≈ 50 %</div>
+    <div style="font-size: 0.85em; margin-top: 0.3em;">de la couche d'Ag affectée à 500 h @ 350 °C</div>
   </div>
 </div>
 
-## 1. Contexte et enjeu scientifique
+---
 
-Les modules d’électronique de puissance reposent sur une chaîne de dissipation thermique dans laquelle l’interconnexion entre la puce et le substrat joue un rôle critique. Avec l’essor des composants SiC et GaN, capables de fonctionner au-delà de **250 °C**, les solutions d’assemblage conventionnelles deviennent limitantes.
+## 1. Contexte & enjeux
 
-L’**argent fritté** apparaît alors comme un matériau d’interconnexion particulièrement attractif : il combine une **conductivité thermique théorique très élevée** (**426 W·m⁻¹·K⁻¹**), une **température d’élaboration modérée** (**200–300 °C**) et l’absence de fusion en service. En revanche, sa **porosité**, la dispersion de sa **microstructure** et l’évolution de ses propriétés sous **vieillissement thermique** compliquent fortement sa caractérisation.
+### Pourquoi s'intéresser à l'Ag fritté en électronique de puissance ?
 
-<figure class="phd-figure">
-  <img src="{{ '/images/module-puissance.png' | relative_url }}" alt="Architecture type d’un module de puissance" style="width:100%; max-width:720px;">
-  <figcaption>
-    Architecture type d’un module de puissance et position critique de l’interconnexion dans la chaîne de dissipation thermique.
-  </figcaption>
-</figure>
+Les modules d'électronique de puissance reposent sur une chaîne de dissipation thermique dans laquelle l'interconnexion entre la puce et le substrat joue un rôle critique. Avec l'essor des composants SiC et GaN de nouvelle génération, capables de fonctionner au-delà de **250 °C**, les solutions d'assemblage conventionnelles deviennent limitantes. Les brasures classiques comme le SAC305 (**50 W·m⁻¹·K⁻¹**, T° fusion 217 °C) ou l'Au-20Sn (**57 W·m⁻¹·K⁻¹**, T° fusion 278 °C) ne permettent plus une dissipation thermique suffisante.
+
+L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à **426 W·m⁻¹·K⁻¹** (le métal le plus conducteur thermiquement), élaboration à basse température (**200–300 °C**), pas de fusion en service (T° fusion Ag : 961 °C). Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées (conductivité variant de **3 à 433 W·m⁻¹·K⁻¹** selon la littérature), et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté.
+
+![Module de puissance](/images/module-puissance.png)
+*Architecture type d'un module de puissance et position critique de l'interconnexion dans la chaîne de dissipation thermique. Source : présentation de soutenance.*
+
+---
 
 ## 2. Verrous scientifiques
 
-Cette thèse s’est structurée autour de trois verrous principaux :
+Malgré l'intérêt croissant porté à l'Ag fritté, son comportement thermique reste difficile à décrire de manière robuste et prédictive. Trois verrous principaux structurent cette thèse :
 
-<div class="phd-grid-3">
-  <div class="phd-card">
-    <h3>Mesurer un matériau hautement diffusif</h3>
-    <p>
-      La très forte diffusivité thermique de l’Ag limite la validité des approches flash 1D classiques. Une méthode tenant compte d’effets 2D/3D était nécessaire.
-    </p>
-  </div>
+### 🔬 Mesurer un matériau hautement diffusif
 
-  <div class="phd-card">
-    <h3>Relier conductivité, densité et vieillissement</h3>
-    <p>
-      La densité contrôle une part importante du comportement thermique, mais la relation entre porosité, conductivité et vieillissement restait encore mal établie.
-    </p>
-  </div>
+L'Ag fritté présente une conductivité thermique très élevée ; l'argent est le métal le plus conducteur thermiquement à température ambiante. Cette forte diffusivité limite la validité des approches flash 1D classiques. Une méthode capable de prendre en compte des effets 2D/3D ainsi qu'une anisotropie potentielle était donc nécessaire.
 
-  <div class="phd-card">
-    <h3>Quantifier l’effet de l’interface Ag/Cu</h3>
-    <p>
-      Dans les assemblages réels, l’interface entre l’argent fritté et le cuivre influence la performance thermique globale, en particulier à long terme.
-    </p>
-  </div>
-</div>
+### 📊 Relier conductivité, densité et vieillissement
 
-## 3. Démarche adoptée
+La densité est un paramètre clé, mais on ne disposait pas d'une relation claire et robuste entre conductivité thermique, densité, temps et température de vieillissement. La mesure de la densité elle-même pose problème : l'analyse d'images MEB 2D peut biaiser les résultats, et la capacité thermique de l'Ag fritté est souvent supposée égale à celle de l'Ag massif — une hypothèse non vérifiée.
 
-### Une contribution méthodologique : la Flash 3D adaptée aux matériaux très conducteurs
+### 🔗 Quantifier l'effet de l'interface Ag/Cu
 
-Le cœur de la démarche repose sur l’utilisation de la **méthode Flash 3D**, adaptée à l’étude de matériaux hautement diffusifs comme l’argent. Le dispositif expérimental combine :
+Dans un assemblage réel, l'Ag repose sur un substrat Cu. Les résistances d'interface (R_Ag/Cu, R_Ag/SiC) sont systématiquement négligées dans la littérature et leur évolution à long terme était totalement inconnue. Pourtant, cette interface est susceptible de contrôler la fiabilité thermique du système complet.
 
-- une **excitation laser locale CO₂** (**130 W, 10 ms**) ;
-- une **caméra infrarouge haute vitesse** (**2000 fps**) ;
-- une identification des propriétés thermiques par **résolution inverse** d’un modèle 3D instationnaire.
+---
 
-Une **phase de calibration** sur des matériaux de référence (**Al, Cu, Ag massif**) a permis de définir les paramètres expérimentaux pertinents et d’atteindre une **erreur de mesure inférieure à 6 %**.
+## 3. Approche expérimentale
 
-<div class="phd-grid-2">
-  <figure class="phd-figure">
-    <img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Banc expérimental Flash 3D" style="width:100%; max-width:520px;">
-    <figcaption>Banc expérimental de la méthode Flash 3D.</figcaption>
-  </figure>
+### 3.1. La méthode Flash 3D : un choix décisif
 
-  <figure class="phd-figure">
-    <img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Principe d’identification thermique" style="width:100%; max-width:620px;">
-    <figcaption>Identification inverse des conductivités thermiques à partir des images infrarouges.</figcaption>
-  </figure>
-</div>
+Le cœur de la démarche repose sur la **méthode Flash 3D**, adaptée à l'étude de matériaux hautement diffusifs comme l'argent. Le dispositif expérimental combine :
 
-### Élaboration et caractérisation des échantillons
+- une **excitation laser locale CO₂** (**130 W, 10 ms**) créant un point chaud sur la face avant de l'échantillon ;
+- une **caméra infrarouge haute vitesse** (**jusqu'à 2000 fps**) enregistrant la diffusion thermique 2D en surface de l'échantillon ;
+- un **cryothermostat** pour le contrôle de la température ambiante.
 
-L’étude repose sur deux familles d’échantillons :
+L'identification des conductivités thermiques repose sur la résolution d'un **problème inverse** fondé sur la solution analytique tridimensionnelle instationnaire de l'équation de la chaleur, projetée sur une base d'harmoniques spatiales (transformée de Fourier) et temporelles (transformée de Laplace). L'estimateur utilisé, dit **ENH** (Estimation par Normalisation Harmonique), permet d'extraire les temps de diffusion caractéristiques τ_x et τ_y, puis les diffusivités α_x et α_y, et enfin les conductivités λ_x et λ_y.
 
-- des **plaques d’Ag fritté seul**, pour isoler le comportement intrinsèque du matériau ;
-- des **bicouches Ag/Cu**, pour intégrer le rôle de l’interface.
+![Flash 3D: banc expérimental](/images/setup-flash3d.png)
+*Banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
 
-Le protocole d’élaboration comprend un dépôt multicouche de pâte d’argent, un dégazage sous vide primaire, puis un **frittage sous pression à 270 °C pendant 5 min**, avec une pression variant de **0 à 10 MPa**.
+![Flash 3D: principe identification](/images/principe-identification.png)
+*Estimation des conductivités thermiques dans le plan à partir d'images infrarouges et de la résolution inverse de l'équation de la chaleur 3D instationnaire.*
 
-Le vieillissement thermique a ensuite été conduit sous vide primaire à **150, 250 et 350 °C**, pour des durées allant jusqu’à **500 h**.
+### 3.2. Calibration et validation
 
-## 4. Résultats — Ag fritté seul
+Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, Cu, Ag massif, pureté 99,95 %) a permis d'établir trois paramètres critiques d'acquisition :
 
-### Corrélation densité / conductivité
+| Paramètre | Critère retenu | Matériau de calibration |
+|:---|:---|:---|
+| Puissance laser | Maximale (100 %) | Al |
+| Nombre de trames | ≥ 1200 | Cu |
+| Rapport signal/bruit | ≥ 5 | Ag |
 
-La pression de frittage s’est révélée être le levier majeur de contrôle des propriétés thermiques. Entre **0 et 10 MPa**, la densité augmente de **62 %** et la conductivité thermique de **84 %**.
+**Résultat :** une **erreur de mesure inférieure à 6 %**, avec confirmation de l'isotropie dans le plan (λ_x ≈ λ_y). La répétabilité a été validée par **20 mesures par échantillon**.
 
-Les mesures obtenues s’alignent avec les modèles de la littérature basés sur des pores sphériques et cylindriques, ce qui confirme la robustesse de la relation établie entre microstructure poreuse et transport thermique.
+| Matériau (99,95%) | Réf. conductivité (W·m⁻¹·K⁻¹) |
+|:---|:---|
+| Ag | 426 – 433 |
+| Cu | 386 – 401 |
+| Al | 237 – 239 |
 
-<figure class="phd-figure">
-  <img src="{{ '/images/ag-non-vieilli.png' | relative_url }}" alt="Conductivité thermique en fonction de la porosité" style="width:100%; max-width:760px;">
-  <figcaption>
-    Évolution de la conductivité thermique en fonction de la porosité relative pour différentes pressions de frittage.
-  </figcaption>
-</figure>
+### 3.3. Élaboration des échantillons
 
-### Effet du vieillissement thermique
+#### Procédé de frittage
 
-Le vieillissement met en évidence une cinétique en deux temps :
+Le protocole d'élaboration comprend :
 
-1. une **augmentation initiale rapide** de la conductivité thermique ;
-2. puis une **stabilisation** à plus long terme.
+1. **Dépôt de pâte d'Ag** (nanoparticules, diamètre moyen 20–40 nm, 17 % de solvant) sur substrat Kapton (Ag seul) ou Cu (bicouches).
+2. **Dégazage sous vide primaire** (14 mbar) à température ambiante — plateau de masse résiduelle (~85 %) atteint après ~30 min, confirmant l'élimination des solvants.
+3. **Répétition** du cycle dépôt + dégazage selon l'épaisseur finale désirée.
+4. **Frittage** à **270 °C pendant 5 min** sous pression de **0 à 10 MPa** (machine jusqu'à 100 kN).
 
-Le point important est que cette hausse initiale intervient dans les **premières 45 minutes**, alors que la **densité reste stable** jusqu’à **500 h à 350 °C**. L’évolution observée n’est donc pas attribuée à une densification supplémentaire, mais à une **relaxation de contraintes résiduelles** générées au cours du frittage.
+![Procédé de frittage](/images/frittage-process.png)
+*Procédé d'élaboration : dépôt multicouche, dégazage sous vide et frittage 0–10 MPa @ 270 °C pendant 5 min.*
 
-<div class="phd-grid-2">
-  <figure class="phd-figure">
-    <img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="Cinétique d’évolution de la conductivité" style="width:100%; max-width:760px;">
-    <figcaption>Cinétique d’évolution de la conductivité thermique sous vieillissement.</figcaption>
-  </figure>
+L'empilement des couches a été validé : la porosité est **homogène dans l'épaisseur**, comme confirmé par des analyses d'images MEB systématiques sur la tranche (taux de porosité surfacique constant ~10–12 % sur toute l'épaisseur pour un échantillon à 10 MPa).
 
-  <figure class="phd-figure">
-    <img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Évolution de lambda au vieillissement" style="width:100%; max-width:760px;">
-    <figcaption>Hausse initiale de λ puis stabilisation à plus long terme.</figcaption>
-  </figure>
-</div>
+#### Détermination de la température de frittage
 
-## 5. Résultats — bicouches Ag/Cu
+La **température de frittage** a été déterminée par **DSC** couplée à l'**ATG** sur la plage **25–300 °C** à **10 °C/min** :
 
-L’étude des bicouches Ag/Cu montre que le comportement à long terme ne peut plus être expliqué par les seules propriétés de l’Ag fritté.
+- **DSC** : premier pic vers **125 °C** (dégazage des solvants), second vers **257 °C** (frittage des particules).
+- **ATG** : perte de masse de **~17 %** entre 100 et 210 °C, puis **~1 %** supplémentaire (décomposition du liant/dispersant).
+- **MEB** : microstructure stable jusqu'à **250 °C**, puis coalescence des particules au-delà.
 
-Au début du vieillissement, la conductivité suit une tendance proche de celle observée pour l’Ag seul. En revanche, **au-delà de 200 h**, une **dégradation progressive puis marquée** apparaît. Cette baisse est absente des monocouches et met donc en évidence le rôle déterminant de l’**interface Ag/Cu**.
+Ces résultats convergent vers le choix d'un frittage à **270 °C / 5 min** — compromis entre élimination du dispersant et compaction.
 
-<figure class="phd-figure">
-  <img src="{{ '/images/agcu-vieillissement.png' | relative_url }}" alt="Vieillissement des bicouches Ag Cu" style="width:100%; max-width:760px;">
-  <figcaption>
-    Évolution de la conductivité thermique effective des bicouches Ag/Cu au cours du vieillissement.
-  </figcaption>
-</figure>
+![ATG-DSC-MEB](/images/ATG-DSC-MEB.png)
+*Analyses DSC/ATG et évolution microstructurale de la pâte d'argent en fonction de la température.*
 
-L’analyse microstructurale met en évidence une **zone interfaciale à porosité inhomogène**, dont l’épaisseur évolue avec le temps. Aucune nouvelle phase chimique significative n’a été détectée, ce qui conduit à attribuer la dégradation observée à une évolution **microstructurale locale** plutôt qu’à une transformation chimique.
+### 3.4. Caractérisation microstructurale et thermophysique
 
-Un modèle en couches a permis d’estimer qu’à **500 h @ 350 °C**, environ **50 % de l’épaisseur de la couche d’Ag** est affectée par le vieillissement. Le modèle reste pertinent jusqu’à environ **200 h**, puis montre une divergence croissante, suggérant l’existence de mécanismes additionnels non capturés à ce niveau de description.
+#### Mesure de densité
 
-## 6. Apport scientifique
+La densité apparente a été déterminée par le rapport **masse/volume** :
 
-Cette thèse apporte plusieurs résultats structurants :
+- **Masse** : balance (précision ~10 mg)
+- **Dimensions latérales** : profilomètre optique (~1 µm)
+- **Épaisseur** : comparateur mécanique digital (~1 µm)
+- **Erreur sur la densité : ~2 %**
 
-- l’**adaptation et la calibration** de la méthode Flash 3D pour des matériaux hautement diffusifs ;
-- l’établissement d’une relation robuste entre **densité, porosité et conductivité thermique** de l’Ag fritté ;
-- l’identification d’une **cinétique initiale rapide** de vieillissement thermique ;
-- la mise en évidence du rôle critique de l’**interface Ag/Cu** dans la dégradation thermique à temps long.
+Résultat : la pression de frittage contrôle directement la densité — de ~3 g·cm⁻³ (0 MPa) à ~8 g·cm⁻³ (10 MPa).
 
-## 7. Limites et perspectives
+#### Porosité par imagerie MEB
 
-Les résultats obtenus ouvrent plusieurs perspectives à fort intérêt scientifique et industriel :
+La porosité primaire a été mesurée par **imagerie MEB** après préparation métallographique (polissages successifs : papiers 400, 800, 1200, 2000, 4000 → surface miroir). Les images acquises à **5000×** ont été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
-- extension aux systèmes **Cu/Ag/Cu** et **SiC/Ag** ;
-- essais en **cyclage thermique** plus représentatifs des conditions de service ;
-- modélisation 3D plus fine de la microstructure ;
-- prise en compte de l’évolution de l’**adhésion interfaciale** et des défauts aux joints de grains.
+![Évaluation de la porosité par traitement d'images MEB](/images/porosite-MEB.png)
+*Traitement d'image pour l'évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
-## 8. Publications
+#### Taille des grains
 
-- **Acta Materialia · 2023** — **A. Sghuri**, Y. Billaud, X. Milhet et al.  
-  *Thermal conductivity of porous sintered silver: effect of density and thermal aging.*
+La taille des grains a été évaluée par **MEB-FEG** à **30 000×**. Les contours des grains ont été tracés, les images binarisées, puis les aires mesurées sous **ImageJ** et converties en **diamètre équivalent** (assimilation à des disques).
 
-- **SFT · 2021** — **A. Sghuri**, Y. Billaud, X. Milhet  
-  Calibration de la méthode Flash 3D pour matériaux hautement conducteurs.
+**Résultat :** diamètre moyen **≈ 300 nm** (295–315 nm selon la pression), écart-type **≈ 100–124 nm**, stable jusqu'à 500 h @ 350 °C.
+
+![Taille des grains](/images/taille-grains.png)
+*Traitement d'image pour l'évaluation de la taille des grains : image brute, tracé des joints, identification individuelle sous ImageJ.*
+
+#### Capacité calorifique
+
+La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique différentielle à balayage en mode modulé) entre **−25 °C et 300 °C** à **10 °C/min**. Ce paramètre est essentiel pour convertir la diffusivité thermique en conductivité thermique (λ = α · ρ · c).
+
+**Résultat clé :** la capacité thermique **diminue** à mesure que la densité **augmente** (de ~600 J·kg⁻¹·K⁻¹ à 0 MPa à ~286 J·kg⁻¹·K⁻¹ à 10 MPa). Ce résultat contredit l'hypothèse courante de la littérature qui suppose c = c_Ag massif. La relation empirique établie est :
+
+> **c(ρ) = 13,9·ρ² − 203·ρ + 1027** &nbsp;&nbsp;(R² = 0,99)
+
+**Erreur : ~5 %**
+
+### 3.5. Échantillons étudiés et plan de vieillissement
+
+**Deux familles d'échantillons :**
+
+| | Ag fritté seul | Bicouches Ag/Cu |
+|:---|:---|:---|
+| Dimensions | 5 × 5 cm | 5 × 5 cm |
+| Épaisseur Ag | 0,5 – 1,4 mm | 0,12 – 0,46 mm |
+| Épaisseur Cu | — | 0,1 mm |
+| Pressions | 0 / 2 / 5 / 10 MPa | 0 / 2 / 5 / 10 MPa |
+| Lots | × 3 | × 1 |
+
+**Vieillissement :** sous vide primaire (four Pyrox) pour limiter l'oxydation parasite.
+
+| | Ag seul | Bicouches Ag/Cu |
+|:---|:---|:---|
+| Températures | 150 / 250 / 350 °C | 350 °C |
+| Durées | 50 / 200 / 500 h | 50 / 200 / 500 h |
+
+---
+
+## 4. Résultats : Ag fritté seul
+
+### 4.1. Corrélation densité → conductivité thermique
+
+La pression de frittage est le levier principal : passer de 0 à 10 MPa augmente la densité de **62 %** et la conductivité thermique de **84 %**. Sur une porosité relative de **~25–75 % (±2 %)**, la conductivité varie d'un **facteur ~4** (de **222 à 66 W·m⁻¹·K⁻¹**).
+
+Les mesures s'alignent sur les prédictions des modèles à pores sphériques et cylindriques d'Ordonez-Miranda et al. (2016), fondés sur la théorie du milieu effectif différentiel :
+
+> **λ_eff = λ₀ · (1 − p)ⁿ**
+
+avec *n* dépendant de la forme des pores (3/2 pour sphérique, 5/3 pour cylindrique, ∞ pour plat).
+
+La relation empirique conductivité–densité (après vieillissement) est :
+
+> **λ = 1,58·ρ² + 10,9·ρ + 20** &nbsp;&nbsp;(R² = 0,97)
+
+![Conductivité vs porosité](/images/ag-non-vieilli.png)
+*Conductivité thermique mesurée en fonction de la porosité relative, pour 4 pressions de frittage. Comparaison avec les modèles de pore sphérique, cylindrique et plat (Ordonez-Miranda et al., 2016).*
+
+### 4.2. Effet du vieillissement thermique
+
+Le vieillissement révèle une dynamique en deux temps :
+
+**Étape 1 (ES1) — Saut initial rapide :** la conductivité thermique augmente significativement dans les **premières 45 minutes** de vieillissement. Ce saut est d'autant plus marqué que la pression de frittage est élevée. À 0 MPa, l'évolution est très limitée et plus lente.
+
+**Étape 2 (ES2) — Stabilisation :** après ES1, la conductivité se stabilise. L'évolution résiduelle ne dépend ni de la procédure d'élaboration ni de la densité.
+
+![Cinétique d'évolution](/images/ag-cinetique.png)
+*Cinétique fine — λ atteint son maximum en ≈ 45 min (Ag 10 MPa @ 150 °C, mesures par intervalles de 15 min).*
+
+![Barplot vieillissement](/images/ag-vieillissement.png)
+*Évolution de λ pour 0–10 MPa, 150–350 °C, jusqu'à 500 h.*
+
+**Trois observations majeures :**
+
+1. **La densité reste parfaitement stable** jusqu'à 500 h à 350 °C, quelle que soit la pression de frittage. L'évolution de λ n'est donc pas liée à une densification globale.
+2. **La taille des grains reste inchangée** (≈ 300 nm, confirmé par MEB-FEG colorisée à 2 et 10 MPa, vieilli à 350 °C). Ce résultat est corroboré par Zuo et al. (2022) et Agyakwa (2024).
+3. **Après vieillissement**, les conductivités mesurées correspondent aux prédictions pour des pores **sphériques et cylindriques**, alors qu'avant vieillissement elles se situaient vers le modèle à pores plats.
+
+> **Interprétation clé :** l'augmentation initiale de λ est attribuée à la **relaxation de contraintes résiduelles de compression** générées lors du frittage sous pression. Milhet et al. (2015) ont montré par résonance dynamique que ~10 % de la contrainte appliquée n'est pas relâchée après frittage, et que ces contraintes se relâchent lors du vieillissement. Lee et al. (2010) ont par ailleurs démontré que la conductivité thermique est fortement affectée par les contraintes/déformations mécaniques.
+
+---
+
+## 5. Résultats : bicouches Ag/Cu
+
+### 5.1. L'interface change tout à long terme
+
+Les bicouches Ag/Cu présentent d'abord le même comportement que l'Ag seul : une hausse de λ dans les 50 premières heures. Puis, **au-delà de 200 h**, une **dégradation progressive et significative** apparaît — absente dans les échantillons monocouches.
+
+La densité globale des bicouches reste stable (confirmé jusqu'à 500 h @ 350 °C, pour toutes les pressions).
+
+![Barplot λ Ag/Cu](/images/agcu-vieillissement.png)
+*Évolution de la conductivité effective des bicouches Ag/Cu au cours du vieillissement @ 350 °C. La tendance en pointillés représente l'Ag fritté seul (pas de dégradation).*
+
+### 5.2. Validation de la méthode Flash 3D sur bicouches
+
+La compatibilité de la méthode Flash 3D avec un matériau bicouche a été vérifiée par des mesures dans **quatre configurations** (laser côté Ag/Cu, caméra côté Ag/Cu). Résultat : les erreurs relatives restent **inférieures à 4 %** et la conductivité mesurée est **indépendante de la configuration**, suggérant la réponse d'un matériau homogène effectif.
+
+| Pression (MPa) | Config. (a) réf. | Config. (b) | Config. (c) | Config. (d) |
+|:---|:---|:---|:---|:---|
+| 0 | 116 | 116 | 117 | 119 |
+| 2 | 218 | 226 | 213 | 214 |
+| 5 | 268 | 261 | 262 | 258 |
+| 10 | 296 | 292 | 288 | 292 |
+
+*Conductivité thermique (W·m⁻¹·K⁻¹) mesurée selon 4 configurations laser/caméra. Erreur relative ≤ 4 %.*
+
+### 5.3. Estimation sans effet d'interface
+
+Un modèle de mélange (loi des mélanges en épaisseur) utilisant les propriétés de l'Ag fritté seul vieilli et du Cu permet d'estimer ce que devrait être la conductivité des bicouches **en l'absence d'effet d'interface** :
+
+> **λ_Ag/Cu estimé = f_Ag · λ_Ag + f_Cu · λ_Cu + f_int · λ_int**
+
+**Résultat :**
+
+- **Adéquation** entre estimations et mesures jusqu'à **~200 h** de vieillissement @ 350 °C.
+- **Divergence croissante** au-delà (jusqu'à **~36 %** à faible pression, **~17,9 %** à 10 MPa à 500 h).
+- Cette divergence, supérieure à la marge d'erreur de mesure (~6 %), confirme un **effet d'interface réel**.
+
+### 5.4. Évolution microstructurale de l'interface
+
+L'analyse MEB de la tranche des bicouches vieillis révèle :
+
+- **Pas de nouvelles phases** détectées (ni oxyde, ni alliage Ag_xCu_y par EDS).
+- **Deux zones** à porosité distincte : une **zone dense (LPA, ~55 %)** et une **zone poreuse (HPA)**, probablement liée au dégazage du dispersant/liant lors du frittage.
+- L'évolution de la **porosité apparente** en fonction du temps de vieillissement est qualitativement visible sur les images MEB.
+
+L'épaisseur de la zone d'interface a été quantifiée par une **méthode originale de segmentation pixel par pixel** : binarisation des images MEB, calcul d'un profil cumulatif de porosité selon l'épaisseur, puis identification des limites inférieure (contact Ag/Cu) et supérieure (transition vers le comportement de l'Ag sain).
+
+**Évolution du taux de porosité en surface (TPS) :**
+
+| Temps (h) | TPS zone Ag (%) | TPS interface (%) |
+|:---|:---|:---|
+| 0 | ~11 | ~39 |
+| 50 | ~12 | ~7 |
+| 200 | ~15 | ~20 |
+| 500 | ~46 | ~20 |
+
+À l'interface : réduction significative du TPS après 50 h, puis stabilisation. En zone Ag : hausse marquée du TPS à long terme.
+
+### 5.5. Estimation des propriétés locales
+
+La chaîne d'estimation **TPS → densité → conductivité** repose sur deux corrélations établies sur l'Ag fritté seul :
+
+> **ρ = 16·10⁻⁶·TPS² − 0,24·TPS + 10,5** &nbsp;&nbsp;(R² = 0,95)
+>
+> **λ = 2,3·ρ² + 8,9·ρ + 25,9** &nbsp;&nbsp;(R² = 0,97)
+
+**Propriétés locales estimées (10 MPa, vieilli @ 350 °C) :**
+
+| Temps (h) | λ zone Ag (W·m⁻¹·K⁻¹) | λ interface (W·m⁻¹·K⁻¹) |
+|:---|:---|:---|
+| 0 | 140 | 76 |
+| 50 | 219 | 281 |
+| 200 | 271 | 173 |
+| 500 | 71 | 178 |
+
+### 5.6. Quantification de la zone Ag affectée
+
+Un modèle en couches (**Cu + interface + zone Ag affectée + Ag sain**) permet d'estimer l'épaisseur de la zone Ag dégradée.
+
+| Temps (h) | λ_Ag exp | f_Zone Ag | f_Ag sain | l_Zone Ag (mm) | l_Ag sain (mm) | % Ag affecté |
+|:---|:---|:---|:---|:---|:---|:---|
+| 0 | 301 | 0 | 0,547 | 0,0 | 0,121 | 0 |
+| 50 | 319 | 0 | 0,547 | 0,0 | 0,121 | 0 |
+| 200 | 308 | 0 | 0,547 | 0,0 | 0,121 | 0 |
+| **500** | **269** | **0,267** | **0,280** | **0,059** | **0,062** | **48,8** |
+
+> **À 500 h @ 350 °C, environ 50 % de la couche d'Ag est affectée par le vieillissement.**
+
+Le modèle prédit correctement λ jusqu'à ~200 h. Au-delà, la divergence croissante suggère des phénomènes non capturés : redistribution de porosité en 3D, défauts aux joints de grains, évolution de l'adhésion Ag/Cu.
+
+---
+
+## 6. Synthèse des contributions
+
+Cette thèse apporte plusieurs résultats structurants, de la méthode de mesure à la compréhension des mécanismes :
+
+| Contribution | Résultat clé |
+|:---|:---|
+| **Méthode Flash 3D calibrée** | Critères d'acquisition explicites (≥1200 trames, S/B ≥5), erreur <6 %, répétabilité validée |
+| **Loi porosité ↔ λ** | Variation ×4 sur 25–75 % de porosité (222 → 66 W·m⁻¹·K⁻¹), R² = 0,97 |
+| **Cinétique de vieillissement** | Maximum atteint en ~45 min ; densité et taille de grains stables |
+| **Mécanisme identifié** | Relaxation de contraintes résiduelles de compression |
+| **Interface Ag/Cu** | Effet critique à temps long : divergence à 200–500 h, ~50 % d'Ag affecté |
+| **Modèles empiriques** | c(ρ) R²=0,99, λ(ρ) R²=0,97, TPS→ρ→λ R²=0,95 |
+| **Capacité thermique mesurée** | Infirmation de l'hypothèse c = c_Ag massif couramment utilisée |
+
+---
+
+## 7. Publications & communications
+
+- **Acta Materialia · 2023** — **A. Sghuri**, Y. Billaud, L. Signor, D. Saury, X. Milhet — [*Experimental investigation of thermal conductivity during aging of nanoporous sintered silver*](https://doi.org/10.1016/j.actamat.2023.119109)
+- **IMAPS · 2023** — **A. Sghuri**, Y. Billaud, L. Signor, D. Saury, X. Milhet — *Evolution of the thermal conductivity of sintered Ag paste as a function of the density and aging* — 16th European Advanced Technology Workshop on Micropackaging and Thermal management, Poitiers.
+- **SFT · 2021** — **A. Sghuri**, Y. Billaud, X. Milhet — Calibration de la méthode Flash 3D pour matériaux hautement conducteurs.
+
+---
+
+## 8. Perspectives
+
+Les résultats ouvrent plusieurs directions à fort intérêt scientifique et industriel :
+
+- Extension aux systèmes **Cu/Ag/Cu** et **SiC/Ag** (assemblages plus représentatifs).
+- Essais en **cyclage thermique** en conditions de service.
+- **Modélisation 3D** de la microstructure incluant la connectivité des pores, les défauts aux joints de grains et l'évolution de l'adhésion interfaciale.
+- Prise en compte de la redistribution de porosité observée par Carr et al. (2015) : passage d'une distribution homogène à hétérogène après vieillissement.
+
+---
 
 ## 9. Compétences développées
 
-<div class="phd-tags">
-  <span class="phd-tag">Flash 3D</span>
-  <span class="phd-tag">Méthode inverse (ENH)</span>
-  <span class="phd-tag">Microscopie MEB</span>
-  <span class="phd-tag">Analyse d’images</span>
-  <span class="phd-tag">mDSC / calorimétrie</span>
-  <span class="phd-tag">Frittage Ag sous pression</span>
-  <span class="phd-tag">Vieillissement thermique</span>
-  <span class="phd-tag">Python</span>
-  <span class="phd-tag">MATLAB</span>
-  <span class="phd-tag">Rédaction scientifique FR/EN</span>
+<div style="display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.5em;">
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Mesure thermique Flash 3D</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Méthode inverse (ENH)</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Microscopie MEB / MEB-FEG</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Analyse d'images (ImageJ, Matlab)</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">mDSC / DSC / ATG</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Frittage Ag sous pression</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Vieillissement thermique accéléré</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Métrologie dimensionnelle</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Python / traitement de données</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">MATLAB / modélisation thermique</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Préparation métallographique</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Rédaction scientifique (EN/FR)</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Plan d'expériences</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Modélisation empirique (lois de comportement)</span>
 </div>
