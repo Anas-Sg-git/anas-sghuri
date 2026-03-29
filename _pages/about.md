@@ -22,23 +22,43 @@ toc_sticky: true
 
 ---
 
-<div style="display: flex; flex-wrap: wrap; gap: 1em; margin: 1.5em 0; justify-content: center;">
-  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
-    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">+84 %</div>
-    <div style="font-size: 0.85em; margin-top: 0.3em;">gain de conductivité thermique entre 0 et 10 MPa</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0.8em; margin: 1.5em 0; justify-content: center;">
+
+  <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔧 Élaboration</div>
+    <div style="font-size: 0.82em; line-height: 1.4;">
+      Procédé multicouche maîtrisé · dégazage contrôlé · 4 pressions de frittage · 2 familles d'échantillons (Ag & Ag/Cu)
+    </div>
   </div>
-  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
-    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">+62 %</div>
-    <div style="font-size: 0.85em; margin-top: 0.3em;">augmentation de densité par pression de frittage</div>
+
+  <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔬 Méthode & Caractérisation</div>
+    <div style="font-size: 0.82em; line-height: 1.4;">
+      Flash 3D + inverse · MEB / MEB-FEG · DSC / ATG / mDSC · traitement d'images · métrologie dimensionnelle
+    </div>
   </div>
-  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
-    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">≈ 45 min</div>
-    <div style="font-size: 0.85em; margin-top: 0.3em;">temps caractéristique du saut initial de λ</div>
+
+  <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">📊 Lois prédictives</div>
+    <div style="font-size: 0.82em; line-height: 1.4;">
+      Variation ×4 de λ · 3 modèles empiriques · R² > 0,95 · directement exploitables pour le dimensionnement
+    </div>
   </div>
-  <div style="flex: 1; min-width: 140px; max-width: 200px; text-align: center; padding: 1em; border: 2px solid #2e86c1; border-radius: 10px;">
-    <div style="font-size: 1.8em; font-weight: bold; color: #2e86c1;">≈ 50 %</div>
-    <div style="font-size: 0.85em; margin-top: 0.3em;">de la couche d'Ag affectée à 500 h @ 350 °C</div>
+
+  <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">⏱️ Vieillissement</div>
+    <div style="font-size: 0.82em; line-height: 1.4;">
+      Cinétique résolue en ≈45 min · densité & grains stables · mécanisme identifié : relaxation de contraintes
+    </div>
   </div>
+
+  <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔗 Interface & Fiabilité</div>
+    <div style="font-size: 0.82em; line-height: 1.4;">
+      ~50 % d'Ag affecté · divergence à 200 h · propriétés locales quantifiées par analyse microstructurale
+    </div>
+  </div>
+
 </div>
 
 ---
