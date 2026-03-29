@@ -195,11 +195,9 @@ La taille des grains a été évaluée par **MEB-FEG** à **30 000×**. Les cont
 
 La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique différentielle à balayage en mode modulé) entre **−25 °C et 300 °C** à **10 °C/min**. Ce paramètre est essentiel pour convertir la diffusivité thermique en conductivité thermique (λ = α · ρ · c).
 
-**Résultat clé :** la capacité thermique **diminue** à mesure que la densité **augmente** (de ~600 J·kg⁻¹·K⁻¹ à 0 MPa à ~286 J·kg⁻¹·K⁻¹ à 10 MPa). Ce résultat contredit l'hypothèse courante de la littérature qui suppose c = c_Ag massif. La relation empirique établie est :
+**Résultat clé :** la capacité thermique **diminue** à mesure que la densité **augmente** (de ~600 J·kg⁻¹·K⁻¹ à 0 MPa à ~286 J·kg⁻¹·K⁻¹ à 10 MPa ,**erreur : ~5 %**). Ce résultat contredit l'hypothèse courante de la littérature qui suppose c = c_Ag massif. La relation empirique établie est :
 
 > **c(ρ) = 13,9·ρ² − 203·ρ + 1027** &nbsp;&nbsp;(R² = 0,99)
-
-**Erreur : ~5 %**
 
 ### 3.5. Échantillons étudiés et plan de vieillissement
 
@@ -207,18 +205,15 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
 
 | | Ag fritté seul | Bicouches Ag/Cu |
 |:---|:---|:---|
-| Dimensions | 5 × 5 cm | 5 × 5 cm |
+| Dimensions | 5 × 5 cm |
 | Épaisseur Ag | 0,5 – 1,4 mm | 0,12 – 0,46 mm |
 | Épaisseur Cu | — | 0,1 mm |
-| Pressions | 0 / 2 / 5 / 10 MPa | 0 / 2 / 5 / 10 MPa |
+| Pressions de frittage | 0 / 2 / 5 / 10 MPa |
 | Lots | × 3 | × 1 |
+| T° de vieillissement | 150 / 250 / 350 °C | 350 °C |
+| Durées de vieillissement | 50 / 200 / 500 h |
 
 **Vieillissement :** sous vide primaire (four Pyrox) pour limiter l'oxydation parasite.
-
-| | Ag seul | Bicouches Ag/Cu |
-|:---|:---|:---|
-| Températures | 150 / 250 / 350 °C | 350 °C |
-| Durées | 50 / 200 / 500 h | 50 / 200 / 500 h |
 
 ---
 
@@ -249,10 +244,10 @@ Le vieillissement révèle une dynamique en deux temps :
 
 **Étape 2 (ES2) — Stabilisation :** après ES1, la conductivité se stabilise. L'évolution résiduelle ne dépend ni de la procédure d'élaboration ni de la densité.
 
-![Cinétique d'évolution](/images/ag-cinetique.png)
+<img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Cinétique fine — λ atteint son maximum en ≈ 45 min (Ag 10 MPa @ 150 °C, mesures par intervalles de 15 min).*
 
-![Barplot vieillissement](/images/ag-vieillissement.png)
+<img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Évolution de λ pour 0–10 MPa, 150–350 °C, jusqu'à 500 h.*
 
 **Trois observations majeures :**
@@ -261,7 +256,7 @@ Le vieillissement révèle une dynamique en deux temps :
 2. **La taille des grains reste inchangée** (≈ 300 nm, confirmé par MEB-FEG colorisée à 2 et 10 MPa, vieilli à 350 °C). Ce résultat est corroboré par Zuo et al. (2022) et Agyakwa (2024).
 3. **Après vieillissement**, les conductivités mesurées correspondent aux prédictions pour des pores **sphériques et cylindriques**, alors qu'avant vieillissement elles se situaient vers le modèle à pores plats.
 
-> **Interprétation clé :** l'augmentation initiale de λ est attribuée à la **relaxation de contraintes résiduelles de compression** générées lors du frittage sous pression. Milhet et al. (2015) ont montré par résonance dynamique que ~10 % de la contrainte appliquée n'est pas relâchée après frittage, et que ces contraintes se relâchent lors du vieillissement. Lee et al. (2010) ont par ailleurs démontré que la conductivité thermique est fortement affectée par les contraintes/déformations mécaniques.
+> **Interprétation :** l'augmentation initiale de λ est attribuée à la **relaxation de contraintes résiduelles de compression** générées lors du frittage sous pression. Milhet et al. (2015) ont montré par résonance dynamique que ~10 % de la contrainte appliquée n'est pas relâchée après frittage, et que ces contraintes se relâchent lors du vieillissement. Lee et al. (2010) ont par ailleurs démontré que la conductivité thermique est fortement affectée par les contraintes/déformations mécaniques.
 
 ---
 
@@ -269,27 +264,14 @@ Le vieillissement révèle une dynamique en deux temps :
 
 ### 5.1. L'interface change tout à long terme
 
-Les bicouches Ag/Cu présentent d'abord le même comportement que l'Ag seul : une hausse de λ dans les 50 premières heures. Puis, **au-delà de 200 h**, une **dégradation progressive et significative** apparaît — absente dans les échantillons monocouches.
+Les bicouches Ag/Cu présentent d'abord le même comportement que l'Ag seul : une hausse de λ dans les 50 premières heures. Puis, **au-delà de 200 h**, une **dégradation progressive et significative** apparaît (absente dans les échantillons monocouches).
 
 La densité globale des bicouches reste stable (confirmé jusqu'à 500 h @ 350 °C, pour toutes les pressions).
 
-![Barplot λ Ag/Cu](/images/agcu-vieillissement.png)
+<img src="{{ '/images/agcu-vieillissement.png' | relative_url }}" alt="Barplot λ Ag/Cu" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Évolution de la conductivité effective des bicouches Ag/Cu au cours du vieillissement @ 350 °C. La tendance en pointillés représente l'Ag fritté seul (pas de dégradation).*
 
-### 5.2. Validation de la méthode Flash 3D sur bicouches
-
-La compatibilité de la méthode Flash 3D avec un matériau bicouche a été vérifiée par des mesures dans **quatre configurations** (laser côté Ag/Cu, caméra côté Ag/Cu). Résultat : les erreurs relatives restent **inférieures à 4 %** et la conductivité mesurée est **indépendante de la configuration**, suggérant la réponse d'un matériau homogène effectif.
-
-| Pression (MPa) | Config. (a) réf. | Config. (b) | Config. (c) | Config. (d) |
-|:---|:---|:---|:---|:---|
-| 0 | 116 | 116 | 117 | 119 |
-| 2 | 218 | 226 | 213 | 214 |
-| 5 | 268 | 261 | 262 | 258 |
-| 10 | 296 | 292 | 288 | 292 |
-
-*Conductivité thermique (W·m⁻¹·K⁻¹) mesurée selon 4 configurations laser/caméra. Erreur relative ≤ 4 %.*
-
-### 5.3. Estimation sans effet d'interface
+### 5.2. Estimation sans effet d'interface
 
 Un modèle de mélange (loi des mélanges en épaisseur) utilisant les propriétés de l'Ag fritté seul vieilli et du Cu permet d'estimer ce que devrait être la conductivité des bicouches **en l'absence d'effet d'interface** :
 
@@ -301,11 +283,10 @@ Un modèle de mélange (loi des mélanges en épaisseur) utilisant les propriét
 - **Divergence croissante** au-delà (jusqu'à **~36 %** à faible pression, **~17,9 %** à 10 MPa à 500 h).
 - Cette divergence, supérieure à la marge d'erreur de mesure (~6 %), confirme un **effet d'interface réel**.
 
-### 5.4. Évolution microstructurale de l'interface
+### 5.3. Évolution microstructurale de l'interface
 
 L'analyse MEB de la tranche des bicouches vieillis révèle :
 
-- **Pas de nouvelles phases** détectées (ni oxyde, ni alliage Ag_xCu_y par EDS).
 - **Deux zones** à porosité distincte : une **zone dense (LPA, ~55 %)** et une **zone poreuse (HPA)**, probablement liée au dégazage du dispersant/liant lors du frittage.
 - L'évolution de la **porosité apparente** en fonction du temps de vieillissement est qualitativement visible sur les images MEB.
 
@@ -322,7 +303,7 @@ L'épaisseur de la zone d'interface a été quantifiée par une **méthode origi
 
 À l'interface : réduction significative du TPS après 50 h, puis stabilisation. En zone Ag : hausse marquée du TPS à long terme.
 
-### 5.5. Estimation des propriétés locales
+### 5.4. Estimation des propriétés locales
 
 La chaîne d'estimation **TPS → densité → conductivité** repose sur deux corrélations établies sur l'Ag fritté seul :
 
@@ -339,7 +320,7 @@ La chaîne d'estimation **TPS → densité → conductivité** repose sur deux c
 | 200 | 271 | 173 |
 | 500 | 71 | 178 |
 
-### 5.6. Quantification de la zone Ag affectée
+### 5.5. Quantification de la zone Ag affectée
 
 Un modèle en couches (**Cu + interface + zone Ag affectée + Ag sain**) permet d'estimer l'épaisseur de la zone Ag dégradée.
 
