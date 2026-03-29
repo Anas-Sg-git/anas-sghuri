@@ -90,15 +90,15 @@ L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle générat
 
 Malgré l'intérêt croissant porté à l'Ag fritté, son comportement thermique reste difficile à décrire de manière robuste et prédictive. Trois verrous principaux structurent cette thèse :
 
-### 🔬 Mesurer un matériau hautement diffusif
+### Mesurer un matériau hautement diffusif
 
 L'Ag fritté présente une conductivité thermique très élevée ; l'argent est le métal le plus conducteur thermiquement à température ambiante. Cette forte diffusivité limite la validité des approches flash 1D classiques. Une méthode capable de prendre en compte des effets 2D/3D ainsi qu'une anisotropie potentielle était donc nécessaire.
 
-### 📊 Relier conductivité, densité et vieillissement
+### Relier conductivité, densité et vieillissement
 
-La densité est un paramètre clé, mais on ne disposait pas d'une relation claire et robuste entre conductivité thermique, densité, temps et température de vieillissement. La mesure de la densité elle-même pose problème : l'analyse d'images MEB 2D peut biaiser les résultats, et la capacité thermique de l'Ag fritté est souvent supposée égale à celle de l'Ag massif — une hypothèse non vérifiée.
+La densité est un paramètre clé, mais on ne disposait pas d'une relation claire et robuste entre conductivité thermique, densité, temps et température de vieillissement. La mesure de la densité elle-même pose problème : l'analyse d'images MEB 2D peut biaiser les résultats, et la capacité thermique de l'Ag fritté est souvent supposée égale à celle de l'Ag massif (une hypothèse non vérifiée).
 
-### 🔗 Quantifier l'effet de l'interface Ag/Cu
+### Quantifier l'effet de l'interface Ag/Cu
 
 Dans un assemblage réel, l'Ag repose sur un substrat Cu. Les résistances d'interface (R_Ag/Cu, R_Ag/SiC) sont systématiquement négligées dans la littérature et leur évolution à long terme était totalement inconnue. Pourtant, cette interface est susceptible de contrôler la fiabilité thermique du système complet.
 
