@@ -112,14 +112,13 @@ Le cœur de la démarche repose sur la **méthode Flash 3D**, adaptée à l'étu
 
 - une **excitation laser locale CO₂** (**130 W, 10 ms**) créant un point chaud sur la face avant de l'échantillon ;
 - une **caméra infrarouge haute vitesse** (**jusqu'à 2000 fps**) enregistrant la diffusion thermique 2D en surface de l'échantillon ;
-- un **cryothermostat** pour le contrôle de la température ambiante.
 
 L'identification des conductivités thermiques repose sur la résolution d'un **problème inverse** fondé sur la solution analytique tridimensionnelle instationnaire de l'équation de la chaleur, projetée sur une base d'harmoniques spatiales (transformée de Fourier) et temporelles (transformée de Laplace). L'estimateur utilisé, dit **ENH** (Estimation par Normalisation Harmonique), permet d'extraire les temps de diffusion caractéristiques τ_x et τ_y, puis les diffusivités α_x et α_y, et enfin les conductivités λ_x et λ_y.
 
-![Flash 3D: banc expérimental](/images/setup-flash3d.png)
+<img src="{{ '/images/setup-flash3d.png' | relative_url }}" alt="Flash 3D: banc expérimental " style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 *Banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
 
-![Flash 3D: principe identification](/images/principe-identification.png)
+<img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification " style="display: block; width: 90%; max-width: 600px; height: auto; margin: 0 auto;">
 *Estimation des conductivités thermiques dans le plan à partir d'images infrarouges et de la résolution inverse de l'équation de la chaleur 3D instationnaire.*
 
 ### 3.2. Calibration et validation
