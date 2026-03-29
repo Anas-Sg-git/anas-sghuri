@@ -22,38 +22,40 @@ toc_sticky: true
 
 ---
 
+**Contributions clés de cette thèse — de l'élaboration à la fiabilité :**
+
 <div style="display: flex; flex-wrap: wrap; gap: 0.8em; margin: 1.5em 0; justify-content: center;">
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
-    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔧 Élaboration</div>
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Élaboration</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Procédé multicouche maîtrisé · dégazage contrôlé · 4 pressions de frittage · 2 familles d'échantillons (Ag & Ag/Cu)
+      Procédé multicouche · dégazage sous vide · 4 pressions de frittage · 2 familles d'échantillons (Ag & Ag/Cu)
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
-    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔬 Méthode & Caractérisation</div>
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Méthode & Caractérisation</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Flash 3D + inverse · MEB / MEB-FEG · DSC / ATG / mDSC · traitement d'images · métrologie dimensionnelle
+      Flash 3D + méthode inverse · MEB / MEB-FEG · DSC / ATG / mDSC · traitement d'images · métrologie dimensionnelle
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
-    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">📊 Lois prédictives</div>
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Relations structure–propriété</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Variation ×4 de λ · 3 modèles empiriques · R² > 0,95 · directement exploitables pour le dimensionnement
+      Variation ×4 de la conductivité thermique · lois porosité–densité–conductivité · capacité thermique mesurée (≠ hypothèse littérature)
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
-    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">⏱️ Vieillissement</div>
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Vieillissement</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Cinétique résolue en ≈45 min · densité & grains stables · mécanisme identifié : relaxation de contraintes
+      Cinétique résolue en ≈ 45 min · densité & grains stables · mécanisme identifié : relaxation de contraintes
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
-    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">🔗 Interface & Fiabilité</div>
+    <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Interface & Fiabilité</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
       ~50 % d'Ag affecté · divergence à 200 h · propriétés locales quantifiées par analyse microstructurale
     </div>
