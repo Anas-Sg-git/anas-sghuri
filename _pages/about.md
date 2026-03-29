@@ -15,7 +15,7 @@ toc_sticky: true
 
 > Sujet de thèse centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance. Travaux menés à l'interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
 
-- **Directeurs :** X. Milhet (MCF HDR) & Y. Billaud (MCF)
+- **Directeurs :** X. Milhet & Y. Billaud
 - **Financement :** ACI++ Pprime Eprom · UE FEDER
 - **Soutenance :** 11 mars 2024
 - **Publication :** [Voir la partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
@@ -50,7 +50,7 @@ toc_sticky: true
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Vieillissement</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Conductivité maximale atteinte en ≈ 45 min de vieillissement · densité et taille de grains stables jusqu'à 500 h · mécanisme identifié : relaxation de contraintes résiduelles
+      Première mise en évidence d'un saut initial de conductivité suivi d'une stabilisation · densité et taille de grains stables jusqu'à 500 h · mécanisme identifié : relaxation de contraintes résiduelles
     </div>
   </div>
 
@@ -179,7 +179,7 @@ La densité apparente a été déterminée par le rapport **masse/volume** :
 
 La porosité primaire a été mesurée par **imagerie MEB** après préparation métallographique (polissages successifs : papiers 400, 800, 1200, 2000, 4000 → surface miroir). Les images acquises à **5000×** ont été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
-![Évaluation de la porosité par traitement d'images MEB](/images/porosite-MEB.png)
+<img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 *Traitement d'image pour l'évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
 #### Taille des grains
@@ -188,7 +188,7 @@ La taille des grains a été évaluée par **MEB-FEG** à **30 000×**. Les cont
 
 **Résultat :** diamètre moyen **≈ 300 nm** (295–315 nm selon la pression), écart-type **≈ 100–124 nm**, stable jusqu'à 500 h @ 350 °C.
 
-![Taille des grains](/images/taille-grains.png)
+<img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 *Traitement d'image pour l'évaluation de la taille des grains : image brute, tracé des joints, identification individuelle sous ImageJ.*
 
 #### Capacité calorifique
@@ -238,7 +238,7 @@ La relation empirique conductivité–densité (après vieillissement) est :
 
 > **λ = 1,58·ρ² + 10,9·ρ + 20** &nbsp;&nbsp;(R² = 0,97)
 
-![Conductivité vs porosité](/images/ag-non-vieilli.png)
+<img src="{{ '/images/ag-non-vieilli.png' | relative_url }}" alt="Conductivité thermique mesurée en fonction de la porosité relative" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Conductivité thermique mesurée en fonction de la porosité relative, pour 4 pressions de frittage. Comparaison avec les modèles de pore sphérique, cylindrique et plat (Ordonez-Miranda et al., 2016).*
 
 ### 4.2. Effet du vieillissement thermique
