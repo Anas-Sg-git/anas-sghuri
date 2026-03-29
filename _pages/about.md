@@ -133,12 +133,6 @@ Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, C
 
 **Résultat :** une **erreur de mesure inférieure à 6 %**, avec confirmation de l'isotropie dans le plan (λ_x ≈ λ_y). La répétabilité a été validée par **20 mesures par échantillon**.
 
-| Matériau (99,95%) | Réf. conductivité (W·m⁻¹·K⁻¹) |
-|:---|:---|
-| Ag | 426 – 433 |
-| Cu | 386 – 401 |
-| Al | 237 – 239 |
-
 ### 3.3. Élaboration des échantillons
 
 #### Procédé de frittage
@@ -150,7 +144,7 @@ Le protocole d'élaboration comprend :
 3. **Répétition** du cycle dépôt + dégazage selon l'épaisseur finale désirée.
 4. **Frittage** à **270 °C pendant 5 min** sous pression de **0 à 10 MPa** (machine jusqu'à 100 kN).
 
-![Procédé de frittage](/images/frittage-process.png)
+<img src="{{ '/images/frittage-process.png' | relative_url }}" alt="Procédé de frittage " style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Procédé d'élaboration : dépôt multicouche, dégazage sous vide et frittage 0–10 MPa @ 270 °C pendant 5 min.*
 
 L'empilement des couches a été validé : la porosité est **homogène dans l'épaisseur**, comme confirmé par des analyses d'images MEB systématiques sur la tranche (taux de porosité surfacique constant ~10–12 % sur toute l'épaisseur pour un échantillon à 10 MPa).
@@ -165,8 +159,8 @@ La **température de frittage** a été déterminée par **DSC** couplée à l'*
 
 Ces résultats convergent vers le choix d'un frittage à **270 °C / 5 min** — compromis entre élimination du dispersant et compaction.
 
-![ATG-DSC-MEB](/images/ATG-DSC-MEB.png)
-*Analyses DSC/ATG et évolution microstructurale de la pâte d'argent en fonction de la température.*
+<img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
+*Analyses DSC/ATG et évolution microstructurale de la pâte d'Ag en fonction de la température.*
 
 ### 3.4. Caractérisation microstructurale et thermophysique
 
