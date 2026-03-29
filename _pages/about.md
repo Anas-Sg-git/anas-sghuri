@@ -16,9 +16,9 @@ toc_sticky: true
 > Sujet de thèse centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance. Travaux menés à l'interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
 
 - **Directeurs :** X. Milhet (MCF HDR) & Y. Billaud (MCF)
-- **Financement :** ACI++ Pprime Eprom · UE FEDER 2014–2021
+- **Financement :** ACI++ Pprime Eprom · UE FEDER
 - **Soutenance :** 11 mars 2024
-- **Publication :** [Acta Materialia (2023)](https://doi.org/10.1016/j.actamat.2023.119109)
+- **Publication :** [Voir partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
 
 ---
 
@@ -29,28 +29,28 @@ toc_sticky: true
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Élaboration</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Procédé multicouche · dégazage sous vide · 4 pressions de frittage · 2 familles d'échantillons (Ag & Ag/Cu)
+      Procédé de frittage multicouche à paramètres variables · dégazage sous vide · 2 familles d'échantillons élaborées (Ag seul & Ag/Cu)
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Méthode & Caractérisation</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Flash 3D + méthode inverse · MEB / MEB-FEG · DSC / ATG / mDSC · traitement d'images · métrologie dimensionnelle
+      Flash 3D + méthode inverse · MEB / MEB-FEG · DSC / ATG / mDSC · caractérisation thermique, microstructurale et dimensionnelle
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Relations structure–propriété</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Variation ×4 de la conductivité thermique · lois porosité–densité–conductivité · capacité thermique mesurée (≠ hypothèse littérature)
+      Conductivité variant d'un facteur 4 selon la porosité · lois reliant porosité, densité et conductivité établies · capacité thermique mesurée, différente de l'hypothèse courante
     </div>
   </div>
 
   <div style="flex: 1; min-width: 150px; max-width: 180px; text-align: center; padding: 0.8em; border: 2px solid #1a5276; border-radius: 10px; background: #fafafa;">
     <div style="font-size: 1.1em; font-weight: bold; color: #1a5276; margin-bottom: 0.4em;">Vieillissement</div>
     <div style="font-size: 0.82em; line-height: 1.4;">
-      Cinétique résolue en ≈ 45 min · densité & grains stables · mécanisme identifié : relaxation de contraintes
+      Conductivité maximale atteinte en ≈ 45 min de vieillissement · densité et taille de grains stables jusqu'à 500 h · mécanisme identifié : relaxation de contraintes résiduelles
     </div>
   </div>
 
