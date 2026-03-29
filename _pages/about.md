@@ -168,12 +168,12 @@ Ces résultats convergent vers le choix d'un frittage à **270 °C / 5 min** —
 
 La densité apparente a été déterminée par le rapport **masse/volume** :
 
-- **Masse** : balance (précision ~10 mg)
-- **Dimensions latérales** : profilomètre optique (~1 µm)
-- **Épaisseur** : comparateur mécanique digital (~1 µm)
+- Masse : **balance** (précision ~10 mg)
+- Dimensions latérales : **profilomètre optique** (~1 µm)
+- Épaisseur : **comparateur mécanique digital** (~1 µm)
 - **Erreur sur la densité : ~2 %**
 
-Résultat : la pression de frittage contrôle directement la densité — de ~3 g·cm⁻³ (0 MPa) à ~8 g·cm⁻³ (10 MPa).
+**Résultat** : la pression de frittage contrôle directement la densité — de ~3 g·cm⁻³ (0 MPa) à ~8 g·cm⁻³ (10 MPa).
 
 #### Porosité par imagerie MEB
 
