@@ -81,7 +81,7 @@ reste insuffisante.
 
 L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle génération : conductivité théorique à **426 W·m⁻¹·K⁻¹** (le métal le plus conducteur thermiquement), élaboration à basse température (**200–300 °C**), pas de fusion en service (T° fusion Ag : 961 °C). Mais sa **microstructure poreuse complexe** génère une dispersion considérable dans les données publiées (conductivité variant de **3 à 433 W·m⁻¹·K⁻¹** selon la littérature), et l'effet du vieillissement thermique sur ses propriétés demeurait insuffisamment documenté.
 
-![Module de puissance](/images/module-puissance.png)
+<img src="{{ '/images/module-puissance.png' | relative_url }}" alt="Module de puissance" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Architecture type d'un module de puissance et position critique de l'interconnexion dans la chaîne de dissipation thermique. Source : présentation de soutenance.*
 
 ---
