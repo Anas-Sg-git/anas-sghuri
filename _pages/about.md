@@ -272,30 +272,84 @@ Après avoir établi la relation entre porosité et conductivité à l'état
 initial, la question suivante est : comment ces propriétés évoluent-elles 
 en service ? Pour y répondre, les échantillons d'Ag fritté ont été vieillis 
 sous vide primaire à 150, 250 et 350 °C pendant des durées allant 
-jusqu'à 500 h. Le suivi de la conductivité thermique au cours du 
-vieillissement révèle une dynamique en deux temps :
+jusqu'à 500 h.
 
-**Étape 1 (ES1) — Saut initial rapide :** la conductivité thermique augmente significativement dans les **premières 45 minutes** de vieillissement. Ce saut est d'autant plus marqué que la pression de frittage est élevée. À 0 MPa, l'évolution est très limitée et plus lente.
+#### Vue d'ensemble : un saut initial suivi d'une stabilisation
 
-**Étape 2 (ES2) — Stabilisation :** après ES1, la conductivité se stabilise. L'évolution résiduelle ne dépend ni de la procédure d'élaboration ni de la densité.
+La figure ci-dessous présente la conductivité thermique de l'ensemble 
+des échantillons (0–10 MPa) aux trois températures de vieillissement. 
+On observe une tendance commune : la majeure partie de l'augmentation 
+de λ se produit entre 0 et 50 h de vieillissement. Au-delà, 
+l'évolution devient faible et ne dépend ni de la pression de frittage 
+ni de la densité initiale. Deux cas particuliers ressortent : le saut 
+est d'autant plus marqué que la pression de frittage est élevée, et 
+à 0 MPa l'évolution reste très limitée.
 
-<img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
+<img src="{{ '/images/ag-vieillissement.png' | relative_url }}" 
+     alt="Évolution de la conductivité au vieillissement" 
+     style="display: block; width: 100%; max-width: 700px; height: auto; margin: 0 auto;">
 
-*Cinétique à temps court : la conductivité thermique atteint son 
-maximum en ≈ 45 min (Ag fritté @ 10 MPa, vieilli à 150 °C, 
-mesures par intervalles de 15 min). La transition ES1 → ES2 est 
-indiquée en pointillés.*
+*Conductivité thermique de l'Ag fritté au cours du vieillissement 
+(0, 50, 200 et 500 h) pour les quatre pressions de frittage, 
+à 150, 250 et 350 °C.*
 
-<img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
+#### Zoom sur la cinétique : le saut se joue en quelques dizaines de minutes
 
+Pour résoudre plus finement la cinétique de ce saut initial, un 
+vieillissement par intervalles de 15 min a été réalisé sur un 
+échantillon fritté à 10 MPa à 150 °C. Le résultat est remarquable : 
+la conductivité atteint sa valeur maximale en **≈ 45 min**. 
+Au-delà (ES2), elle se stabilise. Ce résultat montre que le saut 
+observé entre 0 et 50 h sur la figure précédente ne dure en réalité 
+que quelques dizaines de minutes.
 
-**Trois observations majeures :**
+<img src="{{ '/images/ag-cinetique.png' | relative_url }}" 
+     alt="Cinétique à temps court du vieillissement" 
+     style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 
-1. **La densité reste parfaitement stable** jusqu'à 500 h à 350 °C, quelle que soit la pression de frittage. L'évolution de λ n'est donc pas liée à une densification globale.
-2. **La taille des grains reste inchangée** (≈ 300 nm, confirmé par MEB-FEG colorisée à 2 et 10 MPa, vieilli à 350 °C). Ce résultat est corroboré par Zuo et al. (2022) et Agyakwa (2024).
-3. **Après vieillissement**, les conductivités mesurées correspondent aux prédictions pour des pores **sphériques et cylindriques**, alors qu'avant vieillissement elles se situaient vers le modèle à pores plats.
+*Cinétique à temps court : conductivité thermique de l'Ag fritté 
+à 10 MPa, vieilli à 150 °C par intervalles de 15 min. La transition 
+entre ES1 (saut rapide) et ES2 (stabilisation) intervient vers 45 min.*
 
-> **Interprétation :** l'augmentation initiale de λ est attribuée à la **relaxation de contraintes résiduelles de compression** générées lors du frittage sous pression. Milhet et al. (2015) ont montré par résonance dynamique que ~10 % de la contrainte appliquée n'est pas relâchée après frittage, et que ces contraintes se relâchent lors du vieillissement. Lee et al. (2010) ont par ailleurs démontré que la conductivité thermique est fortement affectée par les contraintes/déformations mécaniques.
+#### Quels paramètres microstructuraux évoluent pendant le vieillissement ?
+
+Pour comprendre l'origine de ce saut, trois paramètres ont été 
+suivis au cours du vieillissement :
+
+1. **La densité reste stable** jusqu'à 500 h à 350 °C, quelle que 
+   soit la pression de frittage. L'évolution de λ n'est donc pas 
+   liée à une densification globale.
+2. **La taille des grains reste inchangée** (≈ 300 nm, mesurée par 
+   MEB-FEG à 2 et 10 MPa, vieilli à 350 °C). Ce résultat est 
+   corroboré par Zuo et al. (2022) et Agyakwa (2024).
+3. **Après vieillissement**, les conductivités mesurées correspondent 
+   aux prédictions pour des pores **sphériques et cylindriques**, 
+   alors qu'avant vieillissement elles se situaient vers le modèle 
+   à pores plats.
+
+Ni la densification, ni la croissance de grains, ni l'évolution 
+de la connectivité des pores ne peuvent expliquer un saut aussi 
+rapide et aussi dépendant de la pression de frittage.
+
+#### Interprétation : relaxation de contraintes résiduelles
+
+Le seul paramètre qui distingue les échantillons entre eux est 
+la **pression appliquée lors du frittage**. Milhet et al. (2015) 
+ont montré par résonance dynamique que le frittage sous pression 
+génère des contraintes résiduelles de compression dans le matériau, 
+dont environ 10 % ne sont pas relâchées après frittage. Ces 
+contraintes se relâchent lors du vieillissement, entraînant une 
+augmentation du module d'Young vers sa valeur théorique. 
+Par ailleurs, Lee et al. (2010) ont démontré que la conductivité 
+thermique est fortement affectée par les contraintes et 
+déformations mécaniques.
+
+Ce mécanisme est cohérent avec l'ensemble des observations : 
+pas de saut à 0 MPa (pas de contrainte résiduelle attendue), 
+saut maximal à 10 MPa (contrainte résiduelle maximale), 
+cinétique rapide indépendante de la température de vieillissement 
+(une fois les contraintes relâchées, la valeur stabilisée ne 
+dépend que de la porosité).
 
 ---
 
