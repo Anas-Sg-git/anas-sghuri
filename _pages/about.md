@@ -332,69 +332,62 @@ n'est donc pas liée à une évolution de la densité globale du
 système, mais à un phénomène qui n'existait pas dans les 
 échantillons monocouches : **l'interface Ag/Cu**.
 
-### 5.2. Estimation sans effet d'interface
+### 5.2. Mise en évidence de l'effet d'interface
 
-Un modèle de mélange (loi des mélanges en épaisseur) utilisant les propriétés de l'Ag fritté seul vieilli et du Cu permet d'estimer ce que devrait être la conductivité des bicouches **en l'absence d'effet d'interface** :
+Pour isoler le rôle de l'interface, la conductivité thermique des 
+bicouches a été estimée à partir des propriétés de l'Ag fritté seul 
+et du Cu, en utilisant une loi des mélanges en épaisseur — autrement 
+dit, en supposant que l'interface n'a pas d'effet propre.
 
-> **λ_Ag/Cu estimé = f_Ag · λ_Ag + f_Cu · λ_Cu + f_int · λ_int**
+Jusqu'à 50 h de vieillissement, les estimations et les mesures 
+concordent, avec des erreurs relatives inférieures à 6 %. Mais 
+**au-delà de 200 h**, un écart croissant apparaît entre le modèle 
+et l'expérience : jusqu'à **~36 %** à faible pression et **~18 %** 
+à 10 MPa après 500 h. Ces écarts, bien supérieurs à l'incertitude 
+de mesure, confirment qu'un **phénomène lié à l'interface** 
+contribue à la dégradation de la conductivité thermique.
 
-**Résultat :**
+Pour comprendre ce phénomène, la microstructure de l'interface a 
+été analysée par MEB sur des échantillons frittés à 10 MPa, 
+découpés et vieillis à 0, 50, 200 et 500 h. L'observation révèle 
+une alternance de **zones denses (LPA, ~55 %)** et **poreuses (HPA)**, 
+ainsi qu'une **zone d'interface** dont la porosité évolue au cours 
+du vieillissement. L'épaisseur de cette zone a été quantifiée par 
+segmentation des images MEB binarisées, ligne par ligne.
 
-- **Adéquation** entre estimations et mesures jusqu'à **~200 h** de vieillissement @ 350 °C.
-- **Divergence croissante** au-delà (jusqu'à **~36 %** à faible pression, **~17,9 %** à 10 MPa à 500 h).
-- Cette divergence, supérieure à la marge d'erreur de mesure (~6 %), confirme un **effet d'interface réel**.
+Le suivi du taux de porosité en surface (TPS) montre deux 
+dynamiques distinctes. À l'interface, le TPS chute de ~39 % 
+à ~7 % après 50 h, traduisant une densification locale, puis 
+se stabilise autour de ~20 %. En zone Ag, le TPS augmente 
+progressivement de ~11 % à ~46 % après 500 h. Ces évolutions 
+opposées expliquent pourquoi la densité globale reste constante 
+alors que les propriétés locales se dégradent.
 
-### 5.3. Évolution microstructurale de l'interface
+### 5.3. Quantification : quelle part de l'Ag est affectée ?
 
-L'analyse MEB de la tranche des bicouches vieillis révèle :
+Pour traduire ces observations microstructurales en propriétés 
+thermiques, une chaîne d'estimation a été construite à partir 
+des corrélations établies sur l'Ag fritté seul : le TPS est 
+d'abord converti en densité locale, puis la densité en 
+conductivité thermique. Ce pipeline permet d'estimer séparément 
+la conductivité de la zone Ag et celle de la zone d'interface 
+à chaque étape de vieillissement.
 
-- **Deux zones** à porosité distincte : une **zone dense (LPA, ~55 %)** et une **zone poreuse (HPA)**, probablement liée au dégazage du dispersant/liant lors du frittage.
-- L'évolution de la **porosité apparente** en fonction du temps de vieillissement est qualitativement visible sur les images MEB.
+Un modèle en couches — **Cu / interface / zone Ag affectée / 
+Ag sain** — a ensuite été utilisé pour estimer l'épaisseur de 
+la zone d'Ag effectivement dégradée. Le résultat est net : 
+jusqu'à 200 h, la totalité de la couche d'Ag conserve des 
+propriétés proches de celles de l'Ag fritté seul. À 500 h, 
+**environ 50 % de l'épaisseur de la couche d'Ag** présente des 
+propriétés dégradées, avec une conductivité de la zone Ag 
+passant de 271 à 71 W·m⁻¹·K⁻¹ entre 200 et 500 h.
 
-L'épaisseur de la zone d'interface a été quantifiée par une **méthode originale de segmentation pixel par pixel** : binarisation des images MEB, calcul d'un profil cumulatif de porosité selon l'épaisseur, puis identification des limites inférieure (contact Ag/Cu) et supérieure (transition vers le comportement de l'Ag sain).
-
-**Évolution du taux de porosité en surface (TPS) :**
-
-| Temps (h) | TPS zone Ag (%) | TPS interface (%) |
-|:---|:---|:---|
-| 0 | ~11 | ~39 |
-| 50 | ~12 | ~7 |
-| 200 | ~15 | ~20 |
-| 500 | ~46 | ~20 |
-
-À l'interface : réduction significative du TPS après 50 h, puis stabilisation. En zone Ag : hausse marquée du TPS à long terme.
-
-### 5.4. Estimation des propriétés locales
-
-La chaîne d'estimation **TPS → densité → conductivité** repose sur deux corrélations établies sur l'Ag fritté seul :
-
-> **ρ = 16·10⁻⁶·TPS² − 0,24·TPS + 10,5** &nbsp;&nbsp;(R² = 0,95)
->
-> **λ = 2,3·ρ² + 8,9·ρ + 25,9** &nbsp;&nbsp;(R² = 0,97)
-
-**Propriétés locales estimées (10 MPa, vieilli @ 350 °C) :**
-
-| Temps (h) | λ zone Ag (W·m⁻¹·K⁻¹) | λ interface (W·m⁻¹·K⁻¹) |
-|:---|:---|:---|
-| 0 | 140 | 76 |
-| 50 | 219 | 281 |
-| 200 | 271 | 173 |
-| 500 | 71 | 178 |
-
-### 5.5. Quantification de la zone Ag affectée
-
-Un modèle en couches (**Cu + interface + zone Ag affectée + Ag sain**) permet d'estimer l'épaisseur de la zone Ag dégradée.
-
-| Temps (h) | λ_Ag exp | f_Zone Ag | f_Ag sain | l_Zone Ag (mm) | l_Ag sain (mm) | % Ag affecté |
-|:---|:---|:---|:---|:---|:---|:---|
-| 0 | 301 | 0 | 0,547 | 0,0 | 0,121 | 0 |
-| 50 | 319 | 0 | 0,547 | 0,0 | 0,121 | 0 |
-| 200 | 308 | 0 | 0,547 | 0,0 | 0,121 | 0 |
-| **500** | **269** | **0,267** | **0,280** | **0,059** | **0,062** | **48,8** |
-
-> **À 500 h @ 350 °C, environ 50 % de la couche d'Ag est affectée par le vieillissement.**
-
-Le modèle prédit correctement λ jusqu'à ~200 h. Au-delà, la divergence croissante suggère des phénomènes non capturés : redistribution de porosité en 3D, défauts aux joints de grains, évolution de l'adhésion Ag/Cu.
+Ce modèle reproduit correctement les mesures jusqu'à ~200 h. 
+Au-delà, une divergence subsiste, suggérant des phénomènes 
+non capturés par une description en couches 2D : redistribution 
+de porosité en 3D, défauts aux joints de grains, évolution de 
+l'adhésion Ag/Cu. Ces limites ouvrent directement sur les 
+perspectives de la thèse.
 
 ---
 
