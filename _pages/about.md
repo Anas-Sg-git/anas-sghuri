@@ -418,8 +418,8 @@ des échantillons à l'identification des mécanismes de dégradation
 ## 7. Publications & communications
 
 - **Acta Materialia · 2023** — **A. Sghuri**, Y. Billaud, L. Signor, D. Saury, X. Milhet — [*Experimental investigation of thermal conductivity during aging of nanoporous sintered silver*](https://doi.org/10.1016/j.actamat.2023.119109)
-- **IMAPS · 2023** — **A. Sghuri**, Y. Billaud, L. Signor, D. Saury, X. Milhet — *Evolution of the thermal conductivity of sintered Ag paste as a function of the density and aging* — 16th European Advanced Technology Workshop on Micropackaging and Thermal management, Poitiers.
-- **SFT · 2021** — **A. Sghuri**, Y. Billaud, X. Milhet — Calibration de la méthode Flash 3D pour matériaux hautement conducteurs.
+
+[Voir la partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
 
 ---
 
@@ -438,10 +438,11 @@ Les résultats ouvrent plusieurs directions à fort intérêt scientifique et in
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.5em;">
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Mesure thermique Flash 3D</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Méthode inverse (ENH)</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Méthode inverse</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Microscopie MEB / MEB-FEG</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Analyse d'images (ImageJ, Matlab)</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">mDSC / DSC / ATG</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Protocole d'élaboration</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Frittage Ag sous pression</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Vieillissement thermique accéléré</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Métrologie dimensionnelle</span>
