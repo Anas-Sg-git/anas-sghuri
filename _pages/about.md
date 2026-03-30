@@ -302,13 +302,35 @@ indiquée en pointillés.*
 ## 5. Résultats : bicouches Ag/Cu
 
 ### 5.1. L'interface change tout à long terme
+La figure ci-dessous compare l'évolution de la conductivité 
+thermique des bicouches Ag/Cu à celle de l'Ag fritté seul 
+(représentée en pointillés), pour les quatre pressions de frittage, 
+au cours du vieillissement à 350 °C.
 
-Les bicouches Ag/Cu présentent d'abord le même comportement que l'Ag seul : une hausse de λ dans les 50 premières heures. Puis, **au-delà de 200 h**, une **dégradation progressive et significative** apparaît (absente dans les échantillons monocouches).
+<img src="{{ '/images/agcu-vieillissement.png' | relative_url }}" 
+     alt="Évolution de la conductivité des bicouches Ag/Cu" 
+     style="display: block; width: 100%; max-width: 700px; height: auto; margin: 0 auto;">
 
-La densité globale des bicouches reste stable (confirmé jusqu'à 500 h @ 350 °C, pour toutes les pressions).
+*Conductivité thermique des bicouches Ag/Cu au cours du 
+vieillissement à 350 °C (0, 50, 200 et 500 h), pour les quatre 
+pressions de frittage. La tendance en pointillés correspond au 
+comportement attendu d'après les résultats de l'Ag fritté seul.*
 
-<img src="{{ '/images/agcu-vieillissement.png' | relative_url }}" alt="Barplot λ Ag/Cu" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
-*Évolution de la conductivité effective des bicouches Ag/Cu au cours du vieillissement @ 350 °C. La tendance en pointillés représente l'Ag fritté seul (pas de dégradation).*
+Dans les 50 premières heures, les bicouches suivent la même 
+tendance que l'Ag seul : une augmentation de la conductivité 
+thermique. Mais **au-delà de 200 h**, un comportement différent 
+apparaît : la conductivité diminue progressivement, alors qu'elle 
+reste stable pour l'Ag seul. Cette dégradation est d'autant plus 
+marquée que la pression de frittage est faible.
+
+#### La densité globale ne change pas
+
+Comme pour l'Ag seul, la densité des échantillons bicouches 
+reste stable tout au long du vieillissement, jusqu'à 500 h à 
+350 °C et pour toutes les pressions. La dégradation observée 
+n'est donc pas liée à une évolution de la densité globale du 
+système, mais à un phénomène qui n'existait pas dans les 
+échantillons monocouches : **l'interface Ag/Cu**.
 
 ### 5.2. Estimation sans effet d'interface
 
