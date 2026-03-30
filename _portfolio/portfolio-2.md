@@ -4,15 +4,14 @@ excerpt: "Développement d'une méthode de segmentation d'images de microscopie 
 collection: portfolio
 ---
 
-# Quantification de l'épaisseur d'interface par traitement d'images MEB
 
 Développement d'une méthode de segmentation d'images de microscopie 
 pour quantifier l'évolution locale de la porosité et estimer 
 l'épaisseur d'une zone d'interface dans un matériau bicouche.
 
-**Contexte :** travaux de thèse · Institut Pprime · Université de Poitiers
-**Outils :** MATLAB, ImageJ, MEB / MEB-FEG
-**Domaine :** analyse d'images, microstructure, quantification
+- **Contexte :** travaux de thèse · Institut Pprime · Université de Poitiers
+- **Outils :** MATLAB, ImageJ, MEB / MEB-FEG
+- **Domaine :** analyse d'images, microstructure, quantification
 
 ---
 
