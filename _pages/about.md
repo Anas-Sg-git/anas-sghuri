@@ -281,8 +281,13 @@ vieillissement révèle une dynamique en deux temps :
 
 <img src="{{ '/images/ag-cinetique.png' | relative_url }}" alt="saut initial rapide" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 
+*Cinétique à temps court : la conductivité thermique atteint son 
+maximum en ≈ 45 min (Ag fritté @ 10 MPa, vieilli à 150 °C, 
+mesures par intervalles de 15 min). La transition ES1 → ES2 est 
+indiquée en pointillés.*
+
 <img src="{{ '/images/ag-vieillissement.png' | relative_url }}" alt="Barplot λ vs temps de vieillissement" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
-*Évolution de λ pour 0–10 MPa, 150–350 °C, jusqu'à 500 h.*
+
 
 **Trois observations majeures :**
 
