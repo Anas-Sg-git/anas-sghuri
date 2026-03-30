@@ -417,7 +417,10 @@ des échantillons à l'identification des mécanismes de dégradation
 
 ## 7. Publications & communications
 
-- **Acta Materialia · 2023** — **A. Sghuri**, Y. Billaud, L. Signor, D. Saury, X. Milhet — [*Experimental investigation of thermal conductivity during aging of nanoporous sintered silver*](https://doi.org/10.1016/j.actamat.2023.119109)
+**Experimental investigation of thermal conductivity during aging of nanoporous sintered silver**  
+A. Sghuri, Y. Billaud, L. Signor, D. Saury, X. Milhet  
+*[Acta Materialia](https://www.sciencedirect.com/journal/acta-materialia)*, 2023 — Impact Factor : 9.3 — [28](https://scholar.google.com/citations?user=qvDI3ZYAAAAJ&hl=fr) citations à ce jour 
+ DOI : [10.1016/j.actamat.2023.119109](https://doi.org/10.1016/j.actamat.2023.119109)
 
 [Voir la partie publication](https://anas-sg-git.github.io/anas-sghuri/publications/)
 
