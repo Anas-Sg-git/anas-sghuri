@@ -50,7 +50,7 @@ lors du frittage.
 <!-- IMAGE SLIDE 2 : vue d'ensemble LPA/HPA -->
 <img src="{{ '/images/portfolio-interface-zones-lpa-hpa.png' | relative_url }}" 
      alt="Zones LPA et HPA dans un échantillon Ag/Cu" 
-     style="display: block; width: 100%; max-width: 700px; height: auto; margin: 0 auto;">
+     style="display: block; width: 60%; max-width: 700px; height: auto; margin: 0 auto;">
 
 *Section transversale d'un échantillon Ag/Cu fritté à 10 MPa. 
 On distingue une zone dense (LPA) et une zone poreuse (HPA) 
@@ -120,8 +120,8 @@ de l'image cumulative en identifiant deux limites :
   rencontre le Cu dense.
 - La **limite supérieure** est estimée à partir de la 
   valeur moyenne de la distribution de porosité : elle 
-  marque la transition entre la zone d'interface (où la 
-  porosité s'écarte du comportement moyen de l'Ag) et 
+  marque la transition entre la zone d'interface **(où la 
+  porosité s'écarte du comportement moyen de l'Ag)** et 
   la zone d'Ag à porosité homogène.
 
 La distance en pixels entre ces deux limites, convertie 
@@ -136,7 +136,7 @@ donne l'épaisseur de la zone d'interface.
 *Pipeline complet : image MEB brute (gauche), image binarisée 
 (centre), image cumulative avec profil de porosité et 
 épaisseur d'interface identifiée (droite). La zone entre 
-les deux lignes rouges correspond à l'interface Ag/Cu.*
+la ligne rouge et jaune correspond à l'interface Ag/Cu.*
 
 ## Implémentation
 
