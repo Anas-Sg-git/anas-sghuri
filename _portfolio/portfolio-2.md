@@ -1,9 +1,6 @@
 ---
 title: "Quantification de l'épaisseur d'interface par traitement d'images MEB"
-excerpt: "Développement d'une méthode de segmentation d'images de microscopie pour quantifier l'évolution locale de la porosité et estimer l'épaisseur d'une zone d'interface dans un matériau bicouche. 
-<img src="{{ '/images/portfolio-interface-hero.png' | relative_url }}" 
-     alt="Pipeline de segmentation : image MEB brute, binarisée et cumulative" 
-     style="display: block; width: 100%; max-width: 800px; height: auto; margin: 1.5em auto;">"
+excerpt: "Développement d'une méthode de segmentation d'images de microscopie pour quantifier l'évolution locale de la porosité et estimer l'épaisseur d'une zone d'interface dans un matériau bicouche. "
 collection: portfolio
 ---
 
@@ -11,6 +8,10 @@ collection: portfolio
 Développement d'une méthode de segmentation d'images de microscopie 
 pour quantifier l'évolution locale de la porosité et estimer 
 l'épaisseur d'une zone d'interface dans un matériau bicouche.
+
+<img src="{{ '/images/portfolio-interface-hero.png' | relative_url }}" 
+     alt="Pipeline de segmentation : image MEB brute, binarisée et cumulative" 
+     style="display: block; width: 100%; max-width: 800px; height: auto; margin: 1.5em auto;">
 
 - **Contexte :** travaux de thèse · Institut Pprime · Université de Poitiers
 - **Outils :** MATLAB, ImageJ, MEB / MEB-FEG
