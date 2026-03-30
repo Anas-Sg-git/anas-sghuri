@@ -375,8 +375,7 @@ la conductivité de la zone Ag et celle de la zone d'interface
 
 Un modèle en couches — **Cu / interface / zone Ag affectée / 
 Ag sain** — a ensuite été utilisé pour estimer l'épaisseur de 
-la zone d'Ag effectivement dégradée. Le résultat est net : 
-jusqu'à 200 h, la totalité de la couche d'Ag conserve des 
+la zone d'Ag effectivement dégradée. Jusqu'à 200 h, la totalité de la couche d'Ag conserve des 
 propriétés proches de celles de l'Ag fritté seul. À 500 h, 
 **environ 50 % de l'épaisseur de la couche d'Ag** présente des 
 propriétés dégradées, avec une conductivité de la zone Ag 
@@ -393,17 +392,26 @@ perspectives de la thèse.
 
 ## 6. Synthèse des contributions
 
-Cette thèse apporte plusieurs résultats structurants, de la méthode de mesure à la compréhension des mécanismes :
+Cette thèse couvre l'ensemble de la chaîne — de l'élaboration 
+des échantillons à l'identification des mécanismes de dégradation 
+— et apporte des contributions à chaque étape.
 
-| Contribution | Résultat clé |
-|:---|:---|
-| **Méthode Flash 3D calibrée** | Critères d'acquisition explicites (≥1200 trames, S/B ≥5), erreur <6 %, répétabilité validée |
-| **Loi porosité ↔ λ** | Variation ×4 sur 25–75 % de porosité (222 → 66 W·m⁻¹·K⁻¹), R² = 0,97 |
-| **Cinétique de vieillissement** | Maximum atteint en ~45 min ; densité et taille de grains stables |
-| **Mécanisme identifié** | Relaxation de contraintes résiduelles de compression |
-| **Interface Ag/Cu** | Effet critique à temps long : divergence à 200–500 h, ~50 % d'Ag affecté |
-| **Modèles empiriques** | c(ρ) R²=0,99, λ(ρ) R²=0,97, TPS→ρ→λ R²=0,95 |
-| **Capacité thermique mesurée** | Infirmation de l'hypothèse c = c_Ag massif couramment utilisée |
+**Méthodologie**
+- Adaptation et calibration de la méthode Flash 3D pour des matériaux hautement diffusifs, avec des critères d'acquisition explicites et une répétabilité validée sur trois matériaux de référence.
+- Mise au point d'un procédé d'élaboration multicouche pour produire des échantillons d'Ag fritté seul et des bicouches Ag/Cu à densité variable.
+
+**Relations structure–propriété**
+- Loi reliant porosité et conductivité thermique établie sur toute la gamme étudiée, mettant en évidence une variation d'un facteur 4.
+- Capacité thermique de l'Ag fritté mesurée par mDSC, révélant un écart significatif avec la valeur de l'Ag massif couramment utilisée dans la littérature.
+- Corrélations empiriques construites pour relier densité, porosité et conductivité, permettant l'estimation des propriétés dans des configurations multicouches.
+
+**Vieillissement thermique**
+- Première mise en évidence, pour ce matériau, d'une cinétique en deux temps : saut initial de conductivité en quelques dizaines de minutes, suivi d'une stabilisation.
+- Densité et taille des grains restant stables, le saut a été attribué à la relaxation de contraintes résiduelles de compression issues du frittage sous pression.
+
+**Fiabilité des assemblages**
+- Effet d'interface critique identifié à temps long dans les bicouches Ag/Cu, absent des échantillons monocouches.
+- Quantification microstructurale montrant qu'à 500 h environ 50 % de la couche d'Ag est affectée, soulignant l'importance de l'interface dans la conception et la qualification des assemblages de puissance.
 
 ---
 
