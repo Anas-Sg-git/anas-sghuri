@@ -11,7 +11,7 @@ toc_sticky: true
 
 # Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre
 
-*Thèse de doctorat · Université de Poitiers · ENSMA · Institut P' (Pprime, UPR CNRS 3346)*
+*Université de Poitiers · ENSMA · Institut P' (Pprime, UPR CNRS 3346)*
 
 > Sujet de thèse centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance. Travaux menés à l'interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
 
