@@ -69,3 +69,5 @@ ATER à l'ISAE-ENSMA (2022) : plus de 190 heures d'enseignement en école d'ing�
 Je suis ouvert à des opportunités en **R&D**, **caractérisation**, **essais** ou **qualité**, dans tout secteur où la compréhension des matériaux et la rigueur expérimentale sont valorisées.
  
 N'hésitez pas à me contacter : [anas.sghuri@gmail.com](mailto:anas.sghuri@gmail.com)
+
+---
