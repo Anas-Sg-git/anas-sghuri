@@ -6,26 +6,6 @@ author_profile: true
 ---
 
 {% include base_path %}
-
-# Formation
-
-* **Doctorat en Milieux Denses et Matériaux**, Université de Poitiers, Institut Pprime, 2019 – 2024
-  * *« Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre »*
-  * [Lien vers le manuscrit](https://hal.science/tel-05045482)
-* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018
-  * *« Étude de la qualité des états de surfaces de l'aluminium aéronautique usinées par CNC »*
-* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017
-  * *« Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron »*
-
-
-Ingénieur en génie des matériaux et procédés,
-Université Cadi Ayyad Marrakech, faculté des sciences et technique 
-Intitulé du mémoire : ‘’Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron‘’
-
-
-
----
-
 # Expériences professionnelles
 
 * **Doctorant** — Université de Poitiers, Institut Pprime *(oct. 2019 – mars 2024)*
@@ -66,6 +46,18 @@ Intitulé du mémoire : ‘’Élaboration, caractérisation et simulation de re
 ## Qualité & métrologie
 * Procédures opératoires standard, traçabilité, calibration, maintenance de premier niveau
 * Sécurité laser et chimie, HSE
+
+---
+
+# Formation
+
+* **Doctorat en Milieux Denses et Matériaux**, Université de Poitiers, Institut Pprime, 2019 – 2024
+  * *« Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre »*
+  * [Lien vers le manuscrit](https://hal.science/tel-05045482)
+* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018
+  * *« Étude de la qualité des états de surfaces de l'aluminium aéronautique usinées par CNC »*
+* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017
+  * *« Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron »*
 
 ---
 
