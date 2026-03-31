@@ -13,11 +13,11 @@ author_profile: true
   * *« Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre »*
   * [Lien vers le manuscrit](https://hal.science/tel-05045482)
 
-* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018
-  École National Supérieur des Arts et Métiers, mention bien
-  Intitulé du mémoire : « Étude de la qualité des états de surfaces de l’aluminium aéronautique usinées par cnc »
-
-* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017
+* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018<br>
+  École Nationale Supérieure des Arts et Métiers, mention bien<br>
+  Intitulé du mémoire : « Étude de la qualité des états de surfaces de l'aluminium aéronautique usinées par CNC »
+ 
+* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017<br>
   Intitulé du mémoire : « Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron »
 
 
