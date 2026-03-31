@@ -6,7 +6,6 @@ author_profile: true
 
 ## À propos
 
-À propos
 Docteur-ingénieur en sciences des matériaux, j'ai développé au cours de ma thèse un ensemble de compétences en caractérisation expérimentale, analyse de données et méthodologie de mesure, appliquées à des problématiques de fiabilité dans un contexte industriel exigeant.
 Mon travail doctoral m'a conduit à concevoir des protocoles d'essais, exploiter des techniques de caractérisation avancées (MEB, MEB-FEG, DSC, ATG, méthode Flash 3D, micro-traction), traiter et interpréter des données complexes (MATLAB, Python, ImageJ), et établir des lois de comportement reliant microstructure et propriétés fonctionnelles.
 Ces compétences sont directement transposables à tout environnement R&D ou industriel où la compréhension des matériaux, la rigueur expérimentale et la résolution de problèmes sont au cœur de l'activité, que ce soit en caractérisation, en essais, en qualité ou en recherche appliquée.
