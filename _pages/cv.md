@@ -82,8 +82,8 @@ Intitulé du mémoire : ‘’Élaboration, caractérisation et simulation de re
 
 # Informatique
 
-* **Programmation & traitement de données :** Matlab, Python
-* **Imagerie & analyse :** Fiji / ImageJ
+* **Programmation & traitement de données :** Matlab (résolution de problèmes inverses, modélisation thermique 3D, traitement d'images MEB, ajustement de lois empiriques), Python (traitement de données, automatisation, visualisation)
+* **Imagerie & analyse :** Fiji / ImageJ (binarisation, seuillage, quantification de porosité et taille de grains)
 * **Bureautique :** Microsoft Office, Adobe
 * **Autres :** impression 3D (modélisation, prototypage), développement d'applications mobiles (jeux & éducation)
 
