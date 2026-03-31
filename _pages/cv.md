@@ -12,13 +12,10 @@ author_profile: true
 * **Doctorat en Milieux Denses et Matériaux**, Université de Poitiers, Institut Pprime, 2019 – 2024
   * *« Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre »*
   * [Lien vers le manuscrit](https://hal.science/tel-05045482)
-
-* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018<br>
-  École Nationale Supérieure des Arts et Métiers, mention bien<br>
-  Intitulé du mémoire : « Étude de la qualité des états de surfaces de l'aluminium aéronautique usinées par CNC »
- 
-* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017<br>
-  Intitulé du mémoire : « Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron »
+* **Master 2 Recherche en Ingénierie des Matériaux et Surfaces**, ENSAM Cluny, 2017 – 2018
+  * *« Étude de la qualité des états de surfaces de l'aluminium aéronautique usinées par CNC »*
+* **Ingénieur en Génie des Matériaux et Procédés**, Université Cadi Ayyad, Marrakech, 2014 – 2017
+  * *« Élaboration, caractérisation et simulation de revêtements en titane pur déposés par pulvérisation magnétron »*
 
 
 Ingénieur en génie des matériaux et procédés,
