@@ -1,1067 +1,239 @@
 ---
-   layout: null
+permalink: /
+title: "Anas SGHURI — Docteur en Sciences des Matériaux"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
 ---
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anas SGHURI — Docteur en Sciences des Matériaux</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg-primary: #0a0f1a;
-    --bg-secondary: #111827;
-    --bg-card: #1a2236;
-    --bg-card-hover: #1f2a42;
-    --accent: #4f8fff;
-    --accent-soft: rgba(79, 143, 255, 0.12);
-    --accent-glow: rgba(79, 143, 255, 0.25);
-    --gold: #d4a853;
-    --gold-soft: rgba(212, 168, 83, 0.12);
-    --text-primary: #e8ecf4;
-    --text-secondary: #8b97b0;
-    --text-muted: #5a6580;
-    --border: rgba(255, 255, 255, 0.06);
-    --border-accent: rgba(79, 143, 255, 0.2);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Source Sans 3', sans-serif;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    line-height: 1.7;
-    overflow-x: hidden;
-  }
-
-  /* ── Grain Overlay ── */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 9999;
-  }
-
-  /* ── Navigation ── */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(20px);
-    background: rgba(10, 15, 26, 0.8);
-    border-bottom: 1px solid var(--border);
-    transition: all 0.3s ease;
-  }
-
-  nav .logo {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.2rem;
-    color: var(--text-primary);
-    text-decoration: none;
-    letter-spacing: 0.02em;
-  }
-
-  nav .logo span { color: var(--accent); }
-
-  nav .nav-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-  }
-
-  nav .nav-links a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: color 0.3s;
-    position: relative;
-  }
-
-  nav .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 1.5px;
-    background: var(--accent);
-    transition: width 0.3s ease;
-  }
-
-  nav .nav-links a:hover { color: var(--text-primary); }
-  nav .nav-links a:hover::after { width: 100%; }
-
-  /* ── Hero ── */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 6rem 2rem 4rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-bg-orb {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.4;
-    pointer-events: none;
-  }
-
-  .hero-bg-orb.orb1 {
-    width: 600px; height: 600px;
-    background: radial-gradient(circle, rgba(79,143,255,0.15), transparent 70%);
-    top: -100px; right: -100px;
-    animation: float 20s ease-in-out infinite;
-  }
-
-  .hero-bg-orb.orb2 {
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(212,168,83,0.1), transparent 70%);
-    bottom: -50px; left: -100px;
-    animation: float 25s ease-in-out infinite reverse;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -30px) scale(1.05); }
-    66% { transform: translate(-20px, 20px) scale(0.95); }
-  }
-
-  .hero-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  .hero-text { animation: fadeUp 1s ease-out; }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 1rem;
-    background: var(--accent-soft);
-    border: 1px solid var(--border-accent);
-    border-radius: 100px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--accent);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-tag .dot {
-    width: 6px; height: 6px;
-    background: var(--accent);
-    border-radius: 50%;
-    animation: pulse 2s ease-in-out infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
-
-  .hero h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 400;
-    line-height: 1.15;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-  }
-
-  .hero h1 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero-description {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    max-width: 520px;
-  }
-
-  .hero-links {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-
-  .hero-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .hero-links a.primary {
-    background: var(--accent);
-    color: #fff;
-  }
-
-  .hero-links a.primary:hover {
-    background: #3a7aee;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(79, 143, 255, 0.3);
-  }
-
-  .hero-links a.outline {
-    border: 1px solid var(--border);
-    color: var(--text-secondary);
-    background: transparent;
-  }
-
-  .hero-links a.outline:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-soft);
-  }
-
-  .hero-links a svg { width: 16px; height: 16px; }
-
-  /* ── Hero Card (Right) ── */
-  .hero-card-wrapper {
-    display: flex;
-    justify-content: center;
-    animation: fadeUp 1s ease-out 0.3s both;
-  }
-
-  .hero-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 2.5rem;
-    width: 100%;
-    max-width: 400px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent), var(--gold), var(--accent));
-  }
-
-  .hero-card-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--gold));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.2rem;
-    color: #fff;
-    margin: 0 auto 1rem;
-    box-shadow: 0 0 0 4px var(--bg-card), 0 0 0 6px var(--accent);
-  }
-
-  .hero-card h3 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 0.25rem;
-  }
-
-  .hero-card .subtitle {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    font-weight: 500;
-  }
-
-  .info-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .info-list li {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 0.88rem;
-    color: var(--text-secondary);
-  }
-
-  .info-list li svg {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-    color: var(--accent);
-  }
-
-  .info-list li a {
-    color: var(--text-secondary);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .info-list li a:hover { color: var(--accent); }
-
-  .social-row {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
-    justify-content: center;
-  }
-
-  .social-row a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    color: var(--text-muted);
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  .social-row a:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-soft);
-    transform: translateY(-2px);
-  }
-
-  .social-row a svg { width: 16px; height: 16px; }
-
-  /* ── Section Base ── */
-  section {
-    padding: 5rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: var(--accent);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-
-  .section-label::before {
-    content: '';
-    width: 24px;
-    height: 1.5px;
-    background: var(--accent);
-  }
-
-  .section-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    font-weight: 400;
-    line-height: 1.25;
-    margin-bottom: 1rem;
-  }
-
-  .section-description {
-    font-size: 1.05rem;
-    color: var(--text-secondary);
-    max-width: 700px;
-    margin-bottom: 3rem;
-    line-height: 1.8;
-  }
-
-  /* ── Thesis highlight ── */
-  .thesis-block {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 2.5rem;
-    margin-bottom: 3rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .thesis-block::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, var(--accent-soft), transparent 70%);
-    pointer-events: none;
-  }
-
-  .thesis-block h3 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-    position: relative;
-  }
-
-  .thesis-block .thesis-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .thesis-block .thesis-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-
-  .thesis-block .thesis-meta span strong {
-    color: var(--text-secondary);
-    font-weight: 500;
-  }
-
-  .thesis-block p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.8;
-    position: relative;
-  }
-
-  /* ── Contributions Grid ── */
-  .contrib-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-  }
-
-  .contrib-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.75rem;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contrib-card:hover {
-    border-color: var(--border-accent);
-    background: var(--bg-card-hover);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-  }
-
-  .contrib-card .card-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-  }
-
-  .contrib-card .card-icon.blue { background: var(--accent-soft); }
-  .contrib-card .card-icon.gold { background: var(--gold-soft); }
-  .contrib-card .card-icon.green { background: rgba(52, 211, 153, 0.12); }
-  .contrib-card .card-icon.rose { background: rgba(244, 114, 182, 0.12); }
-  .contrib-card .card-icon.violet { background: rgba(167, 139, 250, 0.12); }
-
-  .contrib-card h4 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-  }
-
-  .contrib-card p {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-  }
-
-  /* ── Publications ── */
-  .pub-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .pub-item {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    transition: all 0.3s ease;
-    align-items: flex-start;
-  }
-
-  .pub-item:hover {
-    border-color: var(--border-accent);
-    transform: translateX(4px);
-  }
-
-  .pub-type {
-    flex-shrink: 0;
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
-
-  .pub-type.journal { background: var(--accent-soft); color: var(--accent); }
-  .pub-type.thesis { background: var(--gold-soft); color: var(--gold); }
-  .pub-type.conf { background: rgba(52, 211, 153, 0.12); color: #34d399; }
-
-  .pub-content h4 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    line-height: 1.4;
-  }
-
-  .pub-content .pub-venue {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    font-style: italic;
-  }
-
-  .pub-content .pub-date {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    margin-top: 0.25rem;
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  /* ── Skills ── */
-  .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-
-  .skill-tag {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-size: 0.82rem;
-    font-weight: 500;
-    border: 1px solid var(--border);
-    background: var(--bg-card);
-    color: var(--text-secondary);
-    transition: all 0.3s;
-  }
-
-  .skill-tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-soft);
-    transform: translateY(-2px);
-  }
-
-  .skill-tag.highlight {
-    border-color: var(--border-accent);
-    background: var(--accent-soft);
-    color: var(--accent);
-  }
-
-  /* ── Teaching ── */
-  .teaching-block {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 2.5rem;
-  }
-
-  .teaching-block h3 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .teaching-block .teaching-sub {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-    margin-bottom: 1.5rem;
-  }
-
-  .teaching-stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .stat-box {
-    text-align: center;
-    padding: 1rem;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.02);
-    border: 1px solid var(--border);
-  }
-
-  .stat-box .stat-num {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.8rem;
-    color: var(--accent);
-  }
-
-  .stat-box .stat-label {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    margin-top: 0.25rem;
-  }
-
-  .teaching-subjects {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .teaching-subjects li {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-    padding: 0.5rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .teaching-subjects li:last-child { border-bottom: none; }
-
-  .teaching-subjects li .badge {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 4px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    flex-shrink: 0;
-  }
-
-  /* ── Footer ── */
-  footer {
-    padding: 3rem 2rem;
-    text-align: center;
-    border-top: 1px solid var(--border);
-    margin-top: 2rem;
-  }
-
-  footer p {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-  }
-
-  footer a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-
-  /* ── Separator ── */
-  .sep {
-    width: 60px;
-    height: 1.5px;
-    background: linear-gradient(90deg, var(--accent), transparent);
-    margin: 5rem auto;
-  }
-
-  /* ── Responsive ── */
-  @media (max-width: 768px) {
-    .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
-    .hero-card-wrapper { order: -1; }
-    nav .nav-links { gap: 1rem; }
-    nav .nav-links a { font-size: 0.75rem; }
-    .contrib-grid { grid-template-columns: 1fr; }
-    .pub-item { flex-direction: column; gap: 0.75rem; }
-  }
-
-  /* ── Scroll animations ── */
-  .reveal {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
-</head>
-<body>
-
-<!-- ═══ Navigation ═══ -->
-<nav>
-  <a href="#" class="logo">A<span>.</span> Sghuri</a>
-  <ul class="nav-links">
-    <li><a href="#about">À propos</a></li>
-    <li><a href="#research">Recherche</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#teaching">Enseignement</a></li>
-  </ul>
-</nav>
-
-<!-- ═══ Hero ═══ -->
-<section class="hero" id="about">
-  <div class="hero-bg-orb orb1"></div>
-  <div class="hero-bg-orb orb2"></div>
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-tag">
-        <span class="dot"></span>
-        Docteur en Sciences des Matériaux
-      </div>
-      <h1>Anas <em>Sghuri</em></h1>
-      <p class="hero-description">
-        Chercheur spécialisé en caractérisation thermique et fiabilité des matériaux d'assemblage pour l'électronique de puissance. Thèse soutenue à l'Université de Poitiers (ISAE-ENSMA, Institut Pprime) sur la conductivité thermique de l'argent fritté poreux.
-      </p>
-      <div class="hero-links">
-        <a href="mailto:anas.sghuri@gmail.com" class="primary">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Me contacter
-        </a>
-        <a href="https://scholar.google.com/citations?user=qvDI3ZYAAAAJ&hl=fr" class="outline" target="_blank">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          Google Scholar
-        </a>
-        <a href="https://hal.science/tel-05045482" class="outline" target="_blank">
-          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Thèse
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-card-wrapper">
-      <div class="hero-card">
-        <div class="hero-card-header">
-          <div class="avatar">AS</div>
-          <h3>Anas Sghuri</h3>
-          <p class="subtitle">Docteur · ATER · Chercheur</p>
-        </div>
-        <ul class="info-list">
-          <li>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Poitiers, France
-          </li>
-          <li>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
-            Univ. de Poitiers · ISAE-ENSMA
-          </li>
-          <li>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            Institut Pprime (UPR CNRS 3346)
-          </li>
-          <li>
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-            Soutenance : 11 mars 2024
-          </li>
-        </ul>
-        <div class="social-row">
-          <a href="mailto:anas.sghuri@gmail.com" title="Email">
-            <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-          <a href="https://scholar.google.com/citations?user=qvDI3ZYAAAAJ&hl=fr" target="_blank" title="Google Scholar">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-3a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM1.5 4.5l10.5 9 10.5-9"/></svg>
-          </a>
-          <a href="https://orcid.org/0009-0001-5294-6215" target="_blank" title="ORCID">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378a.87.87 0 1 1 0 1.74.87.87 0 0 1 0-1.74zm-.78 3.451h1.56v11.05H6.59V7.83zm3.77 0h4.22c3.74 0 5.43 2.66 5.43 5.52 0 3.07-2.16 5.53-5.53 5.53h-4.12V7.83zm1.56 1.39v8.27h2.5c2.9 0 4.03-2.2 4.03-4.14 0-2.19-1.3-4.13-3.87-4.13h-2.66z"/></svg>
-          </a>
-          <a href="https://www.scopus.com/authid/detail.uri?authorId=58509006000" target="_blank" title="Scopus">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-6h2v6zm0-8H9V7h6v2z"/></svg>
-          </a>
-          <a href="https://github.com/Anas-Sg-git" target="_blank" title="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ═══ Research ═══ -->
-<section id="research">
-  <div class="reveal">
-    <p class="section-label">Recherche doctorale</p>
-    <h2 class="section-title">Thèse de doctorat</h2>
-  </div>
-
-  <div class="thesis-block reveal">
-    <h3>Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre</h3>
-    <div class="thesis-meta">
-      <span>🎓 <strong>Univ. de Poitiers · ENSMA · Institut Pprime</strong></span>
-      <span>📅 <strong>Soutenue le 11 mars 2024</strong></span>
-      <span>👨‍🔬 <strong>Dir. : X. Milhet & Y. Billaud</strong></span>
-    </div>
-    <p>
-      Sujet de thèse centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance. Travaux menés à l'interface entre expérimentation, modélisation et analyse de données, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
-    </p>
-  </div>
-
-  <div class="contrib-grid">
-    <div class="contrib-card reveal">
-      <div class="card-icon blue">🔬</div>
-      <h4>Élaboration</h4>
-      <p>Procédé de frittage multicouche à paramètres variables, dégazage sous vide, 2 familles d'échantillons (Ag seul & Ag/Cu).</p>
-    </div>
-    <div class="contrib-card reveal">
-      <div class="card-icon gold">📐</div>
-      <h4>Méthode & Caractérisation</h4>
-      <p>Flash 3D + méthode inverse, MEB / MEB-FEG, DSC / ATG / mDSC, caractérisations thermiques et microstructurales.</p>
-    </div>
-    <div class="contrib-card reveal">
-      <div class="card-icon green">📊</div>
-      <h4>Relations structure–propriétés</h4>
-      <p>Conductivité variant d'un facteur 4 selon la porosité. Lois reliant porosité, densité et conductivité établies.</p>
-    </div>
-    <div class="contrib-card reveal">
-      <div class="card-icon rose">🔥</div>
-      <h4>Vieillissement</h4>
-      <p>Première mise en évidence d'un saut initial de conductivité suivi d'une stabilisation. Mécanisme : relaxation de contraintes résiduelles.</p>
-    </div>
-    <div class="contrib-card reveal">
-      <div class="card-icon violet">⚡</div>
-      <h4>Interface & Fiabilité</h4>
-      <p>~50 % d'Ag affecté après 500 h. Divergence à 200 h. Propriétés locales quantifiées par analyse microstructurale.</p>
-    </div>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ═══ Publications ═══ -->
-<section id="publications">
-  <div class="reveal">
-    <p class="section-label">Production scientifique</p>
-    <h2 class="section-title">Publications & Communications</h2>
-    <p class="section-description">
-      Articles de revues, rapport de thèse et communications orales lors de congrès nationaux et internationaux.
-    </p>
-  </div>
-
-  <div class="pub-list">
-    <div class="pub-item reveal">
-      <div class="pub-type journal">Article</div>
-      <div class="pub-content">
-        <h4>Experimental investigation of thermal conductivity during aging of nanoporous sintered silver</h4>
-        <p class="pub-venue">Revue à comité de lecture</p>
-      </div>
-    </div>
-
-    <div class="pub-item reveal">
-      <div class="pub-type thesis">Thèse</div>
-      <div class="pub-content">
-        <h4>Étude expérimentale de la conductivité thermique de l'Argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de Cuivre</h4>
-        <p class="pub-venue">Thèse de doctorat — Université de Poitiers</p>
-        <p class="pub-date">11.03.2024 · <a href="https://hal.science/tel-05045482" target="_blank" style="color:var(--accent)">HAL</a></p>
-      </div>
-    </div>
-
-    <div class="pub-item reveal">
-      <div class="pub-type conf">Conf.</div>
-      <div class="pub-content">
-        <h4>Evolution of the thermal conductivity of sintered Ag paste as a function of density and aging</h4>
-        <p class="pub-venue">16th IMAPS European Advanced Technology Workshop — Poitiers, 2023</p>
-        <p class="pub-date">08–09.03.2023</p>
-      </div>
-    </div>
-
-    <div class="pub-item reveal">
-      <div class="pub-type conf">Conf.</div>
-      <div class="pub-content">
-        <h4>Evolution of the thermal conductivity of sintered Ag paste as a function of the density, the roughness of the interface, and aging</h4>
-        <p class="pub-venue">TMS Annual Meeting — Anaheim, California, USA, 2022</p>
-        <p class="pub-date">27.02–03.03.2022</p>
-      </div>
-    </div>
-
-    <div class="pub-item reveal">
-      <div class="pub-type conf">Conf.</div>
-      <div class="pub-content">
-        <h4>Évolution des propriétés thermiques des matériaux nanoporeux</h4>
-        <p class="pub-venue">Congrès Français de Mécanique — Nantes, 2022</p>
-        <p class="pub-date">29.08–02.09.2022</p>
-      </div>
-    </div>
-
-    <div class="pub-item reveal">
-      <div class="pub-type conf">Conf.</div>
-      <div class="pub-content">
-        <h4>Optimisation de la caractérisation thermique de l'Ag fritté par la méthode flash</h4>
-        <p class="pub-venue">Congrès Français de Thermique — Belfort, 2021</p>
-        <p class="pub-date">01–03.06.2021</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ═══ Skills ═══ -->
-<section id="skills">
-  <div class="reveal">
-    <p class="section-label">Expertise</p>
-    <h2 class="section-title">Compétences</h2>
-    <p class="section-description">
-      Compétences développées au cours de la thèse et de l'expérience d'enseignement en école d'ingénieurs.
-    </p>
-  </div>
-
-  <div class="skills-grid reveal">
-    <span class="skill-tag highlight">Flash 3D</span>
-    <span class="skill-tag highlight">Méthode inverse</span>
-    <span class="skill-tag">MEB / MEB-FEG</span>
-    <span class="skill-tag">DSC / ATG / mDSC</span>
-    <span class="skill-tag highlight">Python</span>
-    <span class="skill-tag highlight">MATLAB</span>
-    <span class="skill-tag">Analyse d'images (ImageJ)</span>
-    <span class="skill-tag">Frittage Ag sous pression</span>
-    <span class="skill-tag">Vieillissement thermique accéléré</span>
-    <span class="skill-tag">Métrologie dimensionnelle</span>
-    <span class="skill-tag">Préparation métallographique</span>
-    <span class="skill-tag">Traitement de données</span>
-    <span class="skill-tag">Modélisation empirique</span>
-    <span class="skill-tag">Plan d'expériences</span>
-    <span class="skill-tag">Rédaction scientifique (EN/FR)</span>
-    <span class="skill-tag">Vulgarisation scientifique</span>
-    <span class="skill-tag">Encadrement pédagogique</span>
-  </div>
-</section>
-
-<div class="sep"></div>
-
-<!-- ═══ Teaching ═══ -->
-<section id="teaching">
-  <div class="reveal">
-    <p class="section-label">Enseignement</p>
-    <h2 class="section-title">Expérience d'enseignement</h2>
-  </div>
-
-  <div class="teaching-block reveal">
-    <h3>ATER — ISAE-ENSMA, département MSISI</h3>
-    <p class="teaching-sub">Attaché Temporaire d'Enseignement et de Recherche · 2022</p>
-
-    <div class="teaching-stats">
-      <div class="stat-box">
-        <div class="stat-num">190+</div>
-        <div class="stat-label">Heures d'enseignement</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">118</div>
-        <div class="stat-label">Séances assurées</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">6</div>
-        <div class="stat-label">Disciplines couvertes</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">2</div>
-        <div class="stat-label">Stages encadrés</div>
-      </div>
-    </div>
-
-    <ul class="teaching-subjects">
-      <li><span class="badge">TP</span> Science des matériaux — 27 séances (S3)</li>
-      <li><span class="badge">TP</span> Choix des matériaux — 14 séances (S3)</li>
-      <li><span class="badge">TD</span> Ondes de choc laser — 10 séances (S5)</li>
-      <li><span class="badge">TP</span> Calcul scientifique — 19 séances (S3)</li>
-      <li><span class="badge">Proj.</span> Encadrement projets Calcul scientifique — 12 séances (S3)</li>
-      <li><span class="badge">TD</span> Probabilités — 36 séances (S4)</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ═══ Footer ═══ -->
-<footer>
-  <p>© 2026 Anas Sghuri · <a href="mailto:anas.sghuri@gmail.com">anas.sghuri@gmail.com</a> · <a href="https://github.com/Anas-Sg-git" target="_blank">GitHub</a></p>
-</footer>
-
-<script>
-  // Scroll-reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // Nav shrink on scroll
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 60) {
-      nav.style.padding = '0.6rem 2rem';
-    } else {
-      nav.style.padding = '1rem 2rem';
-    }
-  });
-</script>
-
-</body>
-</html>
+
+## À propos
+
+Docteur en sciences des matériaux, spécialisé en **caractérisation thermique** et **fiabilité des matériaux d'assemblage** pour l'électronique de puissance. Ma thèse, soutenue le **11 mars 2024** à l'Université de Poitiers (ISAE-ENSMA, Institut Pprime), porte sur la conductivité thermique de l'argent fritté poreux et ses évolutions sous vieillissement thermique.
+
+Mes travaux se situent à l'interface entre **expérimentation**, **modélisation** et **analyse de données**, avec un enjeu fort de fiabilité et de compréhension du vieillissement des matériaux.
+
+---
+
+## Thèse de doctorat
+
+**Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre**
+
+*Thèse de doctorat · Université de Poitiers · ENSMA · Institut P' (Pprime, UPR CNRS 3346)*
+
+- **Directeurs :** X. Milhet & Y. Billaud
+- **Financement :** ACI++ Pprime Eprom · UE FEDER
+- **Soutenance :** 11 mars 2024
+- **Manuscrit :** [HAL — tel-05045482](https://hal.science/tel-05045482)
+
+> Sujet centré sur l'évaluation des performances thermiques de matériaux d'assemblage innovants pour l'électronique de puissance.
+
+---
+
+## Contributions clés
+
+### 🔬 Élaboration
+Procédé de frittage multicouche à paramètres variables · dégazage sous vide · 2 familles d'échantillons élaborées (Ag seul & Ag/Cu).
+
+### 📐 Méthode & Caractérisation
+Flash 3D + méthode inverse · MEB / MEB-FEG · DSC / ATG / mDSC · caractérisation thermique, microstructurale et dimensionnelle.
+
+### 📊 Relations structure–propriétés
+Conductivité variant d'un **facteur 4** selon la porosité · lois reliant porosité, densité et conductivité établies.
+
+### 🔥 Vieillissement
+Première mise en évidence d'un **saut initial de conductivité** suivi d'une stabilisation · densité et taille de grains stables jusqu'à 500 h · mécanisme identifié : **relaxation de contraintes résiduelles**.
+
+### ⚡ Interface & Fiabilité
+~**50 % d'Ag affecté** · divergence à 200 h · propriétés locales quantifiées par analyse microstructurale.
+
+---
+
+## Contexte & Enjeux
+
+Les modules d'électronique de puissance reposent sur une chaîne de dissipation thermique dans laquelle l'interconnexion entre la puce et le substrat joue un rôle critique. Les composants SiC et GaN de nouvelle génération fonctionnent au-delà de **250 °C** et imposent des densités de puissance croissantes. Les brasures classiques (SAC305, Au-20Sn) ne sont plus adaptées.
+
+L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle génération grâce à :
+- une conductivité théorique de **426 W·m⁻¹·K⁻¹** (métal le plus conducteur thermiquement)
+- une élaboration à basse température (**200–300 °C**)
+- pas de fusion en service (T° fusion Ag : 961 °C)
+
+Cependant, sa microstructure poreuse complexe génère une dispersion considérable (conductivité variant de **3 à 433 W·m⁻¹·K⁻¹** selon la littérature).
+
+![Module de puissance](/images/module-puissance.png)
+*Architecture type d'un module de puissance et position critique de l'interconnexion.*
+
+---
+
+## Verrous scientifiques
+
+**1. Mesurer un matériau hautement diffusif** — La forte diffusivité de l'Ag fritté limite la validité des approches flash 1D classiques. Une méthode Flash 3D avec résolution inverse 3D instationnaire a été développée.
+
+**2. Relier conductivité, densité et vieillissement** — Aucune relation claire et robuste n'existait entre ces paramètres. La capacité thermique de l'Ag fritté s'est révélée significativement différente de celle de l'Ag massif.
+
+**3. Quantifier l'effet de l'interface Ag/Cu** — Les résistances d'interface sont systématiquement négligées dans la littérature. Leur évolution à long terme était totalement inconnue.
+
+---
+
+## Approche expérimentale
+
+### Méthode Flash 3D
+
+Le cœur de la démarche repose sur la **méthode Flash 3D**, combinant :
+- une excitation laser locale CO₂ (**130 W, 10 ms**)
+- une caméra infrarouge haute vitesse (jusqu'à **2000 fps**)
+
+L'identification des conductivités repose sur un **problème inverse** (estimateur ENH — Estimation par Normalisation Harmonique).
+
+![Banc expérimental Flash 3D](/images/setup-flash3d.png)
+*Banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse, cryothermostat.*
+
+![Principe d'identification](/images/principe-identification.png)
+*Estimation des conductivités thermiques à partir d'images IR et de la résolution inverse 3D.*
+
+**Calibration :** erreur de mesure **< 6 %**, isotropie dans le plan confirmée (λ_x ≈ λ_y), répétabilité validée par **20 mesures par échantillon**.
+
+### Élaboration des échantillons
+
+1. Dépôt de pâte d'Ag (nanoparticules, ∅ 20–40 nm, 17 % solvant)
+2. Dégazage sous vide primaire (14 mbar)
+3. Répétition du cycle dépôt + dégazage
+4. Frittage à **270 °C / 5 min** sous pression de **0 à 10 MPa**
+
+![Procédé de frittage](/images/frittage-process.png)
+*Procédé d'élaboration : dépôt multicouche, dégazage sous vide, frittage 0–10 MPa @ 270 °C.*
+
+La température de frittage a été déterminée par **DSC + ATG** :
+- DSC : pic de frittage vers **257 °C**
+- ATG : perte de masse de **~17 %** (solvants) puis **~1 %** (liant)
+
+![ATG-DSC-MEB](/images/ATG-DSC-MEB.png)
+*Analyses DSC/ATG et évolution microstructurale en fonction de la température.*
+
+### Caractérisation microstructurale et thermophysique
+
+- **Densité** : rapport masse/volume, erreur ~2 %. Résultat : de ~3 g·cm⁻³ (0 MPa) à ~8 g·cm⁻³ (10 MPa)
+- **Porosité** : imagerie MEB @ 5000× + traitement ImageJ/Matlab
+- **Taille des grains** : MEB-FEG @ 30 000×, diamètre moyen ≈ **300 nm** (stable jusqu'à 500 h @ 350 °C)
+- **Capacité calorifique** (mDSC) : **c(ρ) = 13,9·ρ² − 203·ρ + 1027** (R² = 0,99)
+
+![Porosité MEB](/images/porosite-MEB.png)
+*Traitement d'image MEB pour quantifier la fraction surfacique des pores.*
+
+![Taille des grains](/images/taille-grains.png)
+*Évaluation de la taille des grains par MEB-FEG et traitement ImageJ.*
+
+### Échantillons et plan de vieillissement
+
+| | Ag fritté seul | Bicouches Ag/Cu |
+|---|---|---|
+| **Dimensions** | 5 × 5 cm | 5 × 5 cm |
+| **Épaisseur Ag** | 0,5 – 1,4 mm | 0,12 – 0,46 mm |
+| **Épaisseur Cu** | — | 0,1 mm |
+| **Pressions** | 0 / 2 / 5 / 10 MPa | 0 / 2 / 5 / 10 MPa |
+| **T° vieillissement** | 150 / 250 / 350 °C | 350 °C |
+| **Durées** | 50 / 200 / 500 h | 50 / 200 / 500 h |
+
+---
+
+## Résultats : Ag fritté seul
+
+### Corrélation densité → conductivité thermique
+
+La pression de frittage est le levier principal : 0 → 10 MPa augmente la densité de **62 %** et la conductivité de **84 %**. Sur une porosité relative de ~25–75 %, la conductivité varie d'un **facteur ~4** (de **66 à 222 W·m⁻¹·K⁻¹**).
+
+Relation empirique : **λ = 1,58·ρ² + 10,9·ρ + 20** (R² = 0,97)
+
+![Ag non vieilli](/images/ag-non-vieilli.png)
+*Conductivité thermique vs porosité relative, comparaison avec les modèles d'Ordonez-Miranda et al. (2016).*
+
+### Effet du vieillissement thermique
+
+Le suivi révèle une dynamique en **deux temps** :
+
+**Étape 1 (ES1) — Saut initial rapide :** la conductivité augmente significativement dans les **premières 45 minutes**. Ce saut est d'autant plus marqué que la pression est élevée.
+
+**Étape 2 (ES2) — Stabilisation :** après ES1, la conductivité se stabilise. L'évolution résiduelle ne dépend ni de la procédure ni de la densité.
+
+![Cinétique à temps court](/images/ag-cinetique.png)
+*Cinétique : la conductivité atteint son maximum en ≈ 45 min (Ag @ 10 MPa, 150 °C).*
+
+![Ag vieillissement](/images/ag-vieillissement.png)
+
+**Observations clés :**
+1. La densité reste **parfaitement stable** jusqu'à 500 h à 350 °C
+2. La taille des grains reste **inchangée** (≈ 300 nm)
+3. Après vieillissement, les conductivités correspondent aux prédictions pour des pores **sphériques et cylindriques** (vs plats avant vieillissement)
+
+> **Interprétation :** l'augmentation initiale de λ est attribuée à la **relaxation de contraintes résiduelles de compression** générées lors du frittage sous pression.
+
+---
+
+## Résultats : bicouches Ag/Cu
+
+### L'interface change tout à long terme
+
+Dans les 50 premières heures, les bicouches suivent la même tendance que l'Ag seul. Mais **au-delà de 200 h**, la conductivité diminue progressivement, alors qu'elle reste stable pour l'Ag seul.
+
+![Bicouches Ag/Cu](/images/agcu-vieillissement.png)
+*Conductivité thermique des bicouches Ag/Cu au cours du vieillissement à 350 °C.*
+
+La densité globale **ne change pas** → le phénomène est lié à **l'interface Ag/Cu**.
+
+### Quantification
+
+Jusqu'à 200 h : estimations et mesures concordent (erreur < 6 %). Au-delà : écart croissant jusqu'à **~36 %** à faible pression et **~18 %** à 10 MPa après 500 h.
+
+L'analyse microstructurale révèle :
+- À l'interface : le TPS chute de ~39 % à ~7 % après 50 h (densification locale), puis se stabilise ~20 %
+- En zone Ag : le TPS augmente de ~11 % à ~46 % après 500 h
+
+Un modèle en couches **Cu / interface / zone Ag affectée / Ag sain** montre qu'à 500 h, environ **50 % de l'épaisseur** de la couche d'Ag présente des propriétés dégradées (λ passant de 271 à 71 W·m⁻¹·K⁻¹).
+
+---
+
+## Synthèse des contributions
+
+**Méthodologie**
+- Adaptation et calibration de la méthode Flash 3D pour matériaux hautement diffusifs
+- Procédé d'élaboration multicouche pour Ag fritté et bicouches Ag/Cu
+
+**Relations structure–propriétés**
+- Loi porosité ↔ conductivité thermique (variation d'un facteur 4)
+- Capacité thermique mesurée par mDSC : écart significatif vs Ag massif
+- Corrélations empiriques densité–porosité–conductivité
+
+**Vieillissement thermique**
+- Cinétique en deux temps : saut initial puis stabilisation
+- Mécanisme : relaxation de contraintes résiduelles
+
+**Fiabilité des assemblages**
+- Effet d'interface critique identifié à temps long dans les bicouches Ag/Cu
+- ~50 % de la couche d'Ag affectée à 500 h
+
+---
+
+## Publications & Communications
+
+- [Voir la section Publications](/publications/)
+
+---
+
+## Compétences
+
+**Mesure & Caractérisation :** Flash 3D · Méthode inverse · MEB / MEB-FEG · DSC / ATG / mDSC · Métrologie dimensionnelle · Préparation métallographique
+
+**Modélisation & Données :** Python · MATLAB · Analyse d'images (ImageJ) · Modélisation empirique · Plan d'expériences · Traitement de données
+
+**Matériaux & Procédés :** Frittage Ag sous pression · Vieillissement thermique accéléré · Protocole d'élaboration
+
+**Transversal :** Rédaction scientifique (EN/FR) · Encadrement pédagogique · Vulgarisation scientifique
+
+---
+
+## Perspectives
+
+- Extension aux systèmes **Cu/Ag/Cu** et **SiC/Ag** (assemblages plus représentatifs)
+- Essais en **cyclage thermique** en conditions de service
+- **Modélisation 3D** de la microstructure (connectivité des pores, défauts aux joints de grains)
+- Prise en compte de la redistribution de porosité (passage homogène → hétérogène après vieillissement)
