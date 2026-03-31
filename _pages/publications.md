@@ -17,7 +17,7 @@ A. Sghuri, Y. Billaud, L. Signor, D. Saury, X. Milhet
 
 **Étude expérimentale de la conductivité thermique de l’Argent fritté poreux : effet du vieillissement thermique et de l’interface avec un substrat de Cuivre**  
 Thèse de doctorat — Université de Poitiers — Soutenue le 11 mars 2024
- Lien : [hal.science/tel-05045482](hal.science/tel-05045482)
+ Lien : [hal.science/tel-05045482](https://hal.science/tel-05045482)
 
 ### Rapport des jurys
 
