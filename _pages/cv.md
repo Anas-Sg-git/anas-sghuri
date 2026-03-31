@@ -31,70 +31,58 @@ redirect_from:
 
 ---
 
-# Compétences
-
-## Matériaux & caractérisation
-* Développement et sélection de matériaux métalliques (critères techniques, normatifs, RoHS…)
-* Métallographie avancée : découpe, enrobage, polissage, attaque chimique
-* Microscopie optique, MEB, MEB-FEG — quantification de porosité et taille de grains (µm/nm)
-* Dureté, profilométrie, densité (Archimède, masse/volume)
-
-## Élaboration
-* Frittage d'argent nanoparticulaire à basse température et sous pression (~270 °C / 0–10 MPa)
-* Dégazage sous vide, préparation de surface, empilement multicouche
-
-## Caractérisation thermique
-* Méthode Flash 3D (laser CO₂ + caméra infrarouge), calibration, optimisation signal/bruit
-* Mesure de conductivité thermique, diffusivité thermique, capacité calorifique (mDSC, DSC, ATG)
-* Suivi en fonction du vieillissement thermique et de l'interface Ag/Cu
-
-## Traitement & modélisation des données
-* Résolution de l'équation de la chaleur 3D instationnaire, méthode inverse (estimateurs harmoniques)
-* Plans d'expériences, évaluation d'incertitudes
-* Scripts Matlab et Python
-
-## Analyses de défaillance
-* Microstructure et interfaces, formulation d'hypothèses, tests de confirmation, actions correctives
-
-## Qualité & métrologie
-* Procédures opératoires standard, traçabilité, calibration, maintenance de premier niveau
-* Sécurité laser et chimie, HSE
-
+## Compétences clés
+ 
+- Matériaux & caractérisation
+- Élaboration
+- Caractérisation thermique
+- Traitement & modélisation des données
+- Analyses de défaillance
+- Qualité & métrologie
+ 
+[Voir le détail des compétences →](/cv/)
+ 
 ---
-
-# Productions scientifiques
-
-## Article à comité de lecture
-* **Experimental investigation of thermal conductivity during aging of nanoporous sintered silver**, *Acta Materialia* (IF = 9.3), 28 citations.
-  * DOI : [10.1016/j.actamat.2023.119109](https://doi.org/10.1016/j.actamat.2023.119109)
-
-## Conférences
-* 4 participations en tant que présentateur : 2 conférences internationales, 2 nationales.
-
+ 
+## Thèse de doctorat
+ 
+Étude expérimentale de la conductivité thermique de l'argent fritté poreux, menée à l'Université de Poitiers (ISAE-ENSMA, Institut Pprime). Travaux couvrant l'ensemble de la chaîne — élaboration, caractérisation, vieillissement thermique et fiabilité des interfaces — avec un enjeu de compréhension des relations entre microstructure et propriétés fonctionnelles.
+ 
+[Voir le détail de la thèse →](/phd/)
+ 
 ---
-
-# Informatique
-
-* **Programmation & traitement de données :** Matlab, Python
-* **Imagerie & analyse :** Fiji / ImageJ
-* **Bureautique :** Microsoft Office, Adobe
-* **Autres :** impression 3D (modélisation, prototypage), développement d'applications mobiles (jeux & éducation)
-
+ 
+## Portfolio
+ 
+**Microtraction de systèmes Ag/Cu** — Élaboration d'échantillons et caractérisation mécanique par essais de traction et corrélation d'images numériques, pour évaluer l'effet du vieillissement et de la pression de frittage sur la fiabilité de l'assemblage.
+ 
+**Quantification d'interface par traitement d'images MEB** — Développement d'une méthode de segmentation d'images de microscopie pour quantifier l'évolution locale de la porosité et estimer l'épaisseur d'une zone d'interface dans un matériau bicouche.
+ 
+[Voir le portfolio →](/portfolio/)
+ 
 ---
-
-# Langues
-
-* **Français** — courant
-* **Anglais** — courant
-
+ 
+## Publications
+ 
+Un article en revue à comité de lecture, un manuscrit de thèse et quatre communications orales en congrès nationaux et internationaux (IMAPS, TMS, CFM, SFT).
+ 
+[Voir les publications →](/publications/)
+ 
 ---
-
-# Centres d'intérêt
-
-* Impression 3D : modélisation, prototypage, ateliers
-* Développement d'applications mobiles (jeux & éducation)
-
+ 
+## Enseignement
+ 
+ATER à l'ISAE-ENSMA (2022) : plus de 190 heures d'enseignement en école d'ingénieurs et encadrement de deux stages de recherche.
+ 
+[Voir le détail →](/teaching/)
+ 
 ---
+ 
+## Contact
+ 
+Je suis ouvert à des opportunités en **R&D**, **caractérisation**, **essais** ou **qualité**, dans tout secteur où la compréhension des matériaux et la rigueur expérimentale sont valorisées.
+ 
+N'hésitez pas à me contacter : [anas.sghuri@gmail.com](mailto:anas.sghuri@gmail.com)
 
 # Références
 
