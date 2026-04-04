@@ -14,7 +14,7 @@ Au cours de mon doctorat à l'École Doctorale SIMME (Université de Poitiers), 
 **Microscopie Électronique à Balayage (MEB)** — Institut Pprime
 {: .notice--info}
 
-Formation pratique sur le MEB Tescan VEGA3 incluant la maîtrise complète de la chaîne d'acquisition : pilotage de la colonne électronique (source tungstène, lentilles électromagnétiques, bobines de déflexion), préparation et positionnement des échantillons sous vide, optimisation des paramètres d'imagerie (tension d'accélération 5–20 kV, distance de travail, correction d'astigmatisme) et exploitation des détecteurs SE et BSE pour l'analyse morphologique et compositionnelle.
+Formation pratique sur le MEB Tescan VEGA3 incluant la maîtrise complète de la chaîne d'acquisition : pilotage de la colonne électronique (source tungstène, lentilles électromagnétiques, bobines de déflexion), préparation et positionnement des échantillons sous vide, optimisation des paramètres d'imagerie (tension d'accélération 5–20 kV, correction d'astigmatisme,etc.) et exploitation des détecteurs SE et BSE pour l'analyse morphologique et compositionnelle.
 
 **Ce que j'en retiens :** Autonomie sur MEB pour la caractérisation microstructurale de matériaux métalliques et composites.
 
@@ -25,7 +25,7 @@ Formation pratique sur le MEB Tescan VEGA3 incluant la maîtrise complète de la
 **Statistical Analysis of Experimental Data** — 15 h · validé en mars 2022
 {: .notice--info}
 
-Maîtrise des outils statistiques appliqués aux données expérimentales : analyse des erreurs systématiques et aléatoires, distributions gaussiennes, tests de Student et de χ², identification paramétrique par moindres carrés.
+Maîtrise des outils statistiques appliqués aux données expérimentales : analyse des erreurs systématiques et aléatoires, distributions gaussiennes, tests de Student et de χ², identification paramétrique par moindres carrés, ANOVA.
 
 **Ce que j'en retiens :** Rigueur dans l'exploitation et l'interprétation de résultats expérimentaux, capacité à quantifier l'incertitude.
 
