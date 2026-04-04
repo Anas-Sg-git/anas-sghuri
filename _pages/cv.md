@@ -8,14 +8,26 @@ author_profile: true
 {% include base_path %}
 # Expériences professionnelles
 
-* **Doctorant** — Université de Poitiers, Institut Pprime *(oct. 2019 – mars 2024)*
-  * Développement et mise en œuvre d'un protocole complet : élaboration d'échantillons (frittage Ag sous pression), caractérisation thermique (méthode Flash 3D), microscopie (MEB / MEB-FEG), traitement et modélisation des données (Matlab, Python).
-  * Première mise en évidence d'un saut initial de conductivité thermique lors du vieillissement de l'Ag fritté, attribué à la relaxation de contraintes résiduelles.
-  * Quantification de l'effet d'interface Ag/Cu à long terme : ~50 % de la couche d'Ag affectée après 500 h à 350 °C.
-
-* **Attaché Temporaire d'Enseignement et de Recherche (ATER)** — ISAE-ENSMA, Poitiers *(sept. 2022 – août 2023)*
-  * Enseignement en science des matériaux et encadrement de travaux pratiques.
-
+## Doctorant — Ingénieur de recherche matériaux `Oct. 2019 – Mars 2024`
+ 
+*Université de Poitiers, Institut Pprime (UPR CNRS 3346) — Poitiers*
+ 
+- Élaboration d'échantillons d'Ag fritté nanoparticulaire (frittage sous pression 0–10 MPa, 270 °C) et de bicouches Ag/Cu pour l'électronique de puissance.
+- Mise en œuvre et calibration de la méthode Flash 3D (laser CO₂ + caméra IR) pour la mesure de conductivité thermique sur matériaux hautement diffusifs.
+- Caractérisation microstructurale complète : MEB / MEB-FEG, traitement d'images (ImageJ, Matlab), quantification de porosité (µm) et taille de grains (~300 nm).
+- Développement de corrélations empiriques densité–conductivité thermique couvrant un facteur 4 de variation (66–222 W·m⁻¹·K⁻¹).
+- Première mise en évidence d'un saut initial de conductivité lors du vieillissement thermique, attribué à la relaxation de contraintes résiduelles de compression.
+- Identification d'un effet d'interface critique dans les bicouches Ag/Cu : ~50 % de la couche d'Ag dégradée après 500 h à 350 °C.
+- Développement d'une méthode de segmentation d'images MEB sous Matlab pour quantifier l'épaisseur d'interface et la porosité locale.
+- Essais de microtraction couplés à la corrélation d'images numériques (DIC) sur systèmes Ag et Ag/Cu.
+- Rédaction et publication d'un article dans *Acta Materialia* (IF 9.3, 28 citations). 4 communications orales en conférences (2 internationales, 2 nationales).
+ 
+## Attaché Temporaire d'Enseignement et de Recherche (ATER) `Sept. 2022 – Août 2023`
+ 
+*ISAE-ENSMA, département MSISI — Poitiers*
+ 
+- 190+ heures d'enseignement auprès d'élèves ingénieurs : TP science des matériaux (27 séances), TP choix des matériaux (14 séances), TD ondes de choc laser (10 séances), TP et projets calcul scientifique (31 séances), TD probabilités (36 séances).
+- Encadrement de 2 stages de recherche sur l'adhésion Ag/Cu par choc laser (protocole, suivi, évaluation).
 ---
 
 # Compétences
