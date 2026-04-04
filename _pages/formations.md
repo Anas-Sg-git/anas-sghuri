@@ -5,7 +5,7 @@ permalink: /formations/
 author_profile: true
 ---
 
-Au cours de mon doctorat à l'École Doctorale SIMME (Université de Poitiers), j'ai suivi **plus de 90 heures de formation** couvrant des compétences techniques, scientifiques et transversales. Ces formations complètent mon expertise en sciences des matériaux et renforcent ma capacité à mener des projets R&D de bout en bout.
+Au cours de mon doctorat à l'École Doctorale SIMME (Université de Poitiers), j'ai suivi **plus de 90 heures de formation** couvrant des compétences techniques, scientifiques et transversales. Ces formations complètent mon expertise en sciences des matériaux et renforcent ma capacité à mener des projets de bout en bout.
 
 ---
 
@@ -80,4 +80,4 @@ Méthodes d'enseignement à distance et maîtrise d'outils numériques pour la f
 | Principes et comportement d'un jeune enseignant-chercheur | Posture professionnelle et éthique de la recherche |
 | Initiation à l'histoire des sciences | Culture scientifique et épistémologie |
 
-**Ce que j'en retiens :** Vision globale du cycle de vie d'un projet R&D — de l'idée à la valorisation — incluant la gestion de la propriété intellectuelle.
+**Ce que j'en retiens :** Vision globale du cycle de vie d'un projet R&D,de l'idée à la valorisation.
