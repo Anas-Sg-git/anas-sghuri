@@ -9,17 +9,16 @@
 
 main:
   - title: "Accueil"
-  url: /
-- title: "CV"
-  url: /cv/
-- title: "PhD"
-  url: /phd/
-- title: "Publications"
-  url: /publications/
-- title: "Formations"
-  url: /formations/
-- title: "portfolio"
-  url: /portfolio/
-- title: "Teaching"
-  url: /teaching/
-
+    url: /
+  - title: "CV"
+    url: /cv/
+  - title: "PhD"
+    url: /phd/
+  - title: "Publications"
+    url: /publications/
+  - title: "Formations"
+    url: /formations/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "Teaching"
+    url: /teaching/
