@@ -9,20 +9,17 @@
 
 main:
   - title: "Accueil"
-    url: /
-
-  - title: "PhD"
-    url: /phd/
-
-  - title: "Publications"
-    url: /publications/
-
-  - title: "CV"
-    url: /cv/
-
-  - title: "Portfolio"
-    url: /portfolio/
-
-  - title: "Teaching"
-    url: /teaching/
+  url: /
+- title: "CV"
+  url: /cv/
+- title: "PhD"
+  url: /phd/
+- title: "Publications"
+  url: /publications/
+- title: "Formations"
+  url: /formations/
+- title: "Projets associés"
+  url: /portfolio/
+- title: "Teaching"
+  url: /teaching/
 
