@@ -4,105 +4,11 @@ excerpt: "Développement d'un pipeline complet de mesure des propriétés thermi
 collection: portfolio
 ---
 
-# Caractérisation thermique Flash 3D — Pipeline d'estimation et codes MATLAB
+> Développement et calibration d'une méthode de mesure de la conductivité thermique adaptée aux matériaux frittés fortement diffusifs et potentiellement anisotropes.
 
-> **Compétences :** traitement du signal · problème inverse · estimation paramétrique · analyse statistique · gestion de données expérimentales · MATLAB  
-> **Domaines d'application :** R&D matériaux · instrumentation · modélisation · plan d'expérience · incertitudes
+**Mots-clés** : Flash 3D · Conductivité thermique · Problème inverse · Caméra IR · Laser CO₂ · Argent fritté
 
----
-
-## Contexte
-
-La méthode Flash 3D permet de mesurer les diffusivités thermiques planes d'un matériau à partir d'un flash laser et d'une caméra infrarouge. Le principe : exciter thermiquement la surface, filmer la diffusion 2D en temps réel, puis résoudre un problème inverse pour remonter aux propriétés du matériau.
-
-Dans le cadre de ma thèse, j'ai utilisé et adapté un ensemble de codes MATLAB couvrant l'intégralité de la chaîne — de la lecture des données brutes jusqu'à l'estimation des conductivités thermiques et le diagnostic de la qualité du résultat.
-
----
-
-## Vue d'ensemble du pipeline
-
-```
-Fichier de configuration (infos.txt)
-        │
-        ▼
-Lecture des trames IR (format PTW binaire)
-        │
-        ▼
-Soustraction du fond thermique + compensation des dérives
-        │
-        ▼
-Projection sur les harmoniques spatiales (Fourier-Cosinus)
-        │
-        ▼
-Normalisation par l'harmonique de référence
-        │
-        ▼
-Estimation des paramètres (τx, τy) par modèle linéaire
-        │
-        ▼
-Calcul des diffusivités (ax, ay) et conductivités (λx, λy)
-        │
-        ▼
-Diagnostic statistique et validation
-```
-
-Le pipeline est orchestré par un script principal (`sLinearModelEstimate.m`, ~600 lignes) qui s'appuie sur plusieurs modules spécialisés. Un système de cache (`data.tmp`) évite de recalculer les étapes intermédiaires lorsque les données n'ont pas changé.
-
----
-
-## Lecture et prétraitement des données
-
-Les données thermographiques sont stockées au format binaire PTW (propriétaire FLIR). La lecture repose sur deux fonctions complémentaires :
-
-- **`LoadDataFileSetPTW`** charge un ensemble de trames en extrayant uniquement la zone d'intérêt demandée, ce qui limite la consommation mémoire.
-- **`LoadDataFilePTW`** lit un fichier unitaire par accès direct (`fseek` + `fread`) en gérant les deux types de données (niveaux numériques uint16 ou températures float).
-
-Le prétraitement comprend ensuite trois opérations :
-
-1. **Fond thermique** — Moyenne temporelle des trames acquises avant le flash. Les trames aberrantes sont détectées par régression robuste (`robustfit`, seuil à 99 %) et exclues automatiquement.
-2. **Compensation des dérives** — Une zone de pixels hors excitation sert de référence pour corriger les fluctuations temporelles de la caméra, harmonique par harmonique.
-3. **Calibration** — Conversion optionnelle des niveaux numériques en températures via un fichier d'étalonnage.
-
----
-
-## Projection spectrale et normalisation
-
-Le champ de température est projeté sur une base de cosinus spatiaux (transformée de Fourier-Cosinus), ce qui réduit chaque image 2D à un jeu de coefficients scalaires — les harmoniques T̂(m,n,t).
-
-La fonction `transformTemperatureField` implémente cette projection en mode vectorisé (séparation des composantes x et y) et supporte deux schémas d'intégration : `'pixel'` pour les données expérimentales (point au centre du pixel) et `'pt'` pour les données simulées (nœuds aux bords, pondération trapézoïdale).
-
-L'étape clé est la **normalisation** : en divisant chaque harmonique par une harmonique de référence, on élimine les paramètres inaccessibles (énergie laser, pertes convectives, épaisseur, diffusivité transverse). Le rapport normalisé ne dépend plus que des deux paramètres plans recherchés, τx et τy.
-
----
-
-## Estimation et diagnostic
-
-L'estimation est réalisée par `LinearModelEstimate` via une minimisation par moindres carrés pondérés. Le modèle est structuré autour de quatre structures MATLAB (`unknownParams`, `procParams`, `dataParams`, `optParams`) qui séparent clairement les paramètres à estimer, la configuration physique, les données et les options algorithmiques.
-
-**Sorties principales :**
-- Diffusivités thermiques ax, ay (avec incertitudes)
-- Conductivités thermiques λx, λy (à partir de la capacité calorifique et de la densité)
-- Métriques de qualité : χ² réduit, R², R² ajusté, corrélation, fraction des résidus expliqués
-
-Le module de diagnostic (`LinearModelDiagnostic`) génère les graphiques de résidus et permet l'export en PNG ou LaTeX. Une option d'estimation robuste avec pondération itérative des résidus est disponible pour traiter les données contenant des points aberrants.
-
----
-
-## Calibration expérimentale
-
-La fiabilité de la méthode a été établie sur trois métaux de référence, en identifiant les paramètres expérimentaux optimaux :
-
-| Étude | Paramètre varié | Résultat clé |
-|-------|-----------------|--------------|
-| **Aluminium** | Puissance laser (30 → 90 %) | Erreur < 1 % à puissance maximale |
-| **Cuivre** | Nombre de trames (200 → 1600) | Convergence à partir de ~1200 trames |
-| **Argent** | Rapport signal/bruit (1 → 30) | Stabilisation dès S/B ≈ 5 |
-
-Ces études ont conduit à retenir les conditions suivantes : puissance maximale, durée de pulse 10⁻³ s, épaisseur 0.5 mm, ≥ 1200 trames. Une campagne de 54 simulations numériques a confirmé des erreurs d'estimation inférieures à 2 % dans ces conditions.
-
----
-
-## Compétences transférables
+### Compétences transférables
 
 | Compétence technique | Application industrielle |
 |---------------------|--------------------------|
@@ -114,10 +20,120 @@ Ces études ont conduit à retenir les conditions suivantes : puissance maximale
 
 ---
 
-## Outils
+## 01 — Contexte & Enjeu
 
-`MATLAB` · `Format PTW (binaire IR)` · `Transformée de Fourier-Cosinus` · `Moindres carrés pondérés` · `Estimation robuste` · `Export LaTeX/PNG` · `Système de cache`
+La méthode Flash classique (Parker, 1961) repose sur une excitation thermique uniforme et une mesure 1D en face arrière. Elle ne permet pas d'accéder aux propriétés thermiques dans le plan — et ses hypothèses deviennent insuffisantes dès que le matériau est très conducteur ou potentiellement anisotrope.
+
+C'est le cas des matériaux d'argent frittés : leur **structure poreuse complexe** et leur **anisotropie thermique** probable (liée au procédé de frittage) exigent une approche capable de caractériser les propriétés dans les trois directions. L'argent possède la conductivité thermique la plus élevée parmi les métaux purs (~426 W·m⁻¹·K⁻¹), générant des dynamiques thermiques extrêmement rapides et difficiles à capturer.
+
+**Approche retenue** : la méthode Flash 3D, combinant une excitation laser localisée et une caméra infrarouge matricielle, permettant l'estimation simultanée des diffusivités planes (a_x, a_y) par analyse des harmoniques spatiales.
 
 ---
 
-*Ce travail est détaillé dans le **Chapitre 2** de mon manuscrit de thèse. Voir aussi la [page dédiée à la thèse](/phd/) pour le contexte scientifique complet.*
+## 02 — Modèle analytique & méthodologie
+
+### Le modèle direct 3D
+
+L'équation de la chaleur 3D en géométrie cartésienne pour un matériau orthotrope :
+
+```
+ρ·C · ∂T/∂t = λₓ · ∂²T/∂x² + λᵧ · ∂²T/∂y² + λ_z · ∂²T/∂z²
+```
+
+Le modèle repose sur un ensemble d'hypothèses qui permettent une résolution analytique complète :
+- L'échantillon est une **plaque plane orthotrope** : le tenseur de diffusivité est diagonal, avec trois composantes indépendantes (a_x, a_y, a_z) alignées sur les axes du repère.
+- Les propriétés thermiques sont supposées **constantes et uniformes**, ce qui impose de travailler avec de faibles élévations de température.
+- Les **faces latérales sont isolées** (flux nul), les faces avant et arrière échangent par convection.
+- L'excitation laser est un **flux surfacique localisé** φ(x,y,t) sur la face avant.
+
+Grâce à ces conditions aux limites, le champ de température se décompose naturellement sur une **base de cosinus spatiaux** — les harmoniques T̂(m,n,t). Cette décomposition transforme un problème 3D instationnaire en un ensemble de **problèmes 1D indépendants selon z**, chacun résolu analytiquement. C'est ce qui rend la méthode à la fois rigoureuse et calculable en temps raisonnable.
+
+### Estimateur ENH (Normalisation des Harmoniques)
+
+L'observable est le logarithme du rapport entre une harmonique (m,n) et une harmonique de référence (p,q) :
+
+```
+Y_m,n(t) = ln|θ_m,n(t) / θ_p,q(t)| = C_m,n + [τₓ·(p²−m²) + τᵧ·(q²−n²)]·π²·t
+```
+
+Cette normalisation élimine d'un coup tous les paramètres inaccessibles — énergie laser Q, coefficient de pertes h, épaisseur l_z et diffusivité transverse a_z. Le problème inverse devient **linéaire**, permettant une résolution directe par moindres carrés pondérés.
+
+L'harmonique **(2,2)** est choisie comme référence plutôt que (0,0) car elle possède un écart-type deux fois plus faible et une meilleure robustesse au bruit environnemental.
+
+### Comportement des harmoniques
+
+La compréhension du comportement des harmoniques guide directement les choix expérimentaux :
+- Chaque harmonique décroît exponentiellement, avec un taux proportionnel aux diffusivités planes.
+- Plus l'ordre (m,n) est élevé, plus la décroissance est rapide — les harmoniques d'ordre élevé disparaissent dans le bruit après quelques trames.
+- La taille de la fenêtre d'exploitation est un compromis : trop grande, le signal se dilue dans le bruit ; trop petite, les conditions aux limites du modèle ne sont plus respectées.
+
+### Dispositif et pipeline
+
+Le banc repose sur un **laser CO₂** (excitation localisée), une **caméra IR FLIR-SC7000** (acquisition du champ de température), et un post-traitement sous **MATLAB** :
+
+```
+Excitation          Acquisition         Projection           Normalisation       Estimation
+laser CO₂    →     champ T(x,y,t)  →   harmoniques θₘₙ  →  rapport θₘₙ/θ₂₂  →  τₓ, τᵧ → aₓ, aᵧ
+(impulsion)         caméra IR           Fourier-Cosinus      suppression Q,ρC    régression linéaire
+```
+
+Le pipeline est orchestré par un script principal (`sLinearModelEstimate.m`) qui gère la lecture des trames IR (format binaire PTW), la soustraction du fond thermique avec rejet robuste des trames aberrantes, la compensation des dérives de la caméra, la projection spectrale, l'estimation et le diagnostic statistique (χ² réduit, R², résidus). Un système de cache évite de recalculer les étapes intermédiaires lorsque les données n'ont pas changé.
+
+---
+
+## 03 — Validation numérique
+
+Une étude paramétrique complète a été menée avec **FlexPDE** (éléments finis, maillage adaptatif) sur un échantillon virtuel d'argent (a = 173×10⁻⁶ m²·s⁻¹).
+
+| Paramètre | Valeurs testées |
+|---|---|
+| Épaisseur l_z | 1, 5, 10 mm |
+| Énergie laser Q | 1, 10, 100 J |
+| Durée d'impulsion Δt | 0.01, 0.1, 1 s |
+| Face observée | Avant, Arrière |
+
+**Total : 54 configurations simulées** (3 × 3 × 3 × 2)
+
+| Indicateur | Résultat |
+|---|---|
+| Meilleure erreur relative | **< 1 %** (face arrière, Δt = 0.01 s) |
+| Face privilégiée | **Face arrière** (systématiquement meilleure) |
+| Robustesse au bruit | Erreur < 13 % pour σ = 0.1 °C |
+
+**Enseignements** : l'excitation doit être la plus brève et intense possible ; la face arrière fournit des estimations plus robustes ; un compromis énergétique est nécessaire pour éviter de violer l'hypothèse de propriétés constantes (T_max < 100 °C).
+
+---
+
+## 04 — Validation expérimentale
+
+Trois campagnes de mesures sur des échantillons de **50 × 50 × 0.5 mm** ont permis d'optimiser les paramètres et de valider la méthode contre les valeurs de la littérature. Chaque échantillon a été mesuré **20 fois** pour quantifier la reproductibilité.
+
+| Matériau | λ référence (W·m⁻¹·K⁻¹) | Paramètre étudié | Conclusion clé |
+|---|---|---|---|
+| **Aluminium** (Al) | 239 | Intensité du laser | Puissance max + durée minimale nécessaire |
+| **Cuivre** (Cu) | 399 | Nombre de trames | Stabilisation à partir de ~1200 trames |
+| **Argent** (Ag) | 426 | Rapport signal/bruit | Stabilisation à S/N ≥ 5 |
+
+**Protocole final retenu** : P = 100 %, Δt = 1 ms, observation face arrière.
+
+---
+
+## 05 — Compétences mobilisées
+
+- **Modélisation analytique** — Résolution de l'équation de la chaleur 3D par transformées intégrales (Laplace + Fourier-Cosinus), solution semi-analytique exploitable en temps réel.
+- **Problème inverse & estimation** — Estimateur ENH, choix de l'harmonique de référence (2,2), analyse de sensibilité, propagation des incertitudes.
+- **Simulation numérique** — Design d'expérience par éléments finis (FlexPDE), étude paramétrique (54 configurations), maillage adaptatif.
+- **Instrumentation & expérimentation** — Banc laser CO₂ + caméra IR, calibration, optimisation des paramètres d'acquisition, post-traitement MATLAB.
+- **Traitement du signal** — Projection en base cosinus, filtrage par sélection d'harmoniques, analyse du rapport signal/bruit, régularisation du problème inverse.
+
+---
+
+## Perspectives
+
+Ce travail a permis l'élaboration d'un protocole expérimental calibré pour la méthode Flash 3D, appliqué ensuite à la caractérisation d'échantillons d'**argent fritté** : étude des relations densité–conductivité thermique, effet du vieillissement, et influence de l'interface Ag/Cu sur les propriétés du système.
+
+---
+
+**Outils** : `MATLAB` · `FlexPDE` · `Format PTW (binaire IR)` · `Transformée de Fourier-Cosinus` · `Moindres carrés pondérés` · `Estimation robuste` · `Export LaTeX/PNG`
+
+*Ce travail constitue le **Chapitre 2** de mon manuscrit de thèse. Voir la [page dédiée à la thèse](/phd/) pour le contexte scientifique complet.*
