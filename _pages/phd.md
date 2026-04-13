@@ -503,7 +503,7 @@ Les résultats ouvrent plusieurs directions à fort intérêt scientifique et in
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Frittage Ag sous pression</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Vieillissement thermique accéléré</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Métrologie dimensionnelle</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Python / traitement de données</span>
+  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">MATLAB / Python / traitement de données</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">MATLAB / modélisation thermique</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Préparation métallographique</span>
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Rédaction scientifique (EN/FR)</span>
