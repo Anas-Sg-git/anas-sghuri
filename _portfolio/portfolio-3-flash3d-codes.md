@@ -1,229 +1,123 @@
 ---
-title: "Caractérisation thermique Flash 3D — Codes MATLAB & pipeline de données"
-excerpt: "Développement d'un pipeline complet d'estimation des propriétés thermiques : acquisition IR, transformée de Fourier-Cosinus, inversion par modèle linéaire et diagnostic statistique.<br/><img src='/images/portfolio-flash3d-thumbnail.png' alt='Architecture du pipeline Flash 3D'>"
+title: "Caractérisation thermique Flash 3D — Pipeline d'estimation et codes MATLAB"
+excerpt: "Développement d'un pipeline complet de mesure des propriétés thermiques : acquisition IR, traitement spectral, estimation paramétrique et diagnostic statistique.<br/><img src='/images/portfolio-flash3d-thumbnail.png' alt='Pipeline Flash 3D'>"
 collection: portfolio
 ---
 
-# Caractérisation thermique Flash 3D — Codes MATLAB & pipeline de données
+# Caractérisation thermique Flash 3D — Pipeline d'estimation et codes MATLAB
 
-> **Compétences mobilisées :** traitement du signal · problème inverse · estimation paramétrique · gestion de données expérimentales · analyse statistique · optimisation · MATLAB  
-> **Mots-clés sectoriels :** R&D matériaux · instrumentation · méthode de mesure · modélisation · plan d'expérience · fiabilité · incertitudes
+> **Compétences :** traitement du signal · problème inverse · estimation paramétrique · analyse statistique · gestion de données expérimentales · MATLAB  
+> **Domaines d'application :** R&D matériaux · instrumentation · modélisation · plan d'expérience · incertitudes
 
 ---
 
 ## Contexte
 
-Dans le cadre de ma thèse, j'ai utilisé et adapté un ensemble de codes MATLAB pour estimer les propriétés thermiques (diffusivités, conductivités) de matériaux à partir de mesures par caméra infrarouge. La méthode Flash 3D repose sur une excitation laser impulsionnelle et l'analyse du champ de température transitoire en surface de l'échantillon.
+La méthode Flash 3D permet de mesurer les diffusivités thermiques planes d'un matériau à partir d'un flash laser et d'une caméra infrarouge. Le principe : exciter thermiquement la surface, filmer la diffusion 2D en temps réel, puis résoudre un problème inverse pour remonter aux propriétés du matériau.
 
-Le défi principal : extraire des propriétés physiques fiables à partir de données bruitées, en maîtrisant chaque étape — de l'acquisition à l'estimation finale.
+Dans le cadre de ma thèse, j'ai utilisé et adapté un ensemble de codes MATLAB couvrant l'intégralité de la chaîne — de la lecture des données brutes jusqu'à l'estimation des conductivités thermiques et le diagnostic de la qualité du résultat.
 
 ---
 
-## Architecture du pipeline
+## Vue d'ensemble du pipeline
 
-Le pipeline de traitement se décompose en **6 modules fonctionnels** interconnectés :
-
-| Étape | Module | Fonction |
-|-------|--------|----------|
-| **1. Configuration** | `infos.txt` + `LoadIniFile.m` | Paramétrage centralisé de l'expérience |
-| **2. Lecture données** | `LoadDataFileSetPTW.m` | Chargement des trames IR (format PTW binaire) |
-| **3. Fond thermique** | Bloc dans `sLinearModelEstimate.m` | Soustraction du fond + compensation des dérives |
-| **4. Projection spectrale** | `transformTemperatureField.m` | Transformée de Fourier-Cosinus spatiale |
-| **5. Estimation** | `LinearModelEstimate.m` | Inversion par moindres carrés pondérés |
-| **6. Diagnostic** | `LinearModelDiagnostic.m` | Résidus, χ², R², distance de Cook |
-
-**Flux de données :**
 ```
-infos.txt → Lecture PTW → Soustraction fond → Transformée Fourier-Cosinus
-   → Normalisation harmoniques → Estimation (τx, τy) → Diffusivités (ax, ay)
+Fichier de configuration (infos.txt)
+        │
+        ▼
+Lecture des trames IR (format PTW binaire)
+        │
+        ▼
+Soustraction du fond thermique + compensation des dérives
+        │
+        ▼
+Projection sur les harmoniques spatiales (Fourier-Cosinus)
+        │
+        ▼
+Normalisation par l'harmonique de référence
+        │
+        ▼
+Estimation des paramètres (τx, τy) par modèle linéaire
+        │
+        ▼
+Calcul des diffusivités (ax, ay) et conductivités (λx, λy)
+        │
+        ▼
+Diagnostic statistique et validation
 ```
 
----
-
-## 1. Lecture et gestion des données brutes
-
-### Format PTW (propriétaire IR)
-
-Les données thermographiques sont stockées au format binaire PTW (FLIR/Jenoptik). J'ai travaillé avec les fonctions de lecture bas niveau :
-
-- **`LoadDataFileSetPTW.m`** — Chargement d'un ensemble de trames avec extraction d'une zone d'intérêt (ROI). Gère le mode `'full'` (image complète) et les sous-régions `[x1 y1 x2 y2]`.
-- **`LoadDataFilePTW.m`** — Lecture unitaire d'un fichier PTW : parsing de l'en-tête binaire, positionnement par `fseek`, extraction par `fread` avec gestion des types (DL uint16 ou température float).
-
-**Points techniques clés :**
-- Lecture binaire optimisée avec `fread` en mode bloc (`width*format, skip`) pour extraire uniquement la ROI sans charger l'image complète
-- Gestion transparente des deux formats de données (niveaux numériques DL et températures calibrées)
-- Validation systématique de la cohérence des dimensions (assertions sur les ranges)
-
-### Gestion du cache
-
-Le script principal implémente un **système de cache intelligent** (`data.tmp`) qui vérifie si les fichiers d'entrée ont changé depuis le dernier calcul. Si les données sont inchangées, les résultats intermédiaires (harmoniques, moyennes du fond, etc.) sont rechargés directement — un gain de temps significatif lors des itérations de mise au point.
+Le pipeline est orchestré par un script principal (`sLinearModelEstimate.m`, ~600 lignes) qui s'appuie sur plusieurs modules spécialisés. Un système de cache (`data.tmp`) évite de recalculer les étapes intermédiaires lorsque les données n'ont pas changé.
 
 ---
 
-## 2. Traitement du fond thermique et compensation
+## Lecture et prétraitement des données
 
-### Soustraction du fond
+Les données thermographiques sont stockées au format binaire PTW (propriétaire FLIR). La lecture repose sur deux fonctions complémentaires :
 
-Avant toute analyse, il faut isoler la réponse thermique de l'échantillon à l'excitation laser. Le traitement procède en **3 passes** :
+- **`LoadDataFileSetPTW`** charge un ensemble de trames en extrayant uniquement la zone d'intérêt demandée, ce qui limite la consommation mémoire.
+- **`LoadDataFilePTW`** lit un fichier unitaire par accès direct (`fseek` + `fread`) en gérant les deux types de données (niveaux numériques uint16 ou températures float).
 
-1. **Moyenne temporelle du fond** — Calcul de la moyenne des trames de fond (`backgroundImages`) pour obtenir un fond thermique stable.
-2. **Filtrage des trames aberrantes** — Analyse robuste (`robustfit`) de la moyenne temporelle. Les trames dont le résidu dépasse 2.576σ (seuil à 99 %) sont rejetées automatiquement.
-3. **Soustraction spatiale** — Le fond moyen est soustrait de chaque trame pour obtenir les températures relatives.
+Le prétraitement comprend ensuite trois opérations :
 
-### Compensation des dérives
-
-La caméra IR présente des dérives temporelles qu'il faut corriger. Le script utilise une **zone de pixels de compensation** (`compensationPixels`) dont la température est supposée constante. Les variations observées sur cette zone sont retranchées des harmoniques — trame par trame et fréquence par fréquence.
-
-### Calibration DL → Température
-
-Lorsqu'un fichier de calibration est fourni, une loi d'étalonnage (interpolation) convertit les niveaux numériques (DL) en températures physiques.
+1. **Fond thermique** — Moyenne temporelle des trames acquises avant le flash. Les trames aberrantes sont détectées par régression robuste (`robustfit`, seuil à 99 %) et exclues automatiquement.
+2. **Compensation des dérives** — Une zone de pixels hors excitation sert de référence pour corriger les fluctuations temporelles de la caméra, harmonique par harmonique.
+3. **Calibration** — Conversion optionnelle des niveaux numériques en températures via un fichier d'étalonnage.
 
 ---
 
-## 3. Transformée de Fourier-Cosinus
+## Projection spectrale et normalisation
 
-### Principe
+Le champ de température est projeté sur une base de cosinus spatiaux (transformée de Fourier-Cosinus), ce qui réduit chaque image 2D à un jeu de coefficients scalaires — les harmoniques T̂(m,n,t).
 
-Le champ de température 2D est projeté sur une base d'harmoniques spatiales en cosinus :
+La fonction `transformTemperatureField` implémente cette projection en mode vectorisé (séparation des composantes x et y) et supporte deux schémas d'intégration : `'pixel'` pour les données expérimentales (point au centre du pixel) et `'pt'` pour les données simulées (nœuds aux bords, pondération trapézoïdale).
 
-$$\hat{T}(m,n,t) = \int_0^{l_x} \int_0^{l_y} T(x,y,t) \cdot \cos\left(\frac{m\pi x}{l_x}\right) \cdot \cos\left(\frac{n\pi y}{l_y}\right) \, dx \, dy$$
-
-### Implémentation — `transformTemperatureField.m`
-
-Cette fonction calcule la projection discrète du champ de température sur les harmoniques demandées. Elle supporte deux modes d'intégration numérique :
-
-| Mode | Position des points | Pondération | Usage |
-|------|---------------------|-------------|-------|
-| `'pixel'` | Centre du pixel : `(i−0.5)/N` | Uniforme : `Δx = lx/N` | Données caméra IR |
-| `'pt'` | Nœuds : `(i−1)/(N−1)` | Trapèzes : bords à `Δx/2` | Données simulées |
-
-**Optimisation :** le calcul est vectorisé en séparant les composantes x et y (`baseX`, `baseY`), ce qui évite une double boucle sur les pixels et permet de traiter efficacement des matrices de grande taille.
-
-### Normalisation par l'harmonique de référence
-
-L'étape clé de la méthode : en divisant chaque harmonique par une harmonique de référence `(mref, nref)`, on élimine les paramètres inconnus du problème (énergie Q, pertes convectives h, épaisseur lz, diffusivité transverse az) :
-
-$$R(m,n,t) = \frac{\hat{T}(m,n,t)}{\hat{T}(m_{\text{ref}}, n_{\text{ref}}, t)} \quad \xrightarrow{\text{modèle}} \quad f(\tau_x, \tau_y, C_{mn})$$
-
-Le rapport normalisé ne dépend plus que des paramètres plans **τx** et **τy**, qui sont liés aux diffusivités par :
-
-$$a_x = \tau_x \cdot \frac{l_x^2}{\pi^2}, \quad a_y = \tau_y \cdot \frac{l_y^2}{\pi^2}$$
+L'étape clé est la **normalisation** : en divisant chaque harmonique par une harmonique de référence, on élimine les paramètres inaccessibles (énergie laser, pertes convectives, épaisseur, diffusivité transverse). Le rapport normalisé ne dépend plus que des deux paramètres plans recherchés, τx et τy.
 
 ---
 
-## 4. Estimation par modèle linéaire
+## Estimation et diagnostic
 
-### Algorithme d'inversion — `LinearModelEstimate.m`
+L'estimation est réalisée par `LinearModelEstimate` via une minimisation par moindres carrés pondérés. Le modèle est structuré autour de quatre structures MATLAB (`unknownParams`, `procParams`, `dataParams`, `optParams`) qui séparent clairement les paramètres à estimer, la configuration physique, les données et les options algorithmiques.
 
-L'estimation des paramètres repose sur une **minimisation par moindres carrés pondérés**. Le modèle est linéaire en les coefficients `C_mn` (amplitudes des harmoniques) et non linéaire en `τx`, `τy` — mais la normalisation rend le problème globalement linéaire après reparamétrisation.
+**Sorties principales :**
+- Diffusivités thermiques ax, ay (avec incertitudes)
+- Conductivités thermiques λx, λy (à partir de la capacité calorifique et de la densité)
+- Métriques de qualité : χ² réduit, R², R² ajusté, corrélation, fraction des résidus expliqués
 
-**Paramètres estimés :**
-- `τx`, `τy` — taux de décroissance dans les directions x et y
-- `C_mn` — amplitudes associées à chaque harmonique exploitée
-- Incertitudes associées (écarts-types) via la matrice de covariance
-
-**Options avancées :**
-- Information a priori sur τ (régularisation bayésienne)
-- Estimation robuste (pondération itérative des résidus, paramètre `robustH`)
-- Diagnostic complet (χ², R², R² ajusté, corrélation, validRatio, distance de Cook)
-
-### Structures de données
-
-Le code s'organise autour de **4 structures MATLAB** qui encapsulent les différents aspects du problème :
-
-| Structure | Contenu |
-|-----------|---------|
-| `unknownParams` | Paramètres à estimer (τ, C) et leurs a priori |
-| `procParams` | Configuration du modèle (fréquences, temps, face excitée, σ) |
-| `dataParams` | Données expérimentales (harmoniques, fond, compensation) |
-| `optParams` | Options algorithmiques (robustesse, debug, affichage) |
+Le module de diagnostic (`LinearModelDiagnostic`) génère les graphiques de résidus et permet l'export en PNG ou LaTeX. Une option d'estimation robuste avec pondération itérative des résidus est disponible pour traiter les données contenant des points aberrants.
 
 ---
 
-## 5. Diagnostic et validation
+## Calibration expérimentale
 
-### Métriques de qualité du fittage
+La fiabilité de la méthode a été établie sur trois métaux de référence, en identifiant les paramètres expérimentaux optimaux :
 
-| Métrique | Signification | Objectif |
-|----------|---------------|----------|
-| χ² réduit | Somme pondérée des résidus / (N − p) | ≈ 1 |
-| R² | Coefficient de détermination | → 1 |
-| R² ajusté | R² corrigé pour le nombre de paramètres | → 1 |
-| Corrélation | Corrélation données/modèle (pondérée et non pondérée) | → 1 |
-| validRatio | Fraction des résidus expliqués à 99 % | → 1 |
-| Distance de Cook | Influence de chaque observation | Détection d'outliers |
+| Étude | Paramètre varié | Résultat clé |
+|-------|-----------------|--------------|
+| **Aluminium** | Puissance laser (30 → 90 %) | Erreur < 1 % à puissance maximale |
+| **Cuivre** | Nombre de trames (200 → 1600) | Convergence à partir de ~1200 trames |
+| **Argent** | Rapport signal/bruit (1 → 30) | Stabilisation dès S/B ≈ 5 |
 
-### Diagnostic visuel — `LinearModelDiagnostic.m`
-
-Génération automatique de graphiques :
-- Résidus normalisés vs. prédictions
-- Résidus vs. temps (par harmonique)
-- Export PNG et/ou LaTeX
-
----
-
-## 6. Visualisation des données brutes
-
-Un script dédié permet de **visualiser rapidement les trames thermiques** : chargement via `LoadDataFileSet`, soustraction optionnelle du fond, affichage avec `imshow` en niveaux de gris. Des modules FFT2 et DCT2 sont disponibles pour l'analyse fréquentielle du champ.
-
----
-
-## Calibration et optimisation expérimentale
-
-La fiabilité des mesures a été établie par une **campagne systématique sur trois métaux de référence** (Al, Cu, Ag), en faisant varier les paramètres expérimentaux :
-
-### Aluminium — Effet de la puissance laser
-
-| Paramètre | Plage testée | Observation |
-|-----------|-------------|-------------|
-| Puissance laser | 30 % → 90 % | λ augmente avec P ; erreur relative < 1 % à P ≥ 80 % |
-| Durée du pulse | 10⁻³ s (fixe) | Condition d'impulsionnalité respectée |
-
-**Conclusion :** utiliser la puissance maximale pour maximiser le rapport signal/bruit.
-
-### Cuivre — Effet du nombre de trames
-
-| Paramètre | Plage testée | Observation |
-|-----------|-------------|-------------|
-| Nombre de trames | 200 → 1600 | Convergence à partir de ≈ 1200 trames |
-| Référence Cu | 401 W·m⁻¹·K⁻¹ | Stabilisation autour de la valeur tabulée |
-
-**Conclusion :** un nombre minimum de trames est nécessaire pour la convergence statistique.
-
-### Argent — Rapport signal/bruit
-
-| Paramètre | Plage testée | Observation |
-|-----------|-------------|-------------|
-| Rapport S/B | 1 → 30 | Stabilisation dès S/B ≈ 5 |
-| Référence Ag | 429 W·m⁻¹·K⁻¹ | Mesures fiables à ± 6 % |
-
-**Conclusion :** un rapport S/B ≥ 5 est suffisant pour des mesures précises.
-
-### Validation numérique
-
-54 simulations (3 énergies × 3 durées de pulse × 3 épaisseurs × 2 faces) ont confirmé que l'erreur d'estimation est inférieure à 2 % dans les conditions favorables (Δt_laser → 0).
+Ces études ont conduit à retenir les conditions suivantes : puissance maximale, durée de pulse 10⁻³ s, épaisseur 0.5 mm, ≥ 1200 trames. Une campagne de 54 simulations numériques a confirmé des erreurs d'estimation inférieures à 2 % dans ces conditions.
 
 ---
 
 ## Compétences transférables
 
-Ce travail illustre des compétences directement mobilisables en contexte industriel :
-
-| Domaine | Compétence | Application industrielle |
-|---------|------------|--------------------------|
-| **Traitement du signal** | Transformée spectrale, filtrage, compensation de dérives | Instrumentation, capteurs, contrôle qualité |
-| **Problème inverse** | Estimation paramétrique, moindres carrés pondérés, régularisation | Modélisation procédés, identification de paramètres |
-| **Analyse statistique** | χ², R², résidus, distance de Cook, estimation robuste | Validation de modèles, plans d'expérience |
-| **Gestion de données** | Pipeline reproductible, cache, traçabilité, fichier de configuration | Workflows data, reproductibilité, industrialisation |
-| **Optimisation** | Calibration multi-paramètres, analyse de sensibilité | Optimisation procédés, réduction d'itérations |
-| **Programmation** | MATLAB (600+ lignes), architecture modulaire, I/O binaire | Développement d'outils d'analyse, automatisation |
+| Compétence technique | Application industrielle |
+|---------------------|--------------------------|
+| Pipeline de traitement reproductible (config, cache, traçabilité) | Workflows data, industrialisation d'outils d'analyse |
+| Estimation paramétrique et problème inverse | Modélisation procédés, identification de lois de comportement |
+| Analyse statistique (χ², résidus, estimation robuste) | Validation de modèles, plans d'expérience, incertitudes |
+| Calibration multi-paramètres et analyse de sensibilité | Optimisation procédés, réduction d'itérations d'essais |
+| Lecture/écriture de formats binaires, architecture modulaire | Développement d'outils, interfaçage instrumentation |
 
 ---
 
-## Outils et technologies
+## Outils
 
-`MATLAB` · `Traitement d'images IR` · `Format PTW (binaire)` · `Transformée de Fourier-Cosinus` · `Moindres carrés pondérés` · `Estimation robuste` · `Analyse de variance` · `Export LaTeX/PNG` · `Système de cache` · `Fichiers de configuration (INI)`
+`MATLAB` · `Format PTW (binaire IR)` · `Transformée de Fourier-Cosinus` · `Moindres carrés pondérés` · `Estimation robuste` · `Export LaTeX/PNG` · `Système de cache`
 
 ---
 
-*Ce projet est détaillé dans le **Chapitre 2** de mon manuscrit de thèse. Pour une présentation complète de la méthode et des résultats, voir la [page dédiée à la thèse](/phd/).*
+*Ce travail est détaillé dans le **Chapitre 2** de mon manuscrit de thèse. Voir aussi la [page dédiée à la thèse](/phd/) pour le contexte scientifique complet.*
