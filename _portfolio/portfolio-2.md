@@ -1,6 +1,8 @@
 ---
 title: "Quantification de l'épaisseur d'interface par traitement d'images MEB"
-excerpt: "Développement d'une méthode de segmentation d'images de microscopie pour quantifier l'évolution locale de la porosité et estimer l'épaisseur d'une zone d'interface dans un matériau bicouche. "
+excerpt: "Développement d'une méthode de segmentation d'images de microscopie pour quantifier l'évolution locale de la porosité et estimer l'épaisseur d'une zone d'interface dans un matériau bicouche. <br/>
+<img src='/anas-sghuri/images/portfolio-interface-methode-complete.png' 
+     alt='Segmentation MEB' style='width:100%; margin-top:0.5em;'>"
 collection: portfolio
 ---
 
