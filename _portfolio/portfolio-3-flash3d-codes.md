@@ -22,7 +22,7 @@ collection: portfolio
 
 ## 01 — Contexte & Enjeu
 
-La méthode Flash classique (Parker, 1961) repose sur une excitation thermique uniforme et une mesure 1D en face arrière. Elle ne permet pas d'accéder aux propriétés thermiques dans le plan — et ses hypothèses deviennent insuffisantes dès que le matériau est très conducteur ou potentiellement anisotrope.
+La méthode Flash classique (Parker, 1961) repose sur une excitation thermique uniforme et une mesure 1D en face arrière. Elle ne permet pas d'accéder aux propriétés thermiques dans le plan et ses hypothèses deviennent insuffisantes dès que le matériau est très conducteur ou potentiellement anisotrope.
 
 C'est le cas des matériaux d'argent frittés : leur **structure poreuse complexe** et leur **anisotropie thermique** probable (liée au procédé de frittage) exigent une approche capable de caractériser les propriétés dans les trois directions. L'argent possède la conductivité thermique la plus élevée parmi les métaux purs (~426 W·m⁻¹·K⁻¹), générant des dynamiques thermiques extrêmement rapides et difficiles à capturer.
 
@@ -49,10 +49,10 @@ Le modèle repose sur un ensemble d'hypothèses qui permettent une résolution a
 - Les **faces latérales sont isolées** (flux nul), les faces avant et arrière échangent par convection.
 - L'excitation laser est un **flux surfacique localisé** φ(x,y,t) sur la face avant.
 
-Grâce à ces conditions aux limites, le champ de température se décompose naturellement sur une **base de cosinus spatiaux** — les harmoniques T̂(m,n,t). Cette décomposition transforme un problème 3D instationnaire en un ensemble de **problèmes 1D indépendants selon z**, chacun résolu analytiquement. C'est ce qui rend la méthode à la fois rigoureuse et calculable en temps raisonnable.
+Grâce à ces conditions aux limites, le champ de température se décompose sur une **base de cosinus spatiaux** en harmoniques T̂(m,n,t). Cette décomposition transforme un problème 3D instationnaire en un **problème 2D indépendant de z**, résolu analytiquement. C'est ce qui rend la méthode à la fois rigoureuse et calculable en temps raisonnable.
 
 ![Modèle mathématique 3D](/images/portfolio-flash3d-modele.png)
-*Modèle analytique 3D : équation de la chaleur avec conditions aux limites (isolation latérale, convection avant/arrière, excitation laser). La solution se décompose en trois termes : signature fréquentielle de l'excitation, solution du problème 1D dans l'épaisseur, et évanescence de chaque harmonique spatiale.*
+*Modèle analytique 3D : équation de la chaleur avec conditions aux limites (isolation latérale, convection avant/arrière, excitation laser). La solution se décompose en trois termes : signature fréquentielle de l'excitation, solution du problème dans l'épaisseur, et évanescence de chaque harmonique spatiale.*
 
 ### Estimateur ENH (Normalisation des Harmoniques)
 
