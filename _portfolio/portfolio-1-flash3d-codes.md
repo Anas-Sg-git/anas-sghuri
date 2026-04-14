@@ -2,7 +2,7 @@
 title: "Caractérisation thermique Flash 3D — Pipeline d'estimation et codes MATLAB"
 excerpt: "Développement d'un pipeline complet de mesure des propriétés thermiques : acquisition IR, traitement spectral, estimation paramétrique et diagnostic statistique.<br/>
 <img src='/anas-sghuri/images/portfolio-flash3d-thumbnail.png' 
-     alt='Pipeline Flash 3D' style='width:80%; margin-top:0.5em;'>"
+     alt='Pipeline Flash 3D' style='width:70%; margin-top:0.5em;'>"
 collection: portfolio
 ---
 
