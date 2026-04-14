@@ -28,6 +28,9 @@ C'est le cas des matériaux d'argent frittés : leur **structure poreuse complex
 
 **Approche retenue** : la méthode Flash 3D, combinant une excitation laser localisée et une caméra infrarouge matricielle, permettant l'estimation simultanée des diffusivités planes (a_x, a_y) par analyse des harmoniques spatiales.
 
+![Banc expérimental Flash 3D](/images/portfolio-flash3d-banc.png)
+*Banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse (FLIR-SC7000, 2000 fps), échantillon et cryothermostat.*
+
 ---
 
 ## 02 — Modèle analytique & méthodologie
@@ -48,6 +51,9 @@ Le modèle repose sur un ensemble d'hypothèses qui permettent une résolution a
 
 Grâce à ces conditions aux limites, le champ de température se décompose naturellement sur une **base de cosinus spatiaux** — les harmoniques T̂(m,n,t). Cette décomposition transforme un problème 3D instationnaire en un ensemble de **problèmes 1D indépendants selon z**, chacun résolu analytiquement. C'est ce qui rend la méthode à la fois rigoureuse et calculable en temps raisonnable.
 
+![Modèle mathématique 3D](/images/portfolio-flash3d-modele.png)
+*Modèle analytique 3D : équation de la chaleur avec conditions aux limites (isolation latérale, convection avant/arrière, excitation laser). La solution se décompose en trois termes : signature fréquentielle de l'excitation, solution du problème 1D dans l'épaisseur, et évanescence de chaque harmonique spatiale.*
+
 ### Estimateur ENH (Normalisation des Harmoniques)
 
 L'observable est le logarithme du rapport entre une harmonique (m,n) et une harmonique de référence (p,q) :
@@ -59,6 +65,9 @@ Y_m,n(t) = ln|θ_m,n(t) / θ_p,q(t)| = C_m,n + [τₓ·(p²−m²) + τᵧ·(q²
 Cette normalisation élimine d'un coup tous les paramètres inaccessibles — énergie laser Q, coefficient de pertes h, épaisseur l_z et diffusivité transverse a_z. Le problème inverse devient **linéaire**, permettant une résolution directe par moindres carrés pondérés.
 
 L'harmonique **(2,2)** est choisie comme référence plutôt que (0,0) car elle possède un écart-type deux fois plus faible et une meilleure robustesse au bruit environnemental.
+
+![Principe d'identification ENH](/images/portfolio-flash3d-identification.png)
+*Principe d'identification des propriétés thermiques par l'estimateur ENH : les données expérimentales et le modèle analytique sont projetés en Fourier (espace) et Laplace (temps), puis comparés via la normalisation harmonique. La chaîne d'estimation conduit des temps caractéristiques τ aux diffusivités α puis aux conductivités λ.*
 
 ### Comportement des harmoniques
 
@@ -115,6 +124,9 @@ Trois campagnes de mesures sur des échantillons de **50 × 50 × 0.5 mm** ont p
 | **Argent** (Ag) | 426 | Rapport signal/bruit | Stabilisation à S/N ≥ 5 |
 
 **Protocole final retenu** : P = 100 %, Δt = 1 ms, observation face arrière.
+
+![Calibration Al, Cu, Ag](/images/portfolio-flash3d-calibration.png)
+*Résultats de calibration sur trois métaux de référence. Al : la conductivité et la précision augmentent avec la puissance laser. Cu : convergence vers la valeur de référence à partir de ~1200 trames. Ag : stabilisation dès un rapport signal/bruit de 5. Conclusions : λx ≈ λy (isotropie vérifiée), erreur globale ~6 %.*
 
 ---
 
