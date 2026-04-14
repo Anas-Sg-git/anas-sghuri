@@ -1,7 +1,9 @@
 ---
 title: "Microtraction de systèmes Ag nanoporeux / Cu : influence du vieillissement thermique et du frittage"
 excerpt: "Ce projet de portfolio présente mon travail sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouches Ag/Cu, en combinant des essais de traction, la corrélation d’images numériques et l’analyse de la rupture interfaciale afin d’étudier le rôle du vieillissement thermique et de la pression de frittage sur la fiabilité de l’assemblage.
-Ce projet porte sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouche Ag/Cu, afin d’évaluer l’effet du temps de vieillissement thermique et de la pression de frittage sur le comportement en micro-traction."
+Ce projet porte sur l'élaboration d'échantillons et la caractérisation mécanique de l’Ag nanoporeux et de bicouche Ag/Cu, afin d’évaluer l’effet du temps de vieillissement thermique et de la pression de frittage sur le comportement en micro-traction.<br/>
+<img src='/anas-sghuri/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png' 
+     alt='Microtraction Ag/Cu' style='width:100%; margin-top:0.5em;'>"
 collection: portfolio
 ---
 
