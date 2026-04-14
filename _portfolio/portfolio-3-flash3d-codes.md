@@ -30,7 +30,7 @@ C'est le cas des matériaux d'argent frittés : leur **structure poreuse complex
 
 <img src="{{ '/images/portfolio-flash3d-banc.png' | relative_url }}" 
      alt="Banc expérimental Flash 3D : laser CO₂, caméra IR, échantillon, cryothermostat" 
-     style="display: block; width: 100%; max-width: 800px; height: auto; margin: 1.5em auto;">
+     style="display: block; width: 70%; max-width: 800px; height: auto; margin: 1.5em auto;">
 *Banc expérimental de la méthode Flash 3D : laser CO₂, caméra IR haute vitesse (FLIR-SC7000, 2000 fps), échantillon et cryothermostat.*
 
 ---
@@ -95,47 +95,52 @@ laser CO₂    →     champ T(x,y,t)  →   harmoniques θₘₙ  →  rapport 
 Le pipeline est orchestré par un script principal (`sLinearModelEstimate.m`) qui gère la lecture des trames IR (format binaire PTW), la soustraction du fond thermique avec rejet robuste des trames aberrantes, la compensation des dérives de la caméra, la projection spectrale, l'estimation et le diagnostic statistique (χ² réduit, R², résidus). Un système de cache évite de recalculer les étapes intermédiaires lorsque les données n'ont pas changé.
 
 ---
-
+ 
 ## 03 — Validation numérique
-
-Une étude paramétrique complète a été menée avec **FlexPDE** (éléments finis, maillage adaptatif) sur un échantillon virtuel d'argent (a = 173×10⁻⁶ m²·s⁻¹).
-
+ 
+Avant d'appliquer la méthode à des matériaux inconnus, il est indispensable de vérifier que l'estimateur ENH fonctionne correctement dans des conditions maîtrisées. La validation numérique consiste à générer des données synthétiques à partir d'un modèle éléments finis (dont on connaît exactement les propriétés), puis à les traiter avec le pipeline d'estimation pour vérifier qu'on retrouve bien les valeurs injectées. C'est le test le plus exigeant : si l'estimateur échoue sur des données parfaites, il n'a aucune chance sur des données réelles.
+ 
+Une étude paramétrique complète a été menée avec **FlexPDE** (éléments finis, maillage adaptatif) sur un échantillon virtuel d'argent (a = 173×10⁻⁶ m²·s⁻¹), en explorant l'influence de quatre paramètres clés :
+ 
 | Paramètre | Valeurs testées |
 |---|---|
 | Épaisseur l_z | 1, 5, 10 mm |
 | Énergie laser Q | 1, 10, 100 J |
 | Durée d'impulsion Δt | 0.01, 0.1, 1 s |
 | Face observée | Avant, Arrière |
-
+ 
 **Total : 54 configurations simulées** (3 × 3 × 3 × 2)
-
+ 
 | Indicateur | Résultat |
 |---|---|
 | Meilleure erreur relative | **< 1 %** (face arrière, Δt = 0.01 s) |
 | Face privilégiée | **Face arrière** (systématiquement meilleure) |
 | Robustesse au bruit | Erreur < 13 % pour σ = 0.1 °C |
-
+ 
 **Enseignements** : l'excitation doit être la plus brève et intense possible ; la face arrière fournit des estimations plus robustes ; un compromis énergétique est nécessaire pour éviter de violer l'hypothèse de propriétés constantes (T_max < 100 °C).
-
+ 
 ---
-
+ 
 ## 04 — Validation expérimentale
-
-Trois campagnes de mesures sur des échantillons de **50 × 50 × 0.5 mm** ont permis d'optimiser les paramètres et de valider la méthode contre les valeurs de la littérature. Chaque échantillon a été mesuré **20 fois** pour quantifier la reproductibilité.
-
+ 
+La validation numérique montre que la méthode fonctionne en théorie. Reste à le prouver sur de vrais matériaux, avec du vrai bruit, de vraies dérives de caméra et de vraies incertitudes de mesure. Pour cela, trois métaux purs de référence (Al, Cu, Ag) ont été choisis : leurs conductivités thermiques sont connues avec précision dans la littérature, ce qui permet de comparer directement les valeurs mesurées aux valeurs attendues.
+ 
+Chaque matériau a été utilisé pour étudier l'influence d'un paramètre expérimental spécifique, sur des échantillons de **50 × 50 × 0.5 mm** mesurés **20 fois** chacun pour quantifier la reproductibilité.
+ 
 | Matériau | λ référence (W·m⁻¹·K⁻¹) | Paramètre étudié | Conclusion clé |
 |---|---|---|---|
 | **Aluminium** (Al) | 239 | Intensité du laser | Puissance max + durée minimale nécessaire |
 | **Cuivre** (Cu) | 399 | Nombre de trames | Stabilisation à partir de ~1200 trames |
 | **Argent** (Ag) | 426 | Rapport signal/bruit | Stabilisation à S/N ≥ 5 |
-
+ 
 **Protocole final retenu** : P = 100 %, Δt = 1 ms, observation face arrière.
-
+ 
 <img src="{{ '/images/portfolio-flash3d-calibration.png' | relative_url }}" 
      alt="Résultats de calibration : Al vs puissance laser, Cu vs nombre de trames, Ag vs signal/bruit" 
      style="display: block; width: 100%; max-width: 800px; height: auto; margin: 1.5em auto;">
+ 
 *Résultats de calibration sur trois métaux de référence. Al : la conductivité et la précision augmentent avec la puissance laser. Cu : convergence vers la valeur de référence à partir de ~1200 trames. Ag : stabilisation dès un rapport signal/bruit de 5. Conclusions : λx ≈ λy (isotropie vérifiée), erreur globale ~6 %.*
-
+ 
 ---
 
 ## 05 — Compétences mobilisées
@@ -156,4 +161,4 @@ Ce travail a permis l'élaboration d'un protocole expérimental calibré pour la
 
 **Outils** : `MATLAB` · `FlexPDE` · `Format PTW (binaire IR)` · `Transformée de Fourier-Cosinus` · `Moindres carrés pondérés` · `Estimation robuste` · `Export LaTeX/PNG`
 
-*Ce travail constitue le **Chapitre 2** de mon manuscrit de thèse. Voir la [page dédiée à la thèse](/phd/) pour le contexte scientifique complet.*
+*Ce travail constitue le **Chapitre 2** de mon manuscrit de thèse.*
