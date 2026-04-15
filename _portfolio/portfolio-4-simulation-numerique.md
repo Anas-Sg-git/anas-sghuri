@@ -1,6 +1,8 @@
 ---
 title: "Simulation numérique de la conduction thermique 3D — Python & FlexPDE"
-excerpt: "Implémentation d'un solveur pour l'équation de la chaleur 3D instationnaire dans un milieu anisotrope, excité par impulsion laser gaussienne — différences finies, schéma implicite, scipy sparse."
+excerpt: "Implémentation d'un solveur pour l'équation de la chaleur 3D instationnaire dans un milieu anisotrope, excité par impulsion laser gaussienne — différences finies, schéma implicite, scipy sparse.<br/>
+<img src='/anas-sghuri/images/portfolio-simu-excerpt.png' 
+     alt='portfolio-simu-excerpt' style='width:70%; margin-top:0.5em;'>"
 collection: portfolio
 ---
 
