@@ -4,6 +4,12 @@ title: "Anas SGHURI — Docteur en Sciences des Matériaux"
 author_profile: true
 ---
 
+<div style="text-align: center; margin-bottom: 2em;">
+  <img src="/anas-sghuri/images/avatar.gif" 
+       alt="Avatar animé" 
+       style="width: 200px; border-radius: 50%;">
+</div>
+
 ## À propos
 
 Docteur-ingénieur en sciences des matériaux, j'ai développé au cours de ma thèse un ensemble de compétences en caractérisation expérimentale, analyse de données et méthodologie de mesure, appliquées à des problématiques de fiabilité dans un contexte industriel exigeant.
