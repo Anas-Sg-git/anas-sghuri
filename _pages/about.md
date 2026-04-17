@@ -5,7 +5,7 @@ author_profile: true
 ---
 
 <div style="text-align: center; margin-bottom: 2em;">
-  <img src="/anas-sghuri/images/avatar.gif" 
+  <img src="/anas-sghuri/images/avatar_4.gif" 
        alt="Avatar animé" 
        style="width: 200px; border-radius: 50%;">
 </div>
