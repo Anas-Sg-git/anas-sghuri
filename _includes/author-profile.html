@@ -28,12 +28,14 @@
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
       {% if author.employers %}
-      {% for emp in author.employers %}
         <li>
-      {% if forloop.first %}<i class="fa fa-fw fa-university" aria-hidden="true"></i>{% else %}<i class="fa fa-fw" aria-hidden="true"></i>{% endif %}
-        <a href="{{ emp.url }}">{{ emp.name }}</a>
+        <i class="fa fa-fw fa-university" aria-hidden="true"></i>
+        <span style="display: inline-block; vertical-align: top; line-height: 1.6;">
+      {% for emp in author.employers %}
+        <a href="{{ emp.url }}" style="display: inline;">{{ emp.name }}</a>{% unless forloop.last %}<br>{% endunless %}
+       {% endfor %}
+        </span>
         </li>
-      {% endfor %}
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
