@@ -32,32 +32,102 @@ author_profile: true
 
 # Compétences
 
-## Matériaux & caractérisation
-* Développement et sélection de matériaux métalliques (critères techniques, normatifs, RoHS…)
-* Métallographie avancée : découpe, enrobage, polissage, attaque chimique
-* Microscopie optique, MEB, MEB-FEG — quantification de porosité et taille de grains (µm/nm)
-* Dureté, profilométrie, densité (Archimède, masse/volume)
+<div style="background:#f7f8fa; border-radius:8px; padding:1.1rem 1.2rem; margin:1.2rem 0; border-left:3px solid #2c5282;">
+  <div style="font-size:12px; letter-spacing:0.04em; color:#718096; text-transform:uppercase; margin-bottom:0.8rem; font-weight:600;">Chaîne de compétences R&amp;D matériaux</div>
+  <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; line-height:1.9;">
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">1</span>Procédé &amp; élaboration</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">2</span>Préparation métallographique</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">3</span>Caractérisation <span style="color:#718096;">(thermique, mécanique, microstructurale)</span></span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">4</span>Métrologie</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">5</span>Modélisation &amp; estimation</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">6</span>Programmation &amp; traitement de données</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">7</span>Analyse &amp; résolution de problèmes</span>
+    <span style="color:#a0aec0; font-size:13px;">→</span>
+    <span style="background:#fff; border:1px solid #e2e8f0; padding:5px 10px; border-radius:6px; font-size:13px;"><span style="color:#a0aec0; margin-right:4px;">8</span>Qualité, HSE &amp; industrialisation</span>
+  </div>
+</div>
 
-## Élaboration
-* Frittage d'argent nanoparticulaire à basse température et sous pression (~270 °C / 0–10 MPa)
-* Dégazage sous vide, préparation de surface, empilement multicouche
+## Science des matériaux & procédés d'élaboration
+* Matériaux métalliques frittés, pâtes d'argent nanoparticulaire, joints d'interconnexion pour l'électronique de puissance et environnements sévères (haute température, forte puissance)
+* **Frittage d'argent** : frittage sous pression (0–10 MPa), frittage sans pression, cycles thermiques optimisés (270 °C / 5 min) — densification, coalescence, consolidation de poudres métalliques
+* Élaboration d'échantillons massifs, bicouches Ag/Cu et empilements multicouches reproductibles
+* Dégazage sous vide contrôlé, dépôt en couches répétées, maîtrise de l'épaisseur déposée, prétraitement thermique
+* Comparaison et positionnement de procédés d'interconnexion (brasage sans plomb, diffusion en phase liquide transitoire / TLP, frittage)
+* Conception d'échantillons sur substrats Cu, polyimide, Si ; traitements de surface (décapage HCl, revêtement mat pour absorption IR)
+
+## Métallographie & préparation d'échantillons
+* Découpe, enrobage, polissage successif avec papiers abrasifs de granulométries graduées jusqu'à **surface miroir**
+* Attaque chimique, préparation pour observation MEB et analyse de porosité, d'interface et de taille de grains
+* Adaptation des protocoles aux matériaux fragiles, multicouches et géométries fines
+* Préparation d'échantillons pour essais de vieillissement accéléré, essais mécaniques et mesures thermiques
 
 ## Caractérisation thermique
-* Méthode Flash 3D (laser CO₂ + caméra infrarouge), calibration, optimisation signal/bruit
-* Mesure de conductivité thermique, diffusivité thermique, capacité calorifique (mDSC, DSC, ATG)
-* Suivi en fonction du vieillissement thermique et de l'interface Ag/Cu
+* **Méthode Flash 3D** (laser CO₂ + caméra IR) : mise en œuvre, calibration sur Al/Cu/Ag, mesure en régime transitoire par face avant
+* Mesure de **conductivité thermique, diffusivité thermique et capacité calorifique** sur matériaux hautement diffusifs, poreux, anisotropes/orthotropes
+* Analyse calorimétrique : **DSC, DSC modulée (mDSC), ATG** — détection de transitions endo/exothermiques, perte de masse, seuils de frittage et de décomposition
+* Conduite de campagnes de **vieillissement thermique accéléré** (150–350 °C, jusqu'à 500 h) sous atmosphère contrôlée (vide primaire)
+* Identification de régimes cinétiques, stabilisation, sauts de conductivité, effets d'interface et de substrat
+* Estimation de conductivité thermique globale, locale et interfaciale pour systèmes hétérogènes
+* Analyse de l'effet des résistances thermiques de contact sur assemblages multicouches
 
-## Traitement & modélisation des données
-* Résolution de l'équation de la chaleur 3D instationnaire, méthode inverse (estimateurs harmoniques)
-* Plans d'expériences, évaluation d'incertitudes
-* Scripts Matlab et Python
+## Caractérisation mécanique
+* Essais de **microtraction** sur échantillons fragiles : Ag nanoporeux et bicouches Ag/Cu
+* **Corrélation d'images numériques (DIC)** : préparation de mouchetis, mesure de champs de déplacements et de déformations, synchronisation effort / cinématique
+* Analyse du comportement mécanique en deux temps : rupture fragile de l'Ag, relais plastique du Cu, transitions interfaciales
+* Interprétation de courbes contrainte–déformation, détection et analyse des *stress drops* (glissement / désolidarisation interfaciale)
+* Détermination du module de Young, identification des mécanismes de rupture de systèmes bimatériaux
+* Étude du couplage **procédé / vieillissement / intégrité interfaciale** par voie mécanique
+* Traitement des données cinématiques et d'effort sous Matlab
 
-## Analyses de défaillance
-* Microstructure et interfaces, formulation d'hypothèses, tests de confirmation, actions correctives
+## Caractérisation microstructurale & analyse d'images
+* **Microscopie électronique à balayage (MEB, MEB-FEG)**, microscopie optique, profilométrie optique
+* Quantification de **porosité** (primaire, surfacique), **densité relative**, **taille de grains** (distribution, moyenne, écart-type ~ 300 nm)
+* Analyse d'**interfaces Ag/Cu** : mesure d'épaisseur d'interface, fractions en épaisseur et surfaciques, identification de zones d'hétérogénéité, suivi d'évolution en vieillissement
+* **Traitement d'images scientifiques** sous ImageJ/Fiji et Matlab : binarisation, seuillage, segmentation ligne par ligne, détection et comptage de grains, overlay
+* Conversion pixel/mm, construction de distributions granulométriques, exploitation statistique d'images
+* Corrélation microstructure / densité / porosité / conductivité thermique
 
-## Qualité & métrologie
-* Procédures opératoires standard, traçabilité, calibration, maintenance de premier niveau
-* Sécurité laser et chimie, HSE
+## Métrologie & mesures physiques
+* Mesure de **densité** (Archimède, masse/volume), densité relative, dimensions géométriques, épaisseur d'interface
+* **Dureté**, fractions surfaciques et volumiques — vérification croisée mesures directes / indirectes
+* **Calibration d'instruments**, traçabilité, contrôle de précision, maintenance de premier niveau
+* Gestion d'incertitudes de mesure et analyse de robustesse expérimentale
+
+## Modélisation & estimation de paramètres
+* Résolution de l'**équation de la chaleur 3D instationnaire** en matériau orthotrope (tenseur de diffusivité diagonal)
+* **Méthode inverse & estimateurs harmoniques** pour identification de paramètres thermophysiques
+* Modélisation de **conductivité thermique effective** de milieux poreux : modèles à pores sphériques, cylindriques, plats
+* Loi des mélanges pour assemblages multicouches, estimation de propriétés locales par pondération
+* Développement de **corrélations empiriques** : porosité–λ (variation d'un facteur 4 sur 25–75 % de porosité), densité–Cp, relations microstructure–propriétés
+* Plans d'expériences, analyse de sensibilité, validation croisée modèle/mesure
+
+## Traitement de données & programmation
+* **Matlab** (niveau expert) : traitement de champs thermiques 2D/3D, résolution de problèmes inverses, modélisation thermique, segmentation d'images MEB, traitement de données DIC, ajustement de lois empiriques
+* **Python** : automatisation, traitement de données, visualisation, scripts d'analyse
+* **ImageJ / Fiji** : binarisation, seuillage, quantification de porosité et granulométrie
+* Logiciels d'acquisition et d'exploitation thermique (Altair, Export PTW) — champs IR, analyse harmonique, centrage de trames, soustraction de fond
+* Pilotage d'instrumentation, chaîne d'acquisition Ethernet, post-traitement multi-paramètres
+
+## Méthodes d'analyse et de résolution de problèmes
+* Diagnostic microstructural, mécanique et interfacial sur matériaux vieillis ou endommagés
+* Formulation d'**hypothèses mécanistiques** (relaxation de contraintes, évolution des chemins conducteurs, effet de zone affectée), tests de confirmation, actions correctives
+* Corrélation **procédé / microstructure / propriétés** sur systèmes complexes, bimétalliques et poreux
+* Démarche expérimentale itérative, approche multi-échelle et multi-technique
+* Construction d'états de l'art, benchmark de solutions techniques, appui scientifique à la décision
+* Transformation de résultats expérimentaux en recommandations procédés et en leviers de fiabilité
+
+## Qualité, HSE & contexte industriel
+* **Procédures opératoires standard**, traçabilité, maintenance de premier niveau d'équipements
+* **Sécurité laser et chimique**, HSE en environnement laboratoire
+* Veille réglementaire **sans plomb (RoHS, DEEE)**, prise en compte des contraintes environnementales dans le choix matériaux
+* Évaluation du **compromis performance / coût / fabricabilité / fiabilité**
+* Prise en compte des contraintes de fabrication : planéité, rugosité, dilatation différentielle, oxydation, contraintes thermiques résiduelles
 
 ---
 
