@@ -55,8 +55,7 @@ author_profile: true
   </div>
 </div>
 
-{#dev-materiaux}
-## Développement matériaux & procédés 
+## Développement matériaux & procédés {#dev-materiaux}
 * Matériaux métalliques frittés, pâtes d'argent nanoparticulaire, joints d'interconnexion pour l'électronique de puissance et environnements sévères (haute température, forte puissance)
 * **Frittage d'argent** : frittage sous pression (0–10 MPa), frittage sans pression, cycles thermiques optimisés (270 °C / 5 min) — densification, coalescence, consolidation de poudres métalliques
 * Élaboration d'échantillons massifs, bicouches Ag/Cu et empilements multicouches reproductibles
