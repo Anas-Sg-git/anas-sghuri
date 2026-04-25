@@ -6,6 +6,15 @@ author_profile: true
 ---
 
 {% include base_path %}
+
+<style>
+/* Compense la hauteur de la navbar sticky (~70 px) pour que les ancres
+   atterrissent avec le titre bien visible sous la barre de navigation. */
+h2[id],
+h2 + * { scroll-margin-top: 80px; }
+h2[id]  { scroll-margin-top: 80px; }
+</style>
+
 # Expériences professionnelles
 
 ## Doctorant — Ingénieur de recherche matériaux `Oct. 2019 – Mars 2024`
