@@ -55,7 +55,7 @@ author_profile: true
   </div>
 </div>
 
-## Développement matériaux & procédés
+## Développement matériaux & procédés {#dev-materiaux}
 * Matériaux métalliques frittés, pâtes d'argent nanoparticulaire, joints d'interconnexion pour l'électronique de puissance et environnements sévères (haute température, forte puissance)
 * **Frittage d'argent** : frittage sous pression (0–10 MPa), frittage sans pression, cycles thermiques optimisés (270 °C / 5 min) — densification, coalescence, consolidation de poudres métalliques
 * Élaboration d'échantillons massifs, bicouches Ag/Cu et empilements multicouches reproductibles
@@ -63,13 +63,13 @@ author_profile: true
 * Comparaison et positionnement de procédés d'interconnexion (brasage sans plomb, diffusion en phase liquide transitoire / TLP, frittage)
 * Conception d'échantillons sur substrats Cu, polyimide, Si ; traitements de surface (décapage HCl, revêtement mat pour absorption IR)
 
-## Préparation & métallographie
+## Préparation & métallographie {#preparation}
 * Découpe, enrobage, polissage successif avec papiers abrasifs de granulométries graduées jusqu'à **surface miroir**
 * Attaque chimique, préparation pour observation MEB et analyse de porosité, d'interface et de taille de grains
 * Adaptation des protocoles aux matériaux fragiles, multicouches et géométries fines
 * Préparation d'échantillons pour essais de vieillissement accéléré, essais mécaniques et mesures thermiques
 
-## Caractérisation thermique
+## Caractérisation thermique {#caracterisation}
 * **Méthode Flash 3D** (laser CO₂ + caméra IR) : mise en œuvre, calibration sur Al/Cu/Ag, mesure en régime transitoire par face avant
 * Mesure de **conductivité thermique, diffusivité thermique et capacité calorifique** sur matériaux hautement diffusifs, poreux, anisotropes/orthotropes
 * Analyse calorimétrique : **DSC, DSC modulée (mDSC), ATG** — détection de transitions endo/exothermiques, perte de masse, seuils de frittage et de décomposition
@@ -95,13 +95,13 @@ author_profile: true
 * Conversion pixel/mm, construction de distributions granulométriques, exploitation statistique d'images
 * Corrélation microstructure / densité / porosité / conductivité thermique
 
-## Métrologie & mesures physiques
+## Métrologie & mesures physiques {#metrologie}
 * Mesure de **densité** (Archimède, masse/volume), densité relative, dimensions géométriques, épaisseur d'interface
 * **Dureté**, fractions surfaciques et volumiques — vérification croisée mesures directes / indirectes
 * **Calibration d'instruments**, traçabilité, contrôle de précision, maintenance de premier niveau
 * Gestion d'incertitudes de mesure et analyse de robustesse expérimentale
 
-## Modélisation numérique & méthodes inverses
+## Modélisation numérique & méthodes inverses {#modelisation}
 * Résolution de l'**équation de la chaleur 3D instationnaire** en matériau orthotrope (tenseur de diffusivité diagonal)
 * **Méthode inverse & estimateurs harmoniques** pour identification de paramètres thermophysiques
 * Modélisation de **conductivité thermique effective** de milieux poreux : modèles à pores sphériques, cylindriques, plats
@@ -109,28 +109,28 @@ author_profile: true
 * Développement de **corrélations empiriques** : porosité–λ (variation d'un facteur 4 sur 25–75 % de porosité), densité–Cp, relations microstructure–propriétés
 * Plans d'expériences, analyse de sensibilité, validation croisée modèle/mesure
 
-## Programmation scientifique & traitement de données
+## Programmation scientifique & traitement de données {#programmation}
 * **Matlab** (niveau expert) : traitement de champs thermiques 2D/3D, résolution de problèmes inverses, modélisation thermique, segmentation d'images MEB, traitement de données DIC, ajustement de lois empiriques
 * **Python** : automatisation, traitement de données, visualisation, scripts d'analyse
 * **ImageJ / Fiji** : binarisation, seuillage, quantification de porosité et granulométrie
 * Logiciels d'acquisition et d'exploitation thermique (Altair, Export PTW) — champs IR, analyse harmonique, centrage de trames, soustraction de fond
 * Pilotage d'instrumentation, chaîne d'acquisition Ethernet, post-traitement multi-paramètres
 
-## Méthodes d'analyse et de résolution de problèmes
+## Méthodes d'analyse et de résolution de problèmes {#analyse}
 * Diagnostic microstructural, mécanique et interfacial sur matériaux vieillis ou endommagés
 * Formulation d'**hypothèses mécanistiques** (relaxation de contraintes, évolution des chemins conducteurs, effet de zone affectée), tests de confirmation, actions correctives
 * Corrélation **procédé / microstructure / propriétés** sur systèmes complexes, bimétalliques et poreux
 * Démarche expérimentale itérative, approche multi-échelle et multi-technique
 * Transformation de résultats expérimentaux en recommandations procédés et en leviers de fiabilité
 
-## Qualité, sécurité & réglementation
+## Qualité, sécurité & réglementation {#qualite}
 * **Procédures opératoires standard**, traçabilité, maintenance de premier niveau d'équipements
 * **Sécurité laser et chimique**, HSE en environnement laboratoire
 * Veille réglementaire **sans plomb (RoHS, DEEE)**, prise en compte des contraintes environnementales dans le choix matériaux
 * Évaluation du **compromis performance / coût / fabricabilité / fiabilité**
 * Prise en compte des contraintes de fabrication : planéité, rugosité, dilatation différentielle, oxydation, contraintes thermiques résiduelles
 
-## Veille & recherche bibliographique
+## Veille & recherche bibliographique {#veille}
 * Veille scientifique, technologique et réglementaire sur les matériaux métalliques, l'électronique de puissance et la fiabilité d'assemblage
 * Revue systématique de littérature, analyse critique d'articles scientifiques, interprétation de données contradictoires
 * Construction d'**états de l'art** structurés : verrous technologiques, comparaison de procédés, modèles thermophysiques
