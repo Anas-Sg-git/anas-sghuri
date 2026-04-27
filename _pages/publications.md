@@ -21,11 +21,11 @@ Thèse de doctorat — Université de Poitiers — Soutenue le 11 mars 2024
 
 ### Rapports des rapporteurs
 
-- **Nadine Allanic** — Maître de Conférences HDR, Laboratoire GEPEA (UMR CNRS 6144), IUT Nantes, Nantes Université  
-  [Télécharger le rapport (PDF)](/files/SGHURI_Anas_rapport_ALLANIC_20240221.pdf)
+- **Nadine Allanic** — ...  
+  [Télécharger le rapport (PDF)]({{ site.baseurl }}/files/SGHURI_Anas_rapport_ALLANIC_20240221.pdf)
 
-- **Caroline Richard** — Professeur, GREMAN (UMR CNRS 7347), Polytech Tours, Université de Tours  
-  [Télécharger le rapport (PDF)](/files/SGHURI_Anas_rapport_RICHARD_20240212.pdf)
+- **Caroline Richard** — ...  
+  [Télécharger le rapport (PDF)]({{ site.baseurl }}/files/SGHURI_Anas_rapport_RICHARD_20240212.pdf)
 ---
 
 ## Congrès et communications
