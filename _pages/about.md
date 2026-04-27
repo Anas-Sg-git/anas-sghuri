@@ -20,13 +20,15 @@ author_profile: true
   font-style: italic;
   max-width: 620px;
 }
-
 /* ── KPI cards ───────────────────────────────────── */
 .kpi-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.75em;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6em;
   margin: 1.2em 0 1.5em;
+}
+@media (max-width: 1024px) {
+  .kpi-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
   .kpi-grid { grid-template-columns: repeat(2, 1fr); }
@@ -37,22 +39,29 @@ author_profile: true
 .kpi-card {
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 0.75em 0.9em;
+  padding: 0.75em 0.85em;
   background: #fafafa;
-  text-align: center;
+  text-align: left;
 }
 .kpi-card .kpi-value {
-  font-size: 1.05em;
+  font-size: 0.92em;
   font-weight: 700;
   color: #1a1a1a;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 .kpi-card .kpi-label {
-  font-size: 0.78em;
+  font-size: 0.74em;
   color: #666;
-  margin-top: 0.25em;
+  margin-top: 0.3em;
+  line-height: 1.3;
 }
-
+.kpi-card .kpi-impact {
+  font-size: 0.7em;
+  color: #888;
+  margin-top: 0.6em;
+  font-style: italic;
+  line-height: 1.4;
+}
 /* ── CTA buttons ─────────────────────────────────── */
 .cta-row {
   display: flex;
@@ -83,14 +92,12 @@ author_profile: true
   background: transparent;
 }
 .btn-secondary:hover { background: #eaf3fb; }
-
 /* ── Section headings ────────────────────────────── */
 .section-divider {
   border: none;
   border-top: 1px solid #e0e0e0;
   margin: 2.2em 0 1.6em;
 }
-
 /* ── Competence chain ────────────────────────────── */
 .chain-grid {
   display: grid;
@@ -128,7 +135,6 @@ author_profile: true
   color: #666;
   margin-top: 0.1em;
 }
-
 /* ── Portfolio cards ─────────────────────────────── */
 .portfolio-grid {
   display: grid;
@@ -178,10 +184,8 @@ author_profile: true
 }
 .portfolio-card a { text-decoration: none; color: inherit; }
 .portfolio-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.10); }
-
 /* ── Publications list ───────────────────────────── */
 .pub-block p { margin: 0.4em 0; font-size: 0.92em; }
-
 /* ── Contact block ───────────────────────────────── */
 .contact-block {
   background: #f7f9fc;
@@ -190,51 +194,54 @@ author_profile: true
   font-size: 0.92em;
 }
 </style>
-
+ 
 <!-- ═══════════════════════════════════════════════════
      HERO
 ═══════════════════════════════════════════════════ -->
-
+ 
 <p class="hero-subtitle">Docteur-ingénieur — R&D matériaux &amp; caractérisation</p>
-
 <!--
   CHOIX D'ACCROCHE — décommenter celle retenue, supprimer les deux autres.
-
   Option A — Angle « résultat phare » (recommandé) :
 -->
-<p class="hero-accroche">Un facteur 4 de variation de conductivité thermique sur l'argent fritté nanoparticulaire, publié dans <em>Acta Materialia</em> — et une méthode Flash 3D calibrée à moins de 6 % d'erreur pour y arriver.</p>
-
+<p class="hero-accroche">De l'élaboration au mécanisme physique : un procédé de frittage maîtrisé, une méthode de mesure étendue aux métaux, un facteur 4 de variation de conductivité — publié dans <em>Acta Materialia</em>.</p>
 <!--
   Option B — Angle « positionnement poste » :
   <p class="hero-accroche">Je recherche un poste d'ingénieur R&D matériaux ou caractérisation en environnement industriel — France, mobilité nationale.</p>
-
   Option C — Zéro narration (supprimer la balise .hero-accroche entière) :
 -->
-
+ 
 <div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-value">Frittage Ag · 0–10 MPa</div>
+    <div class="kpi-label">Procédé qualifié bout-en-bout · 270 °C</div>
+    <div class="kpi-impact">Autonomie sur un procédé d'assemblage stratégique</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">Flash 3D · 1ère extension aux métaux</div>
+    <div class="kpi-label">Ag, Cu, Al — diffusivité 10× à 100×</div>
+    <div class="kpi-impact">Nouvelle capacité de mesure pour métaux</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">λ × 4 sur 25–75 % de porosité</div>
+    <div class="kpi-label">222 → 66 W·m⁻¹·K⁻¹</div>
+    <div class="kpi-impact">Levier procédé pour la dissipation thermique</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-value">Mécanisme du vieillissement élucidé</div>
+    <div class="kpi-label">Relaxation des contraintes, pas la densification</div>
+    <div class="kpi-impact">Identifie le vrai levier d'optimisation</div>
+  </div>
   <div class="kpi-card">
     <div class="kpi-value">Acta Materialia · IF 9.3</div>
     <div class="kpi-label">28 citations · 2023</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-value">λ × 4</div>
-    <div class="kpi-label">222 → 66 W·m⁻¹·K⁻¹ sur 25–75 % de porosité</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-value">Flash 3D · &lt; 6 % d'erreur</div>
-    <div class="kpi-label">20 mesures/échantillon · critères validés</div>
-  </div>
-  <div class="kpi-card">
-    <div class="kpi-value">Vieillissement 150–350 °C</div>
-    <div class="kpi-label">jusqu'à 500 h · cinétique résolue</div>
+    <div class="kpi-impact">Validé par un filtre éditorial international</div>
   </div>
 </div>
-
 <div class="cta-row">
   <a class="btn-primary" href="{{ '/cv/' | relative_url }}">Voir le CV complet</a>
   <a class="btn-secondary" href="mailto:anas.sghuri@gmail.com">Me contacter</a>
 </div>
-
 ---
 
 ## À propos
