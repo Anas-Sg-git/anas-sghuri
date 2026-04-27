@@ -138,11 +138,11 @@ author_profile: true
 /* ── Portfolio cards ─────────────────────────────── */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   margin: 1em 0 1.2em;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .portfolio-grid { grid-template-columns: 1fr; }
 }
 .portfolio-card {
@@ -153,20 +153,10 @@ author_profile: true
 }
 .portfolio-card img {
   width: 100%;
-  height: 140px;
+  height: 160px;
   object-fit: cover;
   background: #eaeff4;
   display: block;
-}
-.portfolio-card .portfolio-placeholder {
-  width: 100%;
-  height: 140px;
-  background: #dce6f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75em;
-  color: #666;
 }
 .portfolio-card .portfolio-body {
   padding: 0.7em 0.85em 0.85em;
@@ -200,16 +190,7 @@ author_profile: true
 ═══════════════════════════════════════════════════ -->
  
 <p class="hero-subtitle">Docteur-ingénieur — R&D matériaux &amp; caractérisation</p>
-<!--
-  CHOIX D'ACCROCHE — décommenter celle retenue, supprimer les deux autres.
-  Option A — Angle « résultat phare » (recommandé) :
--->
 <p class="hero-accroche">Élaboration, caractérisation, mécanisme, publication.</p>
-<!--
-  Option B — Angle « positionnement poste » :
-  <p class="hero-accroche">Je recherche un poste d'ingénieur R&D matériaux ou caractérisation en environnement industriel — France, mobilité nationale.</p>
-  Option C — Zéro narration (supprimer la balise .hero-accroche entière) :
--->
  
 <div class="kpi-grid">
   <div class="kpi-card">
@@ -355,6 +336,17 @@ Ces compétences sont directement transposables à tout environnement R&D ou ind
     </a>
   </div>
 
+  <div class="portfolio-card">
+    <a href="{{ '/portfolio/portfolio-4-simulation-numerique/' | relative_url }}">
+      <img src="/anas-sghuri/images/portfolio-simu-excerpt.png"
+           alt="Simulation numérique conduction thermique 3D">
+      <div class="portfolio-body">
+        <div class="portfolio-title">Simulation numérique de la conduction thermique 3D — Python &amp; FlexPDE</div>
+        <div class="portfolio-desc">Différences finies implicites, solveur creux scipy, validation du modèle Flash 3D.</div>
+      </div>
+    </a>
+  </div>
+
 </div>
 
 [Voir tous les projets →]({{ '/portfolio/' | relative_url }})
@@ -385,5 +377,5 @@ ATER à l'ISAE-ENSMA (2022–2023) : 190+ heures d'enseignement (TP/TD/projets) 
  
 <div class="contact-block" id="contact">
 Disponible · France · Mobilité nationale
-📧 <a href="mailto:anas.sghuri@gmail.com">anas.sghuri@gmail.com</a>
+<a href="mailto:anas.sghuri@gmail.com">anas.sghuri@gmail.com</a>
 </div>
