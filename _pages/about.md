@@ -240,7 +240,7 @@ author_profile: true
 </div>
 <div class="cta-row">
   <a class="btn-primary" href="{{ '/cv/' | relative_url }}">Voir le CV complet</a>
-  <a class="btn-secondary" href="mailto:anas.sghuri@gmail.com">Me contacter</a>
+  <a class="btn-secondary" href="#contact">Me contacter</a>
 </div>
 ---
 
