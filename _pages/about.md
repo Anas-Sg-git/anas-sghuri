@@ -204,7 +204,7 @@ author_profile: true
   CHOIX D'ACCROCHE — décommenter celle retenue, supprimer les deux autres.
   Option A — Angle « résultat phare » (recommandé) :
 -->
-<p class="hero-accroche">De l'élaboration au mécanisme physique : un procédé de frittage maîtrisé, une méthode de mesure étendue aux métaux, un facteur 4 de variation de conductivité — publié dans <em>Acta Materialia</em>.</p>
+<p class="hero-accroche">Élaboration, caractérisation, mécanisme, publication.</p>
 <!--
   Option B — Angle « positionnement poste » :
   <p class="hero-accroche">Je recherche un poste d'ingénieur R&D matériaux ou caractérisation en environnement industriel — France, mobilité nationale.</p>
