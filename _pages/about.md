@@ -382,6 +382,6 @@ ATER à l'ISAE-ENSMA (2022–2023) : 190+ heures d'enseignement (TP/TD/projets) 
 ## Contact
  
 <div class="contact-block" id="contact">
-Ouvert à des opportunités en <strong>R&amp;D matériaux</strong>, <strong>caractérisation</strong>, <strong>essais</strong> ou <strong>qualité</strong>, dans tout secteur industriel. France — mobilité nationale.<br><br>
+Disponible · France · Mobilité nationale
 📧 <a href="mailto:anas.sghuri@gmail.com">anas.sghuri@gmail.com</a>
 </div>
