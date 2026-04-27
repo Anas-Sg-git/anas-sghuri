@@ -244,14 +244,42 @@ author_profile: true
 </div>
 ---
 
-## À propos
-
-Docteur-ingénieur en sciences des matériaux, j'ai développé au cours de ma thèse un ensemble de compétences en caractérisation expérimentale, analyse de données et méthodologie de mesure, appliquées à des problématiques de fiabilité dans un contexte industriel exigeant.
-
-Mon travail doctoral m'a conduit à concevoir des protocoles d'essais, exploiter des techniques de caractérisation avancées (MEB, MEB-FEG, DSC, ATG, méthode Flash 3D, micro-traction), traiter et interpréter des données complexes (MATLAB, Python, ImageJ), et établir des lois de comportement reliant microstructure et propriétés fonctionnelles.
-
-Ces compétences sont directement transposables à tout environnement R&D ou industriel où la compréhension des matériaux, la rigueur expérimentale et la résolution de problèmes sont au cœur de l'activité — que ce soit en caractérisation, en essais, en qualité ou en recherche appliquée. Ce site présente en détail mes travaux de thèse, mes publications, mon expérience d'enseignement et les compétences que j'ai acquises.
-
+## Portfolio
+ 
+<div class="portfolio-grid">
+  <div class="portfolio-card">
+    <a href="{{ '/portfolio/portfolio-1-flash3d-codes/' | relative_url }}">
+      <img src="/anas-sghuri/images/portfolio-flash3d-thumbnail.png"
+           alt="Pipeline Flash 3D">
+      <div class="portfolio-body">
+        <div class="portfolio-title">Caractérisation thermique Flash 3D — Pipeline d'estimation et codes MATLAB</div>
+        <div class="portfolio-desc">Méthode inverse ENH, critères d'acquisition, validation sur Al/Cu/Ag.</div>
+      </div>
+    </a>
+  </div>
+  <div class="portfolio-card">
+    <a href="{{ '/portfolio/portfolio-2/' | relative_url }}">
+      <img src="/anas-sghuri/images/portfolio-interface-methode-complete.png"
+           alt="Segmentation MEB interface Ag/Cu">
+      <div class="portfolio-body">
+        <div class="portfolio-title">Quantification d'interface par traitement d'images MEB</div>
+        <div class="portfolio-desc">Segmentation MATLAB, épaisseur de zone Ag/Cu, évolution en vieillissement.</div>
+      </div>
+    </a>
+  </div>
+  <div class="portfolio-card">
+    <a href="{{ '/portfolio/portfolio-3/' | relative_url }}">
+      <img src="/anas-sghuri/images/SyntheseArgentNanoporeuxAgetAgCuTestsdeMicrotraction.png"
+           alt="Microtraction Ag/Cu">
+      <div class="portfolio-body">
+        <div class="portfolio-title">Microtraction de systèmes Ag nanoporeux / Cu</div>
+        <div class="portfolio-desc">Influence du vieillissement thermique et de la pression de frittage sur la fiabilité mécanique.</div>
+      </div>
+    </a>
+  </div>
+</div>
+[Voir tous les projets →]({{ '/portfolio/' | relative_url }})
+ 
 <hr class="section-divider">
 
 ## Chaîne de compétences R&D matériaux
