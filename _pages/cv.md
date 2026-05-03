@@ -15,9 +15,9 @@ h2 + * { scroll-margin-top: 80px; }
 h2[id]  { scroll-margin-top: 80px; }
 </style>
 
-# Expériences professionnelles
+## Expériences professionnelles
 
-## Doctorant — Ingénieur de recherche matériaux `Oct. 2019 – Mars 2024`
+### Doctorant — Ingénieur de recherche matériaux `Oct. 2019 – Mars 2024`
  
 *Université de Poitiers, Institut Pprime (UPR CNRS 3346) — Poitiers*
  
@@ -31,7 +31,7 @@ h2[id]  { scroll-margin-top: 80px; }
 - Essais de microtraction couplés à la corrélation d'images numériques (DIC) sur systèmes Ag et Ag/Cu.
 - Rédaction et publication d'un article dans *Acta Materialia* (IF 9.3, 28 citations). 4 communications orales en conférences (2 internationales, 2 nationales).
  
-## Attaché Temporaire d'Enseignement et de Recherche (ATER) `Sept. 2022 – Août 2023`
+### Attaché Temporaire d'Enseignement et de Recherche (ATER) `Sept. 2022 – Août 2023`
  
 *ISAE-ENSMA, département MSISI — Poitiers*
  
@@ -39,7 +39,7 @@ h2[id]  { scroll-margin-top: 80px; }
 - Encadrement de 2 stages de recherche sur l'adhésion Ag/Cu par choc laser (protocole, suivi, évaluation).
 ---
 
-# Compétences
+## Compétences
 
 <div style="background:#f7f8fa; border-radius:8px; padding:1.1rem 1.2rem; margin:1.2rem 0; border-left:3px solid #2c5282;">
   <div style="font-size:12px; letter-spacing:0.04em; color:#718096; text-transform:uppercase; margin-bottom:0.8rem; font-weight:600;">Chaîne de compétences R&amp;D matériaux</div>
@@ -64,7 +64,7 @@ h2[id]  { scroll-margin-top: 80px; }
   </div>
 </div>
 
-## Développement matériaux & procédés {#dev-materiaux}
+### Développement matériaux & procédés {#dev-materiaux}
 * Matériaux métalliques frittés, pâtes d'argent nanoparticulaire, joints d'interconnexion pour l'électronique de puissance et environnements sévères (haute température, forte puissance)
 * **Frittage d'argent** : frittage sous pression (0–10 MPa), frittage sans pression, cycles thermiques optimisés (270 °C / 5 min) — densification, coalescence, consolidation de poudres métalliques
 * Élaboration d'échantillons massifs, bicouches Ag/Cu et empilements multicouches reproductibles
@@ -72,13 +72,13 @@ h2[id]  { scroll-margin-top: 80px; }
 * Comparaison et positionnement de procédés d'interconnexion (brasage sans plomb, diffusion en phase liquide transitoire / TLP, frittage)
 * Conception d'échantillons sur substrats Cu, polyimide, Si ; traitements de surface (décapage HCl, revêtement mat pour absorption IR)
 
-## Préparation & métallographie {#preparation}
+### Préparation & métallographie {#preparation}
 * Découpe, enrobage, polissage successif avec papiers abrasifs de granulométries graduées jusqu'à **surface miroir**
 * Attaque chimique, préparation pour observation MEB et analyse de porosité, d'interface et de taille de grains
 * Adaptation des protocoles aux matériaux fragiles, multicouches et géométries fines
 * Préparation d'échantillons pour essais de vieillissement accéléré, essais mécaniques et mesures thermiques
 
-## Caractérisation thermique {#caracterisation}
+### Caractérisation thermique {#caracterisation}
 * **Méthode Flash 3D** (laser CO₂ + caméra IR) : mise en œuvre, calibration sur Al/Cu/Ag, mesure en régime transitoire par face avant
 * Mesure de **conductivité thermique, diffusivité thermique et capacité calorifique** sur matériaux hautement diffusifs, poreux, anisotropes/orthotropes
 * Analyse calorimétrique : **DSC, DSC modulée (mDSC), ATG** — détection de transitions endo/exothermiques, perte de masse, seuils de frittage et de décomposition
@@ -87,7 +87,7 @@ h2[id]  { scroll-margin-top: 80px; }
 * Estimation de conductivité thermique globale, locale et interfaciale pour systèmes hétérogènes
 * Analyse de l'effet des résistances thermiques de contact sur assemblages multicouches
 
-## Caractérisation mécanique
+### Caractérisation mécanique
 * Essais de **microtraction** sur échantillons fragiles : Ag nanoporeux et bicouches Ag/Cu
 * **Corrélation d'images numériques (DIC)** : préparation de mouchetis, mesure de champs de déplacements et de déformations, synchronisation effort / cinématique
 * Analyse du comportement mécanique en deux temps : rupture fragile de l'Ag, relais plastique du Cu, transitions interfaciales
@@ -96,7 +96,7 @@ h2[id]  { scroll-margin-top: 80px; }
 * Étude du couplage **procédé / vieillissement / intégrité interfaciale** par voie mécanique
 * Traitement des données cinématiques et d'effort sous Matlab
 
-## Caractérisation microstructurale & imagerie
+### Caractérisation microstructurale & imagerie
 * **Microscopie électronique à balayage (MEB, MEB-FEG)**, microscopie optique, profilométrie optique
 * Quantification de **porosité** (primaire, surfacique), **densité relative**, **taille de grains** (distribution, moyenne, écart-type ~ 300 nm)
 * Analyse d'**interfaces Ag/Cu** : mesure d'épaisseur d'interface, fractions en épaisseur et surfaciques, identification de zones d'hétérogénéité, suivi d'évolution en vieillissement
@@ -104,13 +104,13 @@ h2[id]  { scroll-margin-top: 80px; }
 * Conversion pixel/mm, construction de distributions granulométriques, exploitation statistique d'images
 * Corrélation microstructure / densité / porosité / conductivité thermique
 
-## Métrologie & mesures physiques {#metrologie}
+### Métrologie & mesures physiques {#metrologie}
 * Mesure de **densité** (Archimède, masse/volume), densité relative, dimensions géométriques, épaisseur d'interface
 * **Dureté**, fractions surfaciques et volumiques — vérification croisée mesures directes / indirectes
 * **Calibration d'instruments**, traçabilité, contrôle de précision, maintenance de premier niveau
 * Gestion d'incertitudes de mesure et analyse de robustesse expérimentale
 
-## Modélisation numérique & méthodes inverses {#modelisation}
+### Modélisation numérique & méthodes inverses {#modelisation}
 * Résolution de l'**équation de la chaleur 3D instationnaire** en matériau orthotrope (tenseur de diffusivité diagonal)
 * **Méthode inverse & estimateurs harmoniques** pour identification de paramètres thermophysiques
 * Modélisation de **conductivité thermique effective** de milieux poreux : modèles à pores sphériques, cylindriques, plats
@@ -118,28 +118,28 @@ h2[id]  { scroll-margin-top: 80px; }
 * Développement de **corrélations empiriques** : porosité–λ (variation d'un facteur 4 sur 25–75 % de porosité), densité–Cp, relations microstructure–propriétés
 * Plans d'expériences, analyse de sensibilité, validation croisée modèle/mesure
 
-## Programmation scientifique & traitement de données {#programmation}
+### Programmation scientifique & traitement de données {#programmation}
 * **Matlab** (niveau expert) : traitement de champs thermiques 2D/3D, résolution de problèmes inverses, modélisation thermique, segmentation d'images MEB, traitement de données DIC, ajustement de lois empiriques
 * **Python** : automatisation, traitement de données, visualisation, scripts d'analyse
 * **ImageJ / Fiji** : binarisation, seuillage, quantification de porosité et granulométrie
 * Logiciels d'acquisition et d'exploitation thermique (Altair, Export PTW) — champs IR, analyse harmonique, centrage de trames, soustraction de fond
 * Pilotage d'instrumentation, chaîne d'acquisition Ethernet, post-traitement multi-paramètres
 
-## Méthodes d'analyse et de résolution de problèmes {#analyse}
+### Méthodes d'analyse et de résolution de problèmes {#analyse}
 * Diagnostic microstructural, mécanique et interfacial sur matériaux vieillis ou endommagés
 * Formulation d'**hypothèses mécanistiques** (relaxation de contraintes, évolution des chemins conducteurs, effet de zone affectée), tests de confirmation, actions correctives
 * Corrélation **procédé / microstructure / propriétés** sur systèmes complexes, bimétalliques et poreux
 * Démarche expérimentale itérative, approche multi-échelle et multi-technique
 * Transformation de résultats expérimentaux en recommandations procédés et en leviers de fiabilité
 
-## Qualité, sécurité & réglementation {#qualite}
+### Qualité, sécurité & réglementation {#qualite}
 * **Procédures opératoires standard**, traçabilité, maintenance de premier niveau d'équipements
 * **Sécurité laser et chimique**, HSE en environnement laboratoire
 * Veille réglementaire **sans plomb (RoHS, DEEE)**, prise en compte des contraintes environnementales dans le choix matériaux
 * Évaluation du **compromis performance / coût / fabricabilité / fiabilité**
 * Prise en compte des contraintes de fabrication : planéité, rugosité, dilatation différentielle, oxydation, contraintes thermiques résiduelles
 
-## Veille & recherche bibliographique {#veille}
+### Veille & recherche bibliographique {#veille}
 * Veille scientifique, technologique et réglementaire sur les matériaux métalliques, l'électronique de puissance et la fiabilité d'assemblage
 * Revue systématique de littérature, analyse critique d'articles scientifiques, interprétation de données contradictoires
 * Construction d'**états de l'art** structurés : verrous technologiques, comparaison de procédés, modèles thermophysiques
@@ -149,7 +149,7 @@ h2[id]  { scroll-margin-top: 80px; }
 
 ---
 
-# Formation
+## Formation
 
 * **Doctorat en Milieux Denses et Matériaux**, Université de Poitiers, Institut Pprime, 2019 – 2024
   * *« Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre »*
@@ -161,18 +161,18 @@ h2[id]  { scroll-margin-top: 80px; }
 
 ---
 
-# Productions scientifiques
+## Productions scientifiques
 
-## Article à comité de lecture
+### Article à comité de lecture
 * **Experimental investigation of thermal conductivity during aging of nanoporous sintered silver**, *Acta Materialia* (IF = 9.3), 28 citations.
   * DOI : [10.1016/j.actamat.2023.119109](https://doi.org/10.1016/j.actamat.2023.119109)
 
-## Conférences
+### Conférences
 * 4 participations en tant que présentateur : 2 conférences internationales, 2 nationales.
 
 ---
 
-# Informatique
+## Informatique
 
 * **Programmation & traitement de données :** Matlab (résolution de problèmes inverses, modélisation thermique 3D, traitement d'images MEB, ajustement de lois empiriques), Python (traitement de données, automatisation, visualisation)
 * **Imagerie & analyse :** Fiji / ImageJ (binarisation, seuillage, quantification de porosité et taille de grains)
@@ -180,21 +180,20 @@ h2[id]  { scroll-margin-top: 80px; }
 
 ---
 
-# Langues
+## Langues
 
 * **Français** — courant
 * **Anglais** — courant
 
 ---
 
-# Centres d'intérêt
+## Centres d'intérêt
 
 * Impression 3D : modélisation, prototypage, ateliers
 * Développement d'applications mobiles (jeux & éducation)
 
 ---
 
-# Références
+## Références
 
-* **Xavier Milhet** — Directeur de thèse, Université de Poitiers — [xavier.milhet@ensma.fr](mailto:xavier.milhet@ensma.fr)
-* **Yann Billaud** — Encadrant, ISAE-ENSMA, Institut Pprime — [yann.billaud@ensma.fr](mailto:yann.billaud@ensma.fr)
+Références disponibles sur demande.

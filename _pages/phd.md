@@ -9,7 +9,7 @@ toc_icon: "flask"
 toc_sticky: true
 ---
 
-# Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre
+## Étude expérimentale de la conductivité thermique de l'argent fritté poreux : effet du vieillissement thermique et de l'interface avec un substrat de cuivre
 
 *Université de Poitiers · ENSMA · Institut P' (Pprime, UPR CNRS 3346)*
 
@@ -65,9 +65,9 @@ toc_sticky: true
 
 ---
 
-## 1. Contexte & enjeux
+### 1. Contexte & enjeux
 
-### Pourquoi s'intéresser à l'Ag fritté en électronique de puissance ?
+#### Pourquoi s'intéresser à l'Ag fritté en électronique de puissance ?
 
 Les modules d'électronique de puissance reposent sur une chaîne de 
 dissipation thermique dans laquelle l'interconnexion entre la puce et 
@@ -86,27 +86,27 @@ L'**Ag fritté** s'impose comme matériau d'interconnexion de nouvelle générat
 
 ---
 
-## 2. Verrous scientifiques
+### 2. Verrous scientifiques
 
 Malgré l'intérêt croissant porté à l'Ag fritté, son comportement thermique reste difficile à décrire de manière robuste et prédictive. Trois verrous principaux structurent cette thèse :
 
-### Mesurer un matériau hautement diffusif
+#### Mesurer un matériau hautement diffusif
 
 L'Ag fritté présente une conductivité thermique très élevée ; l'argent est le métal le plus conducteur thermiquement à température ambiante. Cette forte diffusivité limite la validité des approches flash 1D classiques. Une méthode capable de prendre en compte des effets 2D/3D ainsi qu'une anisotropie potentielle était donc nécessaire.
 
-### Relier conductivité, densité et vieillissement
+#### Relier conductivité, densité et vieillissement
 
 La densité est un paramètre clé, mais on ne disposait pas d'une relation claire et robuste entre conductivité thermique, densité, temps et température de vieillissement. La mesure de la densité elle-même pose problème : l'analyse d'images MEB 2D peut biaiser les résultats, et la capacité thermique de l'Ag fritté est souvent supposée égale à celle de l'Ag massif (une hypothèse non vérifiée).
 
-### Quantifier l'effet de l'interface Ag/Cu
+#### Quantifier l'effet de l'interface Ag/Cu
 
 Dans un assemblage réel, l'Ag repose sur un substrat Cu. Les résistances d'interface (R_Ag/Cu, R_Ag/SiC) sont systématiquement négligées dans la littérature et leur évolution à long terme était totalement inconnue. Pourtant, cette interface est susceptible de contrôler la fiabilité thermique du système complet.
 
 ---
 
-## 3. Approche expérimentale
+### 3. Approche expérimentale
 
-### 3.1. La méthode Flash 3D : un choix décisif
+#### 3.1. La méthode Flash 3D : un choix décisif
 
 Le cœur de la démarche repose sur la **méthode Flash 3D**, adaptée à l'étude de matériaux hautement diffusifs comme l'argent. Le dispositif expérimental combine :
 
@@ -121,7 +121,7 @@ L'identification des conductivités thermiques repose sur la résolution d'un **
 <img src="{{ '/images/principe-identification.png' | relative_url }}" alt="Flash 3D: principe identification " style="display: block; width: 90%; max-width: 600px; height: auto; margin: 0 auto;">
 *Estimation des conductivités thermiques dans le plan à partir d'images infrarouges et de la résolution inverse de l'équation de la chaleur 3D instationnaire.*
 
-### 3.2. Calibration et validation
+#### 3.2. Calibration et validation
 
 Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, Cu, Ag massif, pureté 99,95 %) a permis d'établir trois paramètres critiques d'acquisition :
 
@@ -133,9 +133,9 @@ Une **phase de calibration rigoureuse** sur des matériaux de référence (Al, C
 
 **Résultat :** une **erreur de mesure inférieure à 6 %**, avec confirmation de l'isotropie dans le plan (λ_x ≈ λ_y). La répétabilité a été validée par **20 mesures par échantillon**.
 
-### 3.3. Élaboration des échantillons
+#### 3.3. Élaboration des échantillons
 
-#### Procédé de frittage
+##### Procédé de frittage
 
 Le protocole d'élaboration comprend :
 
@@ -149,7 +149,7 @@ Le protocole d'élaboration comprend :
 
 L'empilement des couches a été validé : la porosité est **homogène dans l'épaisseur**, comme confirmé par des analyses d'images MEB systématiques sur la tranche (taux de porosité surfacique constant ~10–12 % sur toute l'épaisseur pour un échantillon à 10 MPa).
 
-#### Détermination de la température de frittage
+##### Détermination de la température de frittage
 
 La **température de frittage** a été déterminée par **DSC** couplée à l'**ATG** sur la plage **25–300 °C** à **10 °C/min** :
 
@@ -162,9 +162,9 @@ Ces résultats convergent vers le choix d'un frittage à **270 °C / 5 min** —
 <img src="{{ '/images/ATG-DSC-MEB.png' | relative_url }}" alt="ATG-DSC-MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 *Analyses DSC/ATG et évolution microstructurale de la pâte d'Ag en fonction de la température.*
 
-### 3.4. Caractérisation microstructurale et thermophysique
+#### 3.4. Caractérisation microstructurale et thermophysique
 
-#### Mesure de densité
+##### Mesure de densité
 
 La densité apparente a été déterminée par le rapport **masse/volume** :
 
@@ -175,14 +175,14 @@ La densité apparente a été déterminée par le rapport **masse/volume** :
 
 **Résultat** : la pression de frittage contrôle directement la densité — de ~3 g·cm⁻³ (0 MPa) à ~8 g·cm⁻³ (10 MPa).
 
-#### Porosité par imagerie MEB
+##### Porosité par imagerie MEB
 
 La porosité primaire a été mesurée par **imagerie MEB** après préparation métallographique (polissages successifs : papiers 400, 800, 1200, 2000, 4000 → surface miroir). Les images acquises à **5000×** ont été traitées sous **ImageJ et Matlab** par binarisation et seuillage pour quantifier la fraction surfacique de porosité.
 
 <img src="{{ '/images/porosite-MEB.png' | relative_url }}" alt="Évaluation de la porosité par traitement d’images MEB" style="display: block; width: 80%; max-width: 600px; height: auto; margin: 0 auto;">
 *Traitement d'image pour l'évaluation de la porosité : image MEB brute, seuillage, puis binarisation pour quantifier la fraction surfacique des pores.*
 
-#### Taille des grains
+##### Taille des grains
 
 La taille des grains a été évaluée par **MEB-FEG** à **30 000×**. Les contours des grains ont été tracés, les images binarisées, puis les aires mesurées sous **ImageJ** et converties en **diamètre équivalent** (assimilation à des disques).
 
@@ -191,7 +191,7 @@ La taille des grains a été évaluée par **MEB-FEG** à **30 000×**. Les cont
 <img src="{{ '/images/taille-grains.png' | relative_url }}" alt="Détermination de la taille des grains métallurgiques par traitement d’images MEB-FEG" style="display: block; width: 60%; max-width: 600px; height: auto; margin: 0 auto;">
 *Traitement d'image pour l'évaluation de la taille des grains : image brute, tracé des joints, identification individuelle sous ImageJ.*
 
-#### Capacité calorifique
+##### Capacité calorifique
 
 La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique différentielle à balayage en mode modulé) entre **−25 °C et 300 °C** à **10 °C/min**. Ce paramètre est essentiel pour convertir la diffusivité thermique en conductivité thermique (λ = α · ρ · c).
 
@@ -199,7 +199,7 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
 
 > **c(ρ) = 13,9·ρ² − 203·ρ + 1027** &nbsp;&nbsp;(R² = 0,99)
 
-### 3.5. Échantillons étudiés et plan de vieillissement
+#### 3.5. Échantillons étudiés et plan de vieillissement
 
 **Deux familles d'échantillons :**
 
@@ -247,9 +247,9 @@ La capacité calorifique a été mesurée par **mDSC** (analyse calorimétrique 
 
 ---
 
-## 4. Résultats : Ag fritté seul
+### 4. Résultats : Ag fritté seul
 
-### 4.1. Corrélation densité → conductivité thermique
+#### 4.1. Corrélation densité → conductivité thermique
 
 La pression de frittage est le levier principal : passer de 0 à 10 MPa augmente la densité de **62 %** et la conductivité thermique de **84 %**. Sur une porosité relative de **~25–75 % (±2 %)**, la conductivité varie d'un **facteur ~4** (de **222 à 66 W·m⁻¹·K⁻¹**).
 
@@ -266,7 +266,7 @@ La relation empirique conductivité–densité (avant vieillissement) est :
 <img src="{{ '/images/ag-non-vieilli.png' | relative_url }}" alt="Conductivité thermique mesurée en fonction de la porosité relative" style="display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto;">
 *Conductivité thermique mesurée en fonction de la porosité relative, pour 4 pressions de frittage. Comparaison avec les modèles de pore sphérique, cylindrique et plat (Ordonez-Miranda et al., 2016).*
 
-### 4.2. Effet du vieillissement thermique
+#### 4.2. Effet du vieillissement thermique
 
 Après avoir établi la relation entre porosité et conductivité à l'état 
 initial, la question suivante est : comment ces propriétés évoluent-elles 
@@ -274,7 +274,7 @@ en service ? Pour y répondre, les échantillons d'Ag fritté ont été vieillis
 sous vide primaire à 150, 250 et 350 °C pendant des durées allant 
 jusqu'à 500 h.
 
-#### Vue d'ensemble : un saut initial suivi d'une stabilisation
+##### Vue d'ensemble : un saut initial suivi d'une stabilisation
 
 La figure ci-dessous présente la conductivité thermique de l'ensemble 
 des échantillons (0–10 MPa) aux trois températures de vieillissement. 
@@ -293,7 +293,7 @@ est d'autant plus marqué que la pression de frittage est élevée, et
 (0, 50, 200 et 500 h) pour les quatre pressions de frittage, 
 à 150, 250 et 350 °C.*
 
-#### Zoom sur la cinétique : le saut se joue en quelques dizaines de minutes
+##### Zoom sur la cinétique : le saut se joue en quelques dizaines de minutes
 
 Pour résoudre plus finement la cinétique de ce saut initial, un 
 vieillissement par intervalles de 15 min a été réalisé sur un 
@@ -311,7 +311,7 @@ que quelques dizaines de minutes.
 à 10 MPa, vieilli à 150 °C par intervalles de 15 min. La transition 
 entre ES1 (saut rapide) et ES2 (stabilisation) intervient vers 45 min.*
 
-#### Quels paramètres microstructuraux évoluent pendant le vieillissement ?
+##### Quels paramètres microstructuraux évoluent pendant le vieillissement ?
 
 Pour comprendre l'origine de ce saut, trois paramètres ont été 
 suivis au cours du vieillissement :
@@ -331,7 +331,7 @@ Ni la densification, ni la croissance de grains, ni l'évolution
 de la connectivité des pores ne peuvent expliquer un saut aussi 
 rapide et aussi dépendant de la pression de frittage.
 
-#### Interprétation : relaxation de contraintes résiduelles
+##### Interprétation : relaxation de contraintes résiduelles
 
 Le seul paramètre qui distingue les échantillons entre eux est 
 la **pression appliquée lors du frittage**. Milhet et al. (2015) 
@@ -353,9 +353,9 @@ dépend que de la porosité).
 
 ---
 
-## 5. Résultats : bicouches Ag/Cu
+### 5. Résultats : bicouches Ag/Cu
 
-### 5.1. L'interface change tout à long terme
+#### 5.1. L'interface change tout à long terme
 La figure ci-dessous compare l'évolution de la conductivité 
 thermique des bicouches Ag/Cu à celle de l'Ag fritté seul 
 (représentée en pointillés), pour les quatre pressions de frittage, 
@@ -377,7 +377,7 @@ apparaît : la conductivité diminue progressivement, alors qu'elle
 reste stable pour l'Ag seul. Cette dégradation est d'autant plus 
 marquée que la pression de frittage est faible.
 
-#### La densité globale ne change pas
+##### La densité globale ne change pas
 
 Comme pour l'Ag seul, la densité des échantillons bicouches 
 reste stable tout au long du vieillissement, jusqu'à 500 h à 
@@ -386,7 +386,7 @@ n'est donc pas liée à une évolution de la densité globale du
 système, mais à un phénomène qui n'existait pas dans les 
 échantillons monocouches : **l'interface Ag/Cu**.
 
-### 5.2. Mise en évidence de l'effet d'interface
+#### 5.2. Mise en évidence de l'effet d'interface
 
 Pour isoler le rôle de l'interface, la conductivité thermique des 
 bicouches a été estimée à partir des propriétés de l'Ag fritté seul 
@@ -417,7 +417,7 @@ progressivement de ~11 % à ~46 % après 500 h. Ces évolutions
 opposées expliquent pourquoi la densité globale reste constante 
 alors que les propriétés locales se dégradent.
 
-### 5.3. Quantification : quelle part de l'Ag est affectée ?
+#### 5.3. Quantification : quelle part de l'Ag est affectée ?
 
 Pour traduire ces observations microstructurales en propriétés 
 thermiques, une chaîne d'estimation a été construite à partir 
@@ -444,7 +444,7 @@ perspectives de la thèse.
 
 ---
 
-## 6. Synthèse des contributions
+### 6. Synthèse des contributions
 
 Cette thèse couvre l'ensemble de la chaîne — de l'élaboration 
 des échantillons à l'identification des mécanismes de dégradation 
@@ -469,7 +469,7 @@ des échantillons à l'identification des mécanismes de dégradation
 
 ---
 
-## 7. Publications & communications
+### 7. Publications & communications
 
 **Experimental investigation of thermal conductivity during aging of nanoporous sintered silver**  
 A. Sghuri, Y. Billaud, L. Signor, D. Saury, X. Milhet  
@@ -480,7 +480,7 @@ A. Sghuri, Y. Billaud, L. Signor, D. Saury, X. Milhet
 
 ---
 
-## 8. Perspectives
+### 8. Perspectives
 
 Les résultats ouvrent plusieurs directions à fort intérêt scientifique et industriel :
 
@@ -491,7 +491,7 @@ Les résultats ouvrent plusieurs directions à fort intérêt scientifique et in
 
 ---
 
-## 9. Compétences développées
+### 9. Compétences développées
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.5em;">
   <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Mesure thermique Flash 3D</span>

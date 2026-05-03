@@ -21,7 +21,7 @@ l'épaisseur d'une zone d'interface dans un matériau bicouche.
 
 ---
 
-## Le problème
+## 01. Le problème
 
 Dans les échantillons bicouches Ag/Cu étudiés au cours de la 
 thèse, les mesures de conductivité thermique montrent une 
@@ -43,7 +43,7 @@ fallait répondre à deux questions concrètes :
 Aucune méthode standard ne permet de répondre à ces questions 
 sur ce type d'images. Il a donc fallu en développer une.
 
-## Observation préalable : une microstructure hétérogène
+## 02. Observation préalable : une microstructure hétérogène
 
 Avant de quantifier l'interface, une première analyse des 
 images MEB a révélé que la microstructure de la couche d'Ag 
@@ -83,7 +83,7 @@ vieillissement (0, 50, 200 et 500 h à 350 °C), dans les zones
 denses (LPA, en haut) et poreuses (HPA, en bas). Échantillon 
 fritté à 10 MPa.*
 
-## La méthode développée
+## 03. Méthode de segmentation
 
 Pour passer de l'observation qualitative à une mesure 
 quantitative, une méthode de segmentation a été développée 
@@ -144,7 +144,7 @@ donne l'épaisseur de la zone d'interface.
 épaisseur d'interface identifiée (droite). La zone entre 
 la ligne rouge et jaune correspond à l'interface Ag/Cu.*
 
-## Implémentation
+## 04. Implémentation
 
 La méthode a été implémentée en MATLAB. Le traitement 
 d'une image se déroule de manière séquentielle :
@@ -198,7 +198,7 @@ dernier_point = find(image_cumul(:, colonne) == 0, 1);
 epaisseur = dernier_point - mean_distance;
 ```
 
-## Résultats
+## 05. Résultats
 
 La méthode a été appliquée systématiquement aux échantillons 
 frittés à 10 MPa, vieillis à 350 °C pour des durées de 0, 
@@ -229,7 +229,17 @@ méthode de segmentation, ce phénomène serait resté invisible.
 et en zone d'interface au cours du vieillissement à 350 °C. 
 Les bandes ombrées représentent les écarts-types.*
 
-## Ce que cette méthode a permis
+### Compétences mobilisées
+
+- Traitement d'images et segmentation
+- Binarisation et analyse de seuillage
+- MATLAB (traitement, visualisation)
+- Microscopie électronique à balayage (MEB / MEB-FEG)
+- Analyse quantitative de microstructures
+- Préparation métallographique
+- Développement méthodologique original
+
+### Perspectives
 
 Les mesures de TPS obtenues par cette méthode ont ensuite 
 alimenté une chaîne d'estimation reliant la porosité locale 
@@ -239,17 +249,3 @@ thermique. C'est cette chaîne qui a permis d'estimer qu'à
 couche d'Ag** est affectée, et de proposer un modèle en 
 couches (Cu / interface / zone Ag affectée / Ag sain) pour 
 décrire l'évolution de la conductivité thermique du système.
-
----
-
-**Compétences mobilisées :**
-
-<div style="display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.5em;">
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Traitement d'images</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Segmentation et binarisation</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">MATLAB</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Microscopie MEB</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Analyse quantitative de microstructures</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Préparation métallographique</span>
-  <span style="background: #eaf2f8; padding: 0.4em 0.8em; border-radius: 5px; font-size: 0.9em;">Développement méthodologique</span>
-</div>
